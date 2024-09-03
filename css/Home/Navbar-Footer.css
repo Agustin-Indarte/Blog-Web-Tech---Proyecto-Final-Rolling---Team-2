@@ -1,0 +1,49 @@
+/* Navbar */
+.navbar{
+    background-color:var(--colorBackground);
+}
+
+.navbar-brand{
+    color: var(--colorPrimary);
+    font-weight: bold;
+    font-size: 20px;
+    &:hover{
+        color: var(--colorSecondary);
+    }
+}
+
+.nav-item a{
+    color: var(--colorPrimary);
+    font-size: 20px;
+    &:hover{
+        color: var(--colorSecondary);
+    }
+}
+
+.navbar-toggler{
+    background-color: var(--colorSecondary);
+}
+
+.btn-suscripcion {
+    color: var(--colorBackground);
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: var(--colorPrimary);
+    &:hover{
+        color: var(--colorSecondary);
+        background-color: var(--colorBackground);
+        outline: 2px solid var(--colorSecondary);
+    }
+    }
+
+/* Footer */
+.footer{
+    background-color:var(--colorBackground);
+}
+
+.redes-sociales a{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
