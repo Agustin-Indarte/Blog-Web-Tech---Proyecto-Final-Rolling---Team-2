@@ -1,0 +1,32 @@
+.navbar{
+    background-color:var(--colorBackground);
+}
+.navbar-brand span{
+    text-align: right;
+    font-weight: bolder;
+    font-size: 20px;
+    color: var(--colorPrimary);
+}
+.nav-item a{
+    color: var(--colorPrimary);
+    font-size: 20px;
+    &:hover{
+        color: var(--colorSecondary);
+    }
+}
+
+.navbar-toggler{
+    background-color: var(--colorPrimary);
+}
+
+.btn-suscripcion {
+    color: var(--colorBackground);
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: var(--colorPrimary);
+    &:hover{
+        color: var(--colorSecondary);
+        background-color: var(--colorBackground);
+        outline: 2px solid var(--colorSecondary);
+    }
+    }
