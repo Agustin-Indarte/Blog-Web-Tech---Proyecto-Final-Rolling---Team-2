@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg py-1 fixed-top">
         
         <div class="container-fluid mx-2">
-           
+
             <a href="index.html" class="navbar-brand"> <img src="/img/Logo.png" height="50px" alt="Logo"></a>
 
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle-navigation">
@@ -46,13 +46,36 @@
                     <li class="nav-item">
                         <a href="Login.html" class="nav-link fw-bold me-3">Login</a>
                     </li>
-
-                    <button type="button" class="btn btn-suscripcion">SUSCRIBETE</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal" data-bs-target="#ventana-suscripcion">SUSCRIBETE</button>
                 </ul>
             </div>
         </div>
-
     </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>    
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+            
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">SUSCRIBIRME</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
     </header>
 
     <!-- MAIN DE PRUEBA -->
