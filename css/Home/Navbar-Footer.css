@@ -31,8 +31,8 @@
     background-color: var(--colorPrimary);
     &:hover{
         color: var(--colorSecondary);
+        border: 1px solid var(--colorSecondary) ;
         background-color: var(--colorBackground);
-        outline: 2px solid var(--colorSecondary);
     }
     }
 
