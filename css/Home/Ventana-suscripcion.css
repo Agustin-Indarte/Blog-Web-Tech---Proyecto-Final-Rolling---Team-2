@@ -1,0 +1,28 @@
+.modal-dialog{
+    max-width: 700px;
+}
+
+.modal-header{
+    border-bottom: none;
+}
+
+.btn-close{
+    filter: invert(1);
+}
+
+.banner-ventana-suscripcion{
+    background-image: url(/img/fondo-suscripción.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
