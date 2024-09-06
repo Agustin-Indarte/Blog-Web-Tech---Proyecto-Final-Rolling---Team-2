@@ -5,7 +5,7 @@
     font-family: var(--tipograficaGeneral);
 }
 body{
-    background-image:url(/img/img_gal1.jpg) ;
+     background-color: var(--colorBackground) ;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -13,8 +13,9 @@ body{
 }
 #logo-user{
 
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     object-fit: cover;
+
 
 }
