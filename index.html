@@ -56,7 +56,7 @@
         </div>
     </nav>
 
-  <!-- Modal -->
+    <!-- Modal -->
   <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
 
@@ -175,12 +175,12 @@
             </div>
         </div>
 
-        <!-- Modal Footer -->
-        <div class="modal-footer bg-dark">
-            <div class="d-flex justify-content-center w-100">
-                <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+            <!-- Modal Footer -->
+            <div class="modal-footer bg-dark">
+                <div class="d-flex justify-content-center w-100">
+                    <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+                </div>
             </div>
-        </div>
     </div>
   </div>
 
@@ -189,11 +189,149 @@
 
     <!-- MAIN DE PRUEBA -->
     <main>
-        <img class="object-fit-cover" src="/img/Banner - Prueba.jpg" height="700px" width="100%">
+        
+        <section class="slider-home">   
+            <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
+                <!-- sliders -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide1"></button>
+                    <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="1" aria-label="Slide2"></button>
+                    <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="2" aria-label="Slide3"></button>
+                </div>
+                
+                <!-- Carrousel-banners -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3500">
+                        <img src="/img/banner1.avif" alt="banner1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <img src="/img/banner2.avif" alt="banner2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <img src="/img/banner3.avif" alt="banner3" class="d-block w-100">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="entradas-recientes">
+            <div class="container-fluid text-center">
+                <div class="row mt-3">
+                    <!-- Columna Entradas Recientes -->
+                     <div class="col-lg-8 bg-danger">
+                        <h2>Entradas Recientes</h2>
+
+                        <!-- Carrusel de cards -->
+                        <div id="carousel-cards" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="col-lg-10">
+
+                                            <article class="card h-auto rounded mb-4">
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                    </div>
+                                                    <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                                                        <h2>Titulo de la Entrada 1</h2>
+                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel quibusdam maiores eveniet porro vitae!</p>
+                                                        <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <article class="card h-auto rounded mb-4">
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                    </div>
+                                                    <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                                                        <h2>Titulo de la Entrada 2</h2>
+                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel quibusdam maiores eveniet porro vitae!</p>
+                                                        <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <article class="card h-auto rounded mb-4">
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                    </div>
+                                                    <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                                                        <h2>Titulo de la Entrada 3</h2>
+                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel quibusdam maiores eveniet porro vitae!</p>
+                                                        <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item active">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="col-lg-10">
+
+                                            <article class="card h-auto rounded mb-4">
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                    </div>
+                                                    <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                                                        <h2>Titulo de la Entrada 4</h2>
+                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel quibusdam maiores eveniet porro vitae!</p>
+                                                        <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <article class="card h-auto rounded mb-4">
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                    </div>
+                                                    <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                                                        <h2>Titulo de la Entrada 5</h2>
+                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel quibusdam maiores eveniet porro vitae!</p>
+                                                        <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <article class="card h-auto rounded mb-4">
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                    </div>
+                                                    <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                                                        <h2>Titulo de la Entrada 6</h2>
+                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel quibusdam maiores eveniet porro vitae!</p>
+                                                        <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 bg-primary">
+                        <h2>Categorías</h2>
+                     </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     
     <!-- FOOTER -->
-     <footer class="footer bg-dark bg-gradient">
+    <footer class="footer bg-dark bg-gradient">
         <div class="container-lg">
             <div class="row d-flex justify-content-between align-items-center">
                 <!-- 1ra Columna Logo -->
@@ -215,7 +353,7 @@
                 </div>
             </div>
         </div>
-     </footer>
+    </footer>
     
     
     <!-- SCRIP BOOTSTRAP 5 -->

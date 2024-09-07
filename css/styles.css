@@ -5,4 +5,5 @@
 
 /* Estilos del Home */
 @import "/css/Home/Navbar-Footer.css";
-@import "/css/Home/Ventana-suscripcion.css"
+@import "/css/Home/Ventana-suscripcion.css";
+@import "/css/Home/Home.css"
