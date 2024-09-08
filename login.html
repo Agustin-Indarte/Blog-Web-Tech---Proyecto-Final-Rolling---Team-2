@@ -30,20 +30,18 @@
     <!-- TITULO -->
     <title>Web Tech</title>
   </head>
-  <body>
-    <section id="login" class="py-5">
+  <body class="login-body">
+    <section id="login" class="py-10">
       <div class="container-lg">
-        <!-- creo la fila -->
-        <div class="row min-vh-100 align-items-lg-center align-content-around">
+        <div class="row min-vh-100 align-items-center align-content-center">
           <div
-            class="cont-img col-md-6 mt-5 mt-md-0 d-flex justify-content-center align-items-center"
-            id="div-img"
+            class="div-img col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-center align-items-center"
           >
-            <div class="login-img text-center">
+            <div class="login-img d-flex justify-content-center text-lg-center">
               <img
                 src="/img/img_gal2.jpeg"
                 alt="imagen de login"
-                class="img-fluid mw-100"
+                class="img-fluid mw-100 w-100"
               />
               <div
                 class="overlay d-flex justify-content-center align-items-center"
@@ -54,11 +52,10 @@
           </div>
           <!-- formulario de login -->
           <div
-            class="col-md-6 mt-5 mt-md-0 d-flex justify-content-center align-items-center"
-            id="div-form"
+            class="div-login col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-center align-items-center"
           >
             <form action="" class="login-form">
-              <h1 class="form-title">
+              <h1 class="form-title h3 h-md-1">
                 iniciar sesion <i class="fa-solid fa-right-to-bracket"></i>
               </h1>
 
@@ -70,9 +67,9 @@
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="user"> ingrese su contraseña</label>
+                  <label for="contraseña"> ingrese su contraseña</label>
                   <input
-                    type="number"
+                    type="password"
                     name="contraseña"
                     id="contraseña"
                     required
@@ -80,27 +77,32 @@
                 </div>
               </div>
               <!--buttons-->
-              <div class="form-buttons">
-                <a href="./index.html" class=" btn cancel_button" >cancelar</a>
+              <div class="form-buttons mb-3">
+                <a href="./index.html" class="btn cancel_button">cancelar</a>
+                <button type="submit" class="btn ing_button">ingresar</button>
                 <!--button para desplegar el modal-->
                 <button
                   type="button"
                   class="button_contraseña btn"
                   data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
+                  data-bs-target="#modal_rec"
                 >
                   Recuperar contraseña
-
                 </button>
-              
+                <button
+                  type="button"
+                  class="button_otrosing btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  otras formas de ingreso
+                </button>
               </div>
             </form>
           </div>
-          <div class="row"></div>
-
-          <!-- Modal -->
+          <!-- Modal otras formas de ingreso -->
           <div
-            class="modal fade "
+            class="modal fade"
             id="staticBackdrop"
             data-bs-backdrop="static"
             data-bs-keyboard="false"
@@ -108,9 +110,55 @@
             aria-labelledby="staticBackdropLabel"
             aria-hidden="true"
           >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    elegi un opcion para ingresar
+                  </h1>
+                </div>
+                <div class="modal-body">
+                  <div class="op_ingreso">
+                    <div>
+                      <a href="http://" class="btn_modal btn mb-3 w-100"
+                        >ingresa con tu de cuenta google
+                        <i class="fa-brands fa-google-plus"></i>
+                      </a>
+                    </div>
+
+                    <a href="http://" class="btn_modal btn mb-3 w-100">
+                      ingresa con tu cuenta facebook
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn_modal btn"
+                    data-bs-dismiss="modal"
+                    id="cerrar"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="modal_rec"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            >
             <div class="modal-dialog modal-dialog-centered.modal-dialog">
               <div class="modal-content">
-                <div class="modal-header ">
+                <div class="modal-header">
                   <h1 class="modal-title fs-5" id="staticBackdropLabel">
                     crea un nuevo usuario
                   </h1>
@@ -121,7 +169,7 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body mw-600px">
                   <body class="form-body">
                     <div class="container">
                       <form action="" class="form-login">
@@ -131,25 +179,32 @@
                             <input
                               type="text"
                               id="nuevo_user"
-                              name="nuevo_user" required
+                              name="nuevo_user"
+                              required
                             />
                           </div>
                           <div class="form-group">
                             <label for="dni"> ingresa tu dni </label>
-                            <input type="number" id="dni" name="dni"  required/>
+                            <input type="number" id="dni" name="dni" required />
                           </div>
                         </div>
                         <div class="form-row">
                           <div class="form-group">
                             <label for="email"> ingresa tu Email </label>
-                            <input type="email" id="emaik" name="email" required />
+                            <input
+                              type="email"
+                              id="emaik"
+                              name="email"
+                              required
+                            />
                           </div>
                           <div class="form-group">
                             <label for="password"> ingresar contraseña </label>
                             <input
                               type="password"
                               id="password"
-                              name="password" required
+                              name="password"
+                              required
                             />
                           </div>
                         </div>
@@ -160,13 +215,13 @@
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn  "
+                    class="btn_modal btn"
                     data-bs-dismiss="modal"
                     id="cerrar"
                   >
                     Cerrar
                   </button>
-                  <button type="button" class="btn " id="enviar">
+                  <button type="button" class="btn_modal btn" id="enviar">
                     Enviar
                   </button>
                 </div>
