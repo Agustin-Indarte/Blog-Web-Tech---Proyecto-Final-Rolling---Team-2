@@ -22,3 +22,27 @@
     width: 31px;
     height: 5px;
 }
+
+/* Seccion Cagegorias */
+.btn-lg {
+    height: 56px;
+    font-size: 1.5rem;
+}
+
+.categorias{
+    background-color: var(--colorBackground);
+}
+
+/* carousel publicidad */
+#carousel-publicidad {
+    height: 250px; 
+    max-height: 250px; 
+    overflow: hidden; 
+}
+
+#carousel-publicidad .carousel-item img {
+    height: 100%; 
+    width: auto; 
+    object-fit:cover 
+}
+
