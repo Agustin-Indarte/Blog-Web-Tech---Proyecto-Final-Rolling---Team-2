@@ -1,0 +1,186 @@
+.login-body {
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  color: var(--colorPrimary);
+}
+
+.img-fluid {
+  border-radius: 5%;
+  padding: 20px;
+  border-radius: 5%;
+}
+.login-img {
+  position: relative;
+  height: 450px;
+  object-fit: cover;
+  &img {
+    height: 100%;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.336);
+  border-radius: 5%;
+  border: 1px solid var(--colorPrimary);
+}
+.div-img {
+  height: auto;
+}
+.div-login {
+  padding: 20px;
+  border-radius: 5%;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.8);
+  max-width: 600px;
+  /*  width: 100%;
+  height: 380px;*/
+  color: var(--colorPrimary);
+  opacity: 90%;
+  border: 1px solid var(--colorPrimary);
+  height: auto;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+label {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+input {
+  padding: 8px;
+  background-color: var(--colorsecondary);
+  border: 1px solid var(--colorPrimary);
+  border-radius: 5%;
+  font-size: 0.8em;
+  color: var(--colorPrimary);
+}
+.button_contraseña {
+  border: 1px solid var(--colorPrimary);
+  color: var(--colorPrimary);
+  background-color: var(--colorBackground);
+  width: 30%;
+  &:hover {
+    background-color: var(--colorSecondary);
+    color: var(--colorBackground);
+  }
+}
+
+.cancel_button {
+  border: 1px solid var(--colorPrimary);
+  color: var(--colorPrimary);
+  background-color: var(--colorBackground);
+  width: 40%;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  &:hover {
+    background-color: var(--colorSecondary);
+    color: var(--colorBackground);
+  }
+}
+
+.ing_button {
+  border: 1px solid var(--colorPrimary);
+  color: var(--colorPrimary);
+  background-color: var(--colorBackground);
+  width: 40%;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  &:hover {
+    background-color: var(--colorSecondary);
+    color: var(--colorBackground);
+  }
+}
+.button_otrosing {
+  border: 1px solid var(--colorPrimary);
+  color: var(--colorPrimary);
+  background-color: var(--colorBackground);
+  width: 40%;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  &:hover {
+    background-color: var(--colorSecondary);
+    color: var(--colorBackground);
+  }
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-content {
+  background-color: var(--colorBackground);
+}
+
+.btn_modal {
+  background-color: var(--colorBackground);
+  color: var(--colorPrimary);
+  border: 1px solid var(--colorPrimary);
+}
+
+/*resposividad en 768 ox*/
+@media (max-width: 768px) {
+  .login-body {
+    background-size: contain;
+  }
+}
+/*resposividad en form en 480*/
+@media (max-width: 480px) {
+
+.modal-body{
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+
+  .form-login {
+    width: 90%;
+    margin: 100px auto;
+    padding: 20px;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .form-group {
+    flex-direction: column;
+  }
+  .form-group {
+    width: 100%;
+  }
+}
