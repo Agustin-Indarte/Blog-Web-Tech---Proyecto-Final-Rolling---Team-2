@@ -10,18 +10,66 @@
 }
 
 .carousel-indicators [data-bs-target] {
-    width: 30px;
-    height: 4px;
+    width: 50px;
+    height: 10px;
     border-radius: 5%;
     background-color: #ffffff;
     border: 2px solid #000000;
+    margin-bottom: 50px;
 }
 
 .carousel-indicators .active {
-    background-color: var(--colorSecondary);
-    width: 31px;
-    height: 5px;
+    background-color: var(--colorPrimary);
+    width: 51px;
+    height: 11px;
 }
+
+.textos-banner-principal{
+    position: absolute;
+    top: 20%;
+}
+
+.textos-banner-principal img {
+    height: 450px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.textos-banner-principal h1{
+    font-size: 5rem;
+    font-weight: bolder;
+    color: var(--colorPrimary);
+}
+
+.textos-banner-principal p{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--colorSecondary);
+}
+
+
+
+.textos-banner-inicio{
+    position: absolute;
+    top: 30%;
+}
+
+
+.carousel-item {
+    position: relative;
+}
+
+.textos-banner-inicio h2{
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.textos-banner-inicio p{
+    font-size: 3rem;
+    font-weight:lighter;
+}
+
+
 
 /* Seccion Cagegorias */
 .btn-lg {

@@ -87,18 +87,33 @@
                 </div>
 
                 <!-- Formulario de Suscripción -->
-                <form action="post">
+                <form action="error404.html" method="post">
                     <div class="row">
                     <!-- 1ra columna form - Datos de suscripcion -->
                     <div class="col-md-6 mt-2">
                     
                         <label for="Datos-suscripcion" class="mb-2">Datos de suscripción</label>
 
-                        <input type="text" class="form-control mb-3" placeholder="Nombre y Apellido" required>
+                        <input type="text" id="nombre-apellido" name="nombre-apellido" 
+                        class="form-control mb-3" 
+                        placeholder="Nombre y Apellido" 
+                        title="El nombre solo debe contener letras y espacios." 
+                        required pattern="^[A-Za-zÀ-ÿ\u00f1\u00d1]+(\s[A-Za-zÀ-ÿ\u00f1\u00d1]+)+$"> 
+                        <!-- Incluye letras (mayúsculas y minúsculas), letras acentuadas y la "ñ". Además, requiere al menos un espacio entre el nombre y el apellido, y asegura que solo se ingresen letras y espacios -->
                     
-                        <input type="email" class="form-control mb-3" placeholder="Correo electronico" required>
+                        <input type="email" id="email" name="email" 
+                        class="form-control mb-3" 
+                        placeholder="Correo electronico"  
+                        title="Por favor, introduce un correo electrónico válido."
+                        required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                        <!-- Incluye un nombre de usuario seguido por @, un dominio, y una extensión con al menos dos caracteres -->
                     
-                        <input type="date" class="form-control mb-3" placeholder="Fecha de nacimiento" required>
+                        <input type="date" id="nacimiento" name="nacimiento" 
+                        class="form-control mb-3" 
+                        placeholder="Fecha de nacimiento" 
+                        title="Por favor, introduce una fecha válida en el formato AAAA-MM-DD."
+                        required pattern="\d{4}-\d{2}-\d{2}">
+                        <!-- Valida que la fecha esté en el formato AAAA-MM-DD-->
 
                     </div>
 
@@ -202,13 +217,29 @@
                 <!-- Carrousel-banners -->
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3500">
-                        <img src="/img/banner1.avif" alt="banner1" class="d-block w-100">
+                        <img src="/img/Banner1.png" alt="banner1" class="d-block w-100">
+                        <div class="textos-banner-principal carousel-caption d-none d-md-block">
+                            <img src="/img/Logo-transparente.png" alt="Logo">
+                            <h1> < Web / Tech > </h1>
+                            <p>- Blog -</p>
+                        </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
-                        <img src="/img/banner2.avif" alt="banner2" class="d-block w-100">
+                        <img src="/img/Banner2.png" alt="banner2" class="d-block w-100">
+                        <div class=" textos-banner-inicio carousel-caption d-none d-md-block">
+                            <h2>¡Bienvenido a nuestro Blog!</h2>
+                            <p>
+                                La mejor forma de aprender es enseñando. <br>
+                                Comparte tu código, expande tu mente.
+                            </p>
+                        </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
-                        <img src="/img/banner3.avif" alt="banner3" class="d-block w-100">
+                        <img src="/img/Banner3.png" alt="banner3" class="d-block w-100">
+                        <div class=" textos-banner-inicio carousel-caption d-none d-md-block">
+                            <h2 >Título del primer banner</h2>
+                            <p>Descripción del primer banner.</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -234,7 +265,7 @@
                                             <article class="card h-auto rounded mb-4">
                                                 <div class="row">
                                                     <div class="col-lg-5">
-                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
                                                     </div>
                                                     <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
                                                         <h2>Titulo de la Entrada 1</h2>
@@ -247,7 +278,7 @@
                                             <article class="card h-auto rounded mb-4">
                                                 <div class="row">
                                                     <div class="col-lg-5">
-                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
                                                     </div>
                                                     <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
                                                         <h2>Titulo de la Entrada 2</h2>
@@ -260,7 +291,7 @@
                                             <article class="card h-auto rounded mb-4">
                                                 <div class="row">
                                                     <div class="col-lg-5">
-                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
                                                     </div>
                                                     <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
                                                         <h2>Titulo de la Entrada 3</h2>
@@ -280,7 +311,7 @@
                                             <article class="card h-auto rounded mb-4">
                                                 <div class="row">
                                                     <div class="col-lg-5">
-                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
                                                     </div>
                                                     <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
                                                         <h2>Titulo de la Entrada 4</h2>
@@ -293,7 +324,7 @@
                                             <article class="card h-auto rounded mb-4">
                                                 <div class="row">
                                                     <div class="col-lg-5">
-                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
                                                     </div>
                                                     <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
                                                         <h2>Titulo de la Entrada 5</h2>
@@ -306,7 +337,7 @@
                                             <article class="card h-auto rounded mb-4">
                                                 <div class="row">
                                                     <div class="col-lg-5">
-                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
                                                     </div>
                                                     <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
                                                         <h2>Titulo de la Entrada 6</h2>
@@ -339,7 +370,7 @@
                                             <article class="card h-auto rounded mb-4">
                                                 <div class="row">
                                                     <div class="col-lg-5">
-                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
                                                     </div>
                                                     <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
                                                         <h2>Titulo de la Entrada 8</h2>
@@ -352,7 +383,7 @@
                                             <article class="card h-auto rounded mb-4">
                                                 <div class="row">
                                                     <div class="col-lg-5">
-                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/banner1.avif" alt="Imagen de card">
+                                                        <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
                                                     </div>
                                                     <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
                                                         <h2>Titulo de la Entrada 9</h2>
@@ -415,12 +446,13 @@
                                     </div>
                                     <!-- Opciones -->
                                     <div class=" options d-grid gap-1 col-12 mx-auto">
-                                        <button type="button" class="btn btn-lg btn-secondary">Secondary</button>
-                                        <button type="button" class="btn btn-lg btn-success">Success</button>
-                                        <button type="button" class="btn btn-lg  btn-danger">Danger</button>
-                                        <button type="button" class="btn btn-lg btn-warning">Warning</button>
-                                        <button type="button" class="btn btn-lg btn-info">Info</button>
-                                        <button type="button" class="btn btn-lg btn-light">Light</button>
+                                        <button type="button" class="btn btn-lg btn-primary">Css3</button>
+                                        <button type="button" class="btn btn-lg btn-warning">Html5</button>
+                                        <button type="button" class="btn btn-lg btn-success">Bootstrap5</button>
+                                        <button type="button" class="btn btn-lg btn-light">Informativos</button>
+                                        <button type="button" class="btn btn-lg btn-secondary">Herramientas y tips</button>
+                                        <button type="button" class="btn btn-lg  btn-danger">Metodologia Scrum</button>
+                                        
                                     </div>
 
                                     <!-- Publicidad -->
