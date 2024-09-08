@@ -78,10 +78,54 @@
 
     </header>
 
-    <!-- MAIN DE PRUEBAS -->
-    <main>
-        <img class="object-fit-cover" src="/img/Banner - Prueba.jpg" height="700px" width="100%">
-    </main>
+    <!-- FORMULARIO DE CONTACTOS Y MAPA DE UBICACION -->
+     <section class="contactos-contenedor" id="contactos">
+        <div class="contactos-padre">
+            <div class="contactos">
+                <div class="contactos-titulo">
+                    <h2 class="contactos-texto">Contactate con nosotros <i class="fa-solid fa-envelopes-bulk"></i> </h2>
+                </div>
+                <div class="formulario-contenedor">
+                    <form action="" class="formulario-contacto">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="usuario">Ingrese su usuario</label>
+                                <input type="text" name="usuario" placeholder="ingrese su usuario" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Ingrese su email</label>
+                                <input type="email" name="email" placeholder="ingrese su email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="asunto">Asunto</label>
+                                <input type="text" name="asunto" placeholder="escriba su asunto" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mensaje">Escriba su mensaje</label>
+                                <input type="text" name="mensaje" placeholder="escriba su mensaje" required>
+                            </div>
+                        </div>
+                        <div class="form-button">
+                            <button class="submit-button">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mapa">
+                <div class="mapa-titulo">
+                    <h2>Encontranos aqui <i class="fa-solid fa-location-dot"></i></h2>
+                </div>
+                <div class="inframe-contactos">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.10606794951!2d-65.20974192556415!3d-26.83657849002515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1725746874312!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+     </section>
+   
     
     <!-- FOOTER -->
      <footer class="footer bg-dark bg-gradient">
