@@ -127,8 +127,8 @@ input {
     color: var(--colorBackground);
   }
 }
-.button_otrosing{
- border: 1px solid var(--colorPrimary);
+.button_otrosing {
+  border: 1px solid var(--colorPrimary);
   color: var(--colorPrimary);
   background-color: var(--colorBackground);
   width: 40%;
@@ -141,7 +141,6 @@ input {
     background-color: var(--colorSecondary);
     color: var(--colorBackground);
   }
-
 }
 
 .form-buttons {
@@ -158,11 +157,34 @@ input {
   border: 1px solid var(--colorPrimary);
 }
 
-
-
 /*resposividad en 768 ox*/
 @media (max-width: 768px) {
   .login-body {
     background-size: contain;
+  }
+}
+/*resposividad en form en 480*/
+@media (max-width: 480px) {
+
+.modal-body{
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+
+  .form-login {
+    width: 90%;
+    margin: 100px auto;
+    padding: 20px;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .form-group {
+    flex-direction: column;
+  }
+  .form-group {
+    width: 100%;
   }
 }

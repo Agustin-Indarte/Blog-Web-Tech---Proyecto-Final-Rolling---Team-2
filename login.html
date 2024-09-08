@@ -10,7 +10,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- LINK FAVICON -->
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
     <!-- LINK AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- LINK BOOTSTRAP 5 -->
@@ -34,8 +34,9 @@
     <section id="login" class="py-10">
       <div class="container-lg">
         <div class="row min-vh-100 align-items-center align-content-center">
+      <!--se arma la fila para colocar los fromularios-->
           <div
-            class="div-img col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-center align-items-center"
+            class="div-img col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-between align-items-center"
           >
             <div class="login-img d-flex justify-content-center text-lg-center">
               <img
@@ -110,7 +111,7 @@
             aria-labelledby="staticBackdropLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="staticBackdropLabel">
@@ -120,13 +121,18 @@
                 <div class="modal-body">
                   <div class="op_ingreso">
                     <div>
-                      <a href="http://" class="btn_modal btn mb-3 w-100"
+                      <a
+                        href="http://www.google.com"
+                        class="btn_modal btn mb-3 w-100"
                         >ingresa con tu de cuenta google
                         <i class="fa-brands fa-google-plus"></i>
                       </a>
                     </div>
 
-                    <a href="http://" class="btn_modal btn mb-3 w-100">
+                    <a
+                      href="http://www.facebook.com "
+                      class="btn_modal btn mb-3 w-100"
+                    >
                       ingresa con tu cuenta facebook
                       <i class="fa-brands fa-facebook"></i>
                     </a>
@@ -145,7 +151,7 @@
               </div>
             </div>
           </div>
-          <!-- Modal -->
+          <!-- Modal recuperar contraseñas-->
           <div
             class="modal fade"
             id="modal_rec"
@@ -156,7 +162,7 @@
             aria-hidden="true"
           >
             >
-            <div class="modal-dialog modal-dialog-centered.modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="staticBackdropLabel">
