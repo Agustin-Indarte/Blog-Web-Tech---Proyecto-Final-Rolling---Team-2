@@ -30,11 +30,67 @@
     <!-- TITULO -->
     <title>Web Tech</title>
   </head>
-  <body class="login-body">
+
+  <body class="login-body min-vh-100">
+    <header>
+      <nav class="navbar navbar-expand-lg py-1 fixed-top">
+        <div class="container-fluid mx-2">
+          <!-- Logo -->
+          <a href="index.html" class="navbar-brand">
+            <img src="/img/Logo.png" height="50px" alt="Logo"
+          /></a>
+
+          <!-- Menu desplegable -->
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="#navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle-navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <!-- Lista Navbar -->
+              <li class="nav-item">
+                <a href="Nosotros.html" class="nav-link fw-bold me-3"
+                  >Nosotros</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#Contacto.html" class="nav-link fw-bold me-3"
+                  >Contacto</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="Login.html" class="nav-link fw-bold me-3">Login</a>
+              </li>
+
+              <!-- Button Ventana modal Suscripcion -->
+              <button
+                type="button"
+                class="btn btn-suscripcion"
+                data-bs-toggle="modal"
+                data-bs-target="#ventana-suscripcion"
+              >
+                SUSCRIBETE
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <section id="login" class="py-10">
-      <div class="container-lg">
+      <div class="container-fluid">
         <div class="row min-vh-100 align-items-center align-content-center">
-      <!--se arma la fila para colocar los fromularios-->
+          <!--se arma la fila para colocar los fromularios-->
           <div
             class="div-img col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-between align-items-center"
           >
@@ -47,7 +103,7 @@
               <div
                 class="overlay d-flex justify-content-center align-items-center"
               >
-                <h1>Ingreso al universo IT</h1>
+                <h1>Ingresa al universo IT</h1>
               </div>
             </div>
           </div>
@@ -77,80 +133,239 @@
                   />
                 </div>
               </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <a href="" type="button" class="btn btn-light">
+                    Ingresa con cuenta de google
+                    <i class="fa-brands fa-google-plus text-danger"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <a href="" type="button" class="btn btn-light">
+                    Ingresa con cuenta de facebook
+                    <i class="fa-brands fa-square-facebook text-bg-primary"></i>
+                  </a>
+                </div>
+              </div>
+
               <!--buttons-->
               <div class="form-buttons mb-3">
                 <a href="./index.html" class="btn cancel_button">cancelar</a>
                 <button type="submit" class="btn ing_button">ingresar</button>
+
                 <!--button para desplegar el modal-->
-                <button
-                  type="button"
-                  class="button_contraseña btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal_rec"
-                >
-                  Recuperar contraseña
-                </button>
-                <button
-                  type="button"
-                  class="button_otrosing btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
-                >
-                  otras formas de ingreso
-                </button>
               </div>
+              <button
+                type="button"
+                class="button_contraseña btn w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#modal_rec"
+              >
+                olvidaste tu contraseña? ingresa
+              </button>
             </form>
           </div>
-          <!-- Modal otras formas de ingreso -->
+
+          <!--modal de subcripcion-->
           <div
             class="modal fade"
-            id="staticBackdrop"
+            id="ventana-suscripcion"
             data-bs-backdrop="static"
             data-bs-keyboard="false"
             tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
+            aria-labelledby="ventana-suscripcionLabel"
             aria-hidden="true"
           >
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                    elegi un opcion para ingresar
-                  </h1>
-                </div>
-                <div class="modal-body">
-                  <div class="op_ingreso">
-                    <div>
-                      <a
-                        href="http://www.google.com"
-                        class="btn_modal btn mb-3 w-100"
-                        >ingresa con tu de cuenta google
-                        <i class="fa-brands fa-google-plus"></i>
-                      </a>
-                    </div>
-
-                    <a
-                      href="http://www.facebook.com "
-                      class="btn_modal btn mb-3 w-100"
-                    >
-                      ingresa con tu cuenta facebook
-                      <i class="fa-brands fa-facebook"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="modal-footer">
+                <!-- Modal Header -->
+                <div class="modal-header bg-dark">
+                  <!-- Btn de cancelar sup -->
                   <button
                     type="button"
-                    class="btn_modal btn"
+                    class="btn-close"
                     data-bs-dismiss="modal"
-                    id="cerrar"
-                  >
-                    Cerrar
-                  </button>
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body text-center">
+                  <!-- Banner Suscripción -->
+                  <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
+                    <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
+
+                    <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
+                      ¡Únete a Nuestra comunidad!
+                    </h3>
+
+                    <p class="my-2 text-white">
+                      Recibe los últimos artículos publicados <br />
+                      Aprende con nosotros, compártelo con el mundo.
+                    </p>
+
+                    <p class="mb-2" style="color: var(--colorPrimary)">
+                      Nuevas publicaciones Lunes y Viernes
+                    </p>
+                  </div>
+
+                  <!-- Formulario de Suscripción -->
+                  <form action="post">
+                    <div class="row">
+                      <!-- 1ra columna form - Datos de suscripcion -->
+                      <div class="col-md-6 mt-2">
+                        <label for="Datos-suscripcion" class="mb-2"
+                          >Datos de suscripción</label
+                        >
+
+                        <input
+                          type="text"
+                          class="form-control mb-3"
+                          placeholder="Nombre y Apellido"
+                          required
+                        />
+
+                        <input
+                          type="email"
+                          class="form-control mb-3"
+                          placeholder="Correo electronico"
+                          required
+                        />
+
+                        <input
+                          type="date"
+                          class="form-control mb-3"
+                          placeholder="Fecha de nacimiento"
+                          required
+                        />
+                      </div>
+
+                      <!-- 2da columna form - Intereses y preferencias -->
+                      <div class="col-md-6 mt-2">
+                        <label for="Datos-suscripcion" class="mb-2"
+                          >Intereses y Preferencias</label
+                        >
+
+                        <!-- Selector de frecuencia -->
+                        <select
+                          name="Frecuencia"
+                          id="Frecuencia-envios"
+                          class="form-select mb-3"
+                        >
+                          <option selected>Frecuencia de envíos</option>
+                          <option value="1">Diariamente</option>
+                          <option value="2">Semanalmente</option>
+                          <option value="3">Mensualmente</option>
+                        </select>
+
+                        <!-- Checkbox de intereses -->
+                        <div class="row">
+                          <!-- 1ra columna checkbox-->
+                          <div class="col-6">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="Bootsrap5"
+                                id="Bootsrap5"
+                                value="Bootsrap5"
+                              />
+                              <label
+                                for="Bootsrap5"
+                                class="form-check-label mb-2"
+                              >
+                                Bootsrap5
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="Informativos"
+                                id="Informativos"
+                                value="Informativos"
+                              />
+                              <label
+                                for="Informativos"
+                                class="form-check-label mb-2"
+                              >
+                                Informativos
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="Herramientas"
+                                id="Herramientas"
+                                value="Herramientas"
+                              />
+                              <label
+                                for="Herramientas"
+                                class="form-check-label mb-2"
+                              >
+                                Herramientas
+                              </label>
+                            </div>
+                          </div>
+
+                          <!-- 2da columna checbox-->
+                          <div class="col-6">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="Css3"
+                                id="Css3"
+                                value="Css3"
+                              />
+                              <label for="Css3" class="form-check-label mb-2">
+                                Css3
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="Html5"
+                                id="Html5"
+                                value="Html5"
+                              />
+                              <label for="Html5" class="form-check-label mb-2">
+                                Html5
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="Scrum"
+                                id="Scrum"
+                                value="Scrum"
+                              />
+                              <label for="Scrum" class="form-check-label mb-2">
+                                Scrum
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                      <div class="d-flex justify-content-center w-100">
+                        <button type="submit" class="btn btn-suscripcion">
+                          SUSCRIBIRME
+                        </button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
+
           <!-- Modal recuperar contraseñas-->
           <div
             class="modal fade"
@@ -161,12 +376,11 @@
             aria-labelledby="staticBackdropLabel"
             aria-hidden="true"
           >
-            >
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                    crea un nuevo usuario
+                <div class="modal-header text-center">
+                  <h1 class="modal-title fs-8" id="staticBackdropLabel">
+                    recupera tu contraseña
                   </h1>
                   <button
                     type="button"
@@ -175,7 +389,24 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body mw-600px">
+                <div class="modal-body text-center mw-600px">
+                  <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
+                    <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
+
+                    <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
+                      ¡Únete a Nuestra comunidad!
+                    </h3>
+
+                    <p class="my-2 text-white">
+                      Recibe los últimos artículos publicados <br />
+                      Aprende con nosotros, compártelo con el mundo.
+                    </p>
+
+                    <p class="mb-2" style="color: var(--colorPrimary)">
+                      Nuevas publicaciones Lunes y Viernes
+                    </p>
+                  </div>
+
                   <body class="form-body">
                     <div class="container">
                       <form action="" class="form-login">
@@ -199,13 +430,15 @@
                             <label for="email"> ingresa tu Email </label>
                             <input
                               type="email"
-                              id="emaik"
+                              id="email"
                               name="email"
                               required
                             />
                           </div>
                           <div class="form-group">
-                            <label for="password"> ingresar contraseña </label>
+                            <label for="password">
+                              Ingresa el codigo que te enviamos a tu mail
+                            </label>
                             <input
                               type="password"
                               id="password"
@@ -227,7 +460,7 @@
                   >
                     Cerrar
                   </button>
-                  <button type="button" class="btn_modal btn" id="enviar">
+                  <button type="submit" class="btn_modal btn" id="enviar">
                     Enviar
                   </button>
                 </div>
@@ -236,6 +469,42 @@
           </div>
         </div>
       </div>
+      <footer class="footer bg-dark bg-gradient">
+        <div class="container-lg">
+          <div class="row d-flex justify-content-between align-items-center">
+            <!-- 1ra Columna Logo -->
+            <div
+              class="col-lg-4 d-flex justify-content-center justify-content-lg-start"
+            >
+              <a
+                class="nav-link text-center text-white fw-bolder fs-6"
+                href="index.html"
+              >
+                < Web / Tech >
+              </a>
+            </div>
+
+            <!-- 2da Columna Faqs -->
+            <div class="col-lg-4 d-flex justify-content-center">
+              <a
+                class="nav-link text-center text-white fw-bolder fs-6"
+                href="Faqs.html"
+                >Preguntas Frecuentes</a
+              >
+            </div>
+
+            <!-- 3ra Columna Redes sociales -->
+            <div
+              class="text-center redes-sociales col-lg-4 d-flex justify-content-center justify-content-lg-end"
+            >
+              <a href="#"><i class="fa-brands fa-square-instagram mx-2"></i></a>
+              <a href="#"><i class="fa-brands fa-square-twitter mx-2"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook mx-2"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok mx-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
 
     <!-- SCRIP BOOTSTRAP 5 -->
