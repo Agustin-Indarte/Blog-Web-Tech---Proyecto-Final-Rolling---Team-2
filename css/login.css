@@ -84,62 +84,6 @@ input {
   color: var(--colorPrimary);
 }
 
-.button_contraseña {
-  border: 1px solid var(--colorPrimary);
-  color: var(--colorPrimary);
-  background-color: var(--colorBackground);
-  width: 30%;
-  &:hover {
-    background-color: var(--colorSecondary);
-    color: var(--colorBackground);
-  }
-}
-
-.cancel_button {
-  border: 1px solid var(--colorPrimary);
-  color: var(--colorPrimary);
-  background-color: var(--colorBackground);
-  border-radius: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  &:hover {
-    background-color: var(--colorSecondary);
-    color: var(--colorBackground);
-  }
-}
-
-.ing_button {
-  border: 1px solid var(--colorPrimary);
-  color: var(--colorPrimary);
-  background-color: var(--colorBackground);
-  border-radius: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  &:hover {
-    background-color: var(--colorSecondary);
-    color: var(--colorBackground);
-  }
-}
-.button_otrosing {
-  border: 1px solid var(--colorPrimary);
-  color: var(--colorPrimary);
-  background-color: var(--colorBackground);
-  width: 40%;
-  border-radius: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  &:hover {
-    background-color: var(--colorSecondary);
-    color: var(--colorBackground);
-  }
-}
-
 .form-buttons {
   display: flex;
   justify-content: space-between;

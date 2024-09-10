@@ -152,14 +152,14 @@
 
               <!--buttons-->
               <div class="form-buttons mb-3">
-                <a href="./index.html" class="btn cancel_button">cancelar</a>
-                <button type="submit" class="btn ing_button">ingresar</button>
+                <a href="./index.html" class="btn btn-suscripcion">cancelar</a>
+                <button type="submit" class="btn btn-suscripcion">ingresar</button>
 
                 <!--button para desplegar el modal-->
               </div>
               <button
                 type="button"
-                class="button_contraseña btn w-100"
+                class=" btn-suscripcion btn w-100"
                 data-bs-toggle="modal"
                 data-bs-target="#modal_rec"
               >
@@ -379,12 +379,10 @@
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header text-center">
-                  <h1 class="modal-title fs-8" id="staticBackdropLabel">
-                    recupera tu contraseña
-                  </h1>
+                  <h1 class="modal-title fs-8" id="staticBackdropLabel"></h1>
                   <button
                     type="button"
-                    class="btn"
+                    class="btn-close"
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   ></button>
@@ -425,7 +423,7 @@
                             <input type="number" id="dni" name="dni" required />
                           </div>
                         </div>
-                        <div class="form-row">
+                        <div class="form-row mb-3">
                           <div class="form-group">
                             <label for="email"> ingresa tu Email </label>
                             <input
@@ -447,22 +445,18 @@
                             />
                           </div>
                         </div>
+                        <div class="modal-footer d-flex justify-content-center ">
+                          <button
+                            type="submit"
+                            class="btn-suscripcion btn w-30"
+                            id="enviar"
+                          >
+                            Enviar
+                          </button>
+                        </div>
                       </form>
                     </div>
                   </body>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn_modal btn"
-                    data-bs-dismiss="modal"
-                    id="cerrar"
-                  >
-                    Cerrar
-                  </button>
-                  <button type="submit" class="btn_modal btn" id="enviar">
-                    Enviar
-                  </button>
                 </div>
               </div>
             </div>
