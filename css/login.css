@@ -103,6 +103,11 @@ input {
   .login-body {
     background-size: contain;
   }
+    .img-fluid {
+    width: 100%;
+    object-fit: cover;
+  }
+  
 }
 /*resposividad en form en 480*/
 @media (max-width: 480px) {
@@ -115,6 +120,7 @@ input {
   .img-fluid {
     width: 100%;
     object-fit: cover;
+  
   }
 
   .form-login {
