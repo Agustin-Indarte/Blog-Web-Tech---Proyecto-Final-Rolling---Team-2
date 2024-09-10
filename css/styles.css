@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
-@import url(/css/login.css); 
+
+/* Estilos Login */
+@import "/css/login.css";
 @import "/css/general.css";
 @import "/css/variables.css";
 
 /* Estilos del Home */
 @import "/css/Home/Navbar-Footer.css";
 @import "/css/Home/Ventana-suscripcion.css";
+@import "/css/Home/Home.css";
+@import "/css/Home/MediaQuerys-home.css";
