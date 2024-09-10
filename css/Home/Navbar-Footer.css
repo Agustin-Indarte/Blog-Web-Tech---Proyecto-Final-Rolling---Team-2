@@ -1,6 +1,7 @@
 /* Navbar */
 .navbar{
     background-color:var(--colorBackground);
+    border-bottom: 2px solid var(--colorPrimary);
 }
 
 .navbar-brand{
@@ -39,6 +40,9 @@
 /* Footer */
 .footer{
     background-color:var(--colorBackground);
+
+    
+
 }
 
 .redes-sociales a{

@@ -1,9 +1,9 @@
 .login-body {
   margin: 0;
 
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
-  align-items: end;
+  /*align-items: end;*/
 
   color: var(--colorPrimary);
 }
@@ -15,7 +15,7 @@
 }
 .login-img {
   position: relative;
-  height: 450px;
+  height: 530px;
   object-fit: cover;
   &img {
     height: 100%;
@@ -34,6 +34,7 @@
 }
 .div-img {
   height: auto;
+  object-fit: cover;
 }
 .div-login {
   padding: 20px;
@@ -46,18 +47,19 @@
   opacity: 90%;
   border: 1px solid var(--colorPrimary);
   height: auto;
+  background-image: url(/img/fondo-suscripción.png);
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 .form-title {
   text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  font-size: 2em;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .form-group {
   flex: 1;
@@ -81,63 +83,6 @@ input {
   font-size: 0.8em;
   color: var(--colorPrimary);
 }
-.button_contraseña {
-  border: 1px solid var(--colorPrimary);
-  color: var(--colorPrimary);
-  background-color: var(--colorBackground);
-  width: 30%;
-  &:hover {
-    background-color: var(--colorSecondary);
-    color: var(--colorBackground);
-  }
-}
-
-.cancel_button {
-  border: 1px solid var(--colorPrimary);
-  color: var(--colorPrimary);
-  background-color: var(--colorBackground);
-  width: 40%;
-  border-radius: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  &:hover {
-    background-color: var(--colorSecondary);
-    color: var(--colorBackground);
-  }
-}
-
-.ing_button {
-  border: 1px solid var(--colorPrimary);
-  color: var(--colorPrimary);
-  background-color: var(--colorBackground);
-  width: 40%;
-  border-radius: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  &:hover {
-    background-color: var(--colorSecondary);
-    color: var(--colorBackground);
-  }
-}
-.button_otrosing {
-  border: 1px solid var(--colorPrimary);
-  color: var(--colorPrimary);
-  background-color: var(--colorBackground);
-  width: 40%;
-  border-radius: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  &:hover {
-    background-color: var(--colorSecondary);
-    color: var(--colorBackground);
-  }
-}
 
 .form-buttons {
   display: flex;
@@ -158,21 +103,30 @@ input {
   .login-body {
     background-size: contain;
   }
+    .img-fluid {
+    width: 100%;
+    object-fit: cover;
+  }
+  
 }
 /*resposividad en form en 480*/
 @media (max-width: 480px) {
+  /*.modal-body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }*/
 
-.modal-body{
-display: flex;
-justify-content: center;
-align-content: center;
-}
-
+  .img-fluid {
+    width: 100%;
+    object-fit: cover;
+  
+  }
 
   .form-login {
-    width: 90%;
+    width: 100%;
     margin: 100px auto;
-    padding: 20px;
+    padding: 10px;
   }
   .form-row {
     flex-direction: column;
