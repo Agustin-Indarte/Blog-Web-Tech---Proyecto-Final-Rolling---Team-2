@@ -1,0 +1,16 @@
+.main-contactos{
+    background-color: var(--colorBackground);
+}
+
+@media (max-width:1024px){
+    iframe{
+        width: 100%;
+    }
+}
+
+   
+        
+    
+    
+        
+   
