@@ -6,3 +6,5 @@
 /* Estilos del Home */
 @import "/css/Home/Navbar-Footer.css";
 @import "/css/Home/Ventana-suscripcion.css";
+/*estilos dela page galeria*/
+@import"/css/galeria.css";

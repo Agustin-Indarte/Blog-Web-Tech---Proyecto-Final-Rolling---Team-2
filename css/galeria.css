@@ -1,0 +1,29 @@
+.body-galeria{
+
+    background-image: url(/img/fondo-suscripción.png);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen en el contenedor */
+
+}
+
+
+
+.cards{
+  margin-top: 20;
+  margin-bottom: 20
+  ;
+
+
+
+}
+.banner-galeria{
+  height: 250px;
+  background-image: url(/img/fondo-suscripción.png);
+  
+
+
+}
+
+
+
