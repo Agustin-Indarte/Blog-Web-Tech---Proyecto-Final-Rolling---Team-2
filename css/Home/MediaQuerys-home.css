@@ -14,7 +14,6 @@
     }
 
     .carousel-indicators .active {
-        background-color: var(--colorPrimary);
         width: 31px;
         height: 11px;
     }
@@ -46,12 +45,28 @@
         font-size: 1rem;
     }
 
+    .btn-sm{
+        width: 150px;
+    }
+
 
 }
 
 /* Dispositivos pequeños */
-
-
     @media (max-width: 360px){
-        
+       
+        .carousel-indicators [data-bs-target] {
+            width: 15px;
+            height: 5px;
+            margin-bottom: 2px;
+        }
+    
+        .carousel-indicators .active {
+            width: 16px;
+            height: 6px;
+        }  
+
+        .btn-sm{
+            width: 100px;
+        }
     }
