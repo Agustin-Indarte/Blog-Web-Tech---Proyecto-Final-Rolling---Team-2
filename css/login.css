@@ -1,0 +1,140 @@
+.login-body {
+  margin: 0;
+
+  /*display: flex;*/
+  justify-content: center;
+  /*align-items: end;*/
+
+  color: var(--colorPrimary);
+}
+
+.img-fluid {
+  border-radius: 5%;
+  padding: 20px;
+  border-radius: 5%;
+}
+.login-img {
+  position: relative;
+  height: 530px;
+  object-fit: cover;
+  &img {
+    height: 100%;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.336);
+  border-radius: 5%;
+  border: 1px solid var(--colorPrimary);
+}
+.div-img {
+  height: auto;
+  object-fit: cover;
+}
+.div-login {
+  padding: 20px;
+  border-radius: 5%;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.8);
+  max-width: 600px;
+  /*  width: 100%;
+  height: 380px;*/
+  color: var(--colorPrimary);
+  opacity: 90%;
+  border: 1px solid var(--colorPrimary);
+  height: auto;
+  background-image: url(/img/fondo-suscripción.png);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+label {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+input {
+  padding: 8px;
+  background-color: var(--colorsecondary);
+  border: 1px solid var(--colorPrimary);
+  border-radius: 5%;
+  font-size: 0.8em;
+  color: var(--colorPrimary);
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-content {
+  background-color: var(--colorBackground);
+}
+
+.btn_modal {
+  background-color: var(--colorBackground);
+  color: var(--colorPrimary);
+  border: 1px solid var(--colorPrimary);
+}
+
+/*resposividad en 768 ox*/
+@media (max-width: 768px) {
+  .login-body {
+    background-size: contain;
+  }
+    .img-fluid {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+}
+/*resposividad en form en 480*/
+@media (max-width: 480px) {
+  /*.modal-body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }*/
+
+  .img-fluid {
+    width: 100%;
+    object-fit: cover;
+  
+  }
+
+  .form-login {
+    width: 100%;
+    margin: 100px auto;
+    padding: 10px;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .form-group {
+    flex-direction: column;
+  }
+  .form-group {
+    width: 100%;
+  }
+}

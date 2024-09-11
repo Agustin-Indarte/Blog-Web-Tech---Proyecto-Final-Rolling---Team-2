@@ -1,117 +1,608 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Indarte Agustin, Mario Chavez, Jose Navarro">
-    <meta name="description" content="Blog de programación y Desarrollo Web">
-    <meta name="keywords" content="Blog, Programación, Desarrollo, Web, Html, Css,Bootsrap,Scrum,Herramientas,Tecnologia">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- LINK FAVICON -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <!-- LINK AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- LINK BOOTSTRAP 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- SCRIP FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/5982b69b0e.js" crossorigin="anonymous"></script>
-    <!-- LINK CSS -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <!-- TITULO -->
-    <title>Web Tech</title>
-</head>
-<body>
 
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Indarte Agustin, Mario Chavez, Jose Navarro" />
+  <meta name="description" content="Blog de programación y Desarrollo Web" />
+  <meta name="keywords"
+    content="Blog, Programación, Desarrollo, Web, Html, Css,Bootsrap,Scrum,Herramientas,Tecnologia" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- LINK FAVICON -->
+  <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+  <!-- LINK AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- LINK BOOTSTRAP 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- SCRIP FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/5982b69b0e.js" crossorigin="anonymous"></script>
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <!-- TITULO -->
+  <title>Web Tech</title>
+</head>
+
+<body>
+  <header>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg py-1 fixed-top">
-        
-        <div class="container-fluid mx-2">
+      <div class="container-fluid mx-2">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand">
+          <img src="/img/Logo.png" height="50px" alt="Logo" /></a>
 
-            <a href="index.html" class="navbar-brand"> <img src="/img/Logo.png" height="50px" alt="Logo"></a>
+        <!-- Menu desplegable -->
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle-navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle-navigation">
-                <span class="navbar-toggler-icon"></span>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Lista Navbar -->
+            <li class="nav-item">
+              <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/contactos.html" class="nav-link fw-bold me-3">Contacto</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="login.html" class="nav-link fw-bold me-3">Login</a>
+            </li>
+
+            <!-- Button Ventana modal Suscripcion -->
+            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal"
+              data-bs-target="#ventana-suscripcion">
+              SUSCRIBETE
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="/contactos.html" class="nav-link fw-bold me-3">Contacto</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="Login.html" class="nav-link fw-bold me-3">Login</a>
-                    </li>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal" data-bs-target="#ventana-suscripcion">SUSCRIBETE</button>
-                </ul>
-            </div>
+          </ul>
         </div>
+      </div>
+      <hr style="color: yellow;">
     </nav>
 
-  <!-- Modal -->
-  <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
+    <!-- Modal -->
+    <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
 
-        <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>    
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header bg-dark">
+            <!-- Btn de cancelar sup -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body text-center">
+            <!-- Banner Suscripción -->
+            <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
+              <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
+
+              <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
+                ¡Únete a Nuestra comunidad!
+              </h3>
+
+              <p class="my-2 text-white">
+                Recibe los últimos artículos publicados <br />
+                Aprende con nosotros, compártelo con el mundo.
+              </p>
+
+              <p class="mb-2" style="color: var(--colorPrimary)">
+                Nuevas publicaciones Lunes y Viernes
+              </p>
+            </div>
+
+            <!-- Formulario de Suscripción -->
+            <form action="error404.html" method="post">
+              <div class="row">
+                <!-- 1ra columna form - Datos de suscripcion -->
+                <div class="col-md-6 mt-2">
+
+                  <label for="Datos-suscripcion" class="mb-2">Datos de suscripción</label>
+
+                  <input type="text" id="nombre-apellido" name="nombre-apellido" class="form-control mb-3"
+                    placeholder="Nombre y Apellido" title="El nombre solo debe contener letras y espacios." required
+                    pattern="^[A-Za-zÀ-ÿ\u00f1\u00d1]+(\s[A-Za-zÀ-ÿ\u00f1\u00d1]+)+$">
+                  <!-- Incluye letras (mayúsculas y minúsculas), letras acentuadas y la "ñ". Además, requiere al menos un espacio entre el nombre y el apellido, y asegura que solo se ingresen letras y espacios -->
+
+                  <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Correo electronico"
+                    title="Por favor, introduce un correo electrónico válido." required
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                  <!-- Incluye un nombre de usuario seguido por @, un dominio, y una extensión con al menos dos caracteres -->
+
+                  <input type="date" id="nacimiento" name="nacimiento" class="form-control mb-3"
+                    placeholder="Fecha de nacimiento"
+                    title="Por favor, introduce una fecha válida en el formato AAAA-MM-DD." required
+                    pattern="\d{4}-\d{2}-\d{2}">
+                  <!-- Valida que la fecha esté en el formato AAAA-MM-DD-->
+
+                </div>
+
+                <!-- 2da columna form - Intereses y preferencias -->
+                <div class="col-md-6 mt-2">
+
+                  <label for="Datos-suscripcion" class="mb-2">Intereses y Preferencias</label>
+
+                  <!-- Selector de frecuencia -->
+                  <select name="Frecuencia" id="Frecuencia-envios" class="form-select mb-3">
+
+                    <option selected>Frecuencia de envíos</option>
+                    <option value="1">Diariamente</option>
+                    <option value="2">Semanalmente</option>
+                    <option value="3">Mensualmente</option>
+
+                  </select>
+
+                  <!-- Checkbox de intereses -->
+                  <div class="row">
+
+                    <!-- 1ra columna checkbox-->
+                    <div class="col-6">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Bootsrap5" id="Bootsrap5"
+                          value="Bootsrap5">
+                        <label for="Bootsrap5" class="form-check-label mb-2">
+                          Bootsrap5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Informativos" id="Informativos"
+                          value="Informativos">
+                        <label for="Informativos" class="form-check-label mb-2">
+                          Informativos
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Herramientas" id="Herramientas"
+                          value="Herramientas">
+                        <label for="Herramientas" class="form-check-label mb-2">
+                          Herramientas
+                        </label>
+                      </div>
+
+                    </div>
+
+                    <!-- 2da columna checbox-->
+                    <div class="col-6">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Css3" id="Css3" value="Css3">
+                        <label for="Css3" class="form-check-label mb-2">
+                          Css3
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Html5" id="Html5" value="Html5">
+                        <label for="Html5" class="form-check-label mb-2">
+                          Html5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Scrum" id="Scrum" value="Scrum">
+                        <label for="Scrum" class="form-check-label mb-2">
+                          Scrum
+                        </label>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="Informativos" id="Informativos"
+                      value="Informativos" />
+                    <label for="Informativos" class="form-check-label mb-2">
+                      Informativos
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="Herramientas" id="Herramientas"
+                      value="Herramientas" />
+                    <label for="Herramientas" class="form-check-label mb-2">
+                      Herramientas
+                    </label>
+                  </div>
+                </div>
+
+                <!-- 2da columna checbox-->
+                <div class="col-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="Css3" id="Css3" value="Css3" />
+                    <label for="Css3" class="form-check-label mb-2">
+                      Css3
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="Html5" id="Html5" value="Html5" />
+                    <label for="Html5" class="form-check-label mb-2">
+                      Html5
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="Scrum" id="Scrum" value="Scrum" />
+                    <label for="Scrum" class="form-check-label mb-2">
+                      Scrum
+                    </label>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-dark">
+          <div class="d-flex justify-content-center w-100">
+            <button type="submit" class="btn btn-suscripcion">
+              SUSCRIBIRME
+            </button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Modal Footer -->
+    <div class="modal-footer bg-dark">
+      <div class="d-flex justify-content-center w-100">
+        <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+  </header>
+
+  <!-- MAIN DE PRUEBAS -->
+  <main>
+
+    <section class="slider-home mt-2">
+      <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
+        <!-- sliders -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide1"></button>
+          <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="1" aria-label="Slide2"></button>
+          <button type="button" data-bs-target="#carousel-home" data-bs-slide-to="2" aria-label="Slide3"></button>
         </div>
 
-        <div class="modal-body">
-          <div class="container-fluid">
-            
+        <!-- Carrousel-banners -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3500">
+            <img src="/img/Banner1.png" alt="banner1" class="d-block w-100 ">
+            <div class="textos-banner-inicio carousel-caption d-none d-md-block">
+              <h2>¡Bienvenido a nuestro Blog!</h2>
+              <p>
+                La mejor forma de aprender es enseñando <br>
+                Comparte tu código, expande tu mente
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3500">
+            <img src="/img/Banner2.png" alt="banner2" class="d-block w-100 ">
+            <div class="textos-banner-principal  carousel-caption d-none d-md-block">
+              <img src="/img/Logo-transparente.png" alt="Logo">
+              <h1>
+                < Web / Tech>
+              </h1>
+              <p>- Blog -</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3500">
+            <img src="/img/Banner3.png" alt="banner3" class="d-block w-100 ">
+            <div class=" textos-banner-inicio carousel-caption d-none d-md-block">
+              <h2>Nuestro Cuaderno digital</h2>
+              <p>Lo que aprendemos en el aula a un clic de distancia <br>
+                HTML, CSS, Bootstrap y más.</p>
+            </div>
           </div>
         </div>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">SUSCRIBIRME</button>
-        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
 
-    </header>
+    <section class="Entradas-categorias container-fluid text-center">
+      <div class="row">
 
-    <!-- MAIN DE PRUEBAS -->
-    <main>
-        <img class="object-fit-cover" src="/img/Banner - Prueba.jpg" height="700px" width="100%">
-    </main>
-    
-    <!-- FOOTER -->
-     <footer class="footer bg-dark bg-gradient">
-        <div class="container-lg">
-            <div class="row py-2">
-                <div class="col-lg-4">
-                    <a class="nav-link text-center text-white fw-bolder fs-5" href="index.html"> < Web / Tech > </a>
+        <!-- Columna Entradas Recientes -->
+        <div class="col-lg-8">
+          <h2 class="my-3">Entradas Recientes</h2>
+
+          <!-- Carrusel de cards -->
+          <div id="carousel-cards" class="carousel slide">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <div class="col-lg-10 col-md-11">
+
+                    <article class="card h-auto rounded mb-4">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png"
+                            alt="Imagen de card">
+                        </div>
+                        <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                          <h2>Titulo de la Entrada 1</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel
+                            quibusdam maiores eveniet porro vitae!</p>
+                          <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card h-auto rounded mb-4">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png"
+                            alt="Imagen de card">
+                        </div>
+                        <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                          <h2>Titulo de la Entrada 2</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel
+                            quibusdam maiores eveniet porro vitae!</p>
+                          <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card h-auto rounded mb-4">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png"
+                            alt="Imagen de card">
+                        </div>
+                        <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                          <h2>Titulo de la Entrada 3</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel
+                            quibusdam maiores eveniet porro vitae!</p>
+                          <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
+              </div>
 
-                <div class="col-lg-4">
-                    <a class="nav-link text-center text-white fw-bolder fs-5" href="Faqs.html">Preguntas Frecuentes</a>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="col-lg-10">
+
+                    <article class="card h-auto rounded mb-4">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png"
+                            alt="Imagen de card">
+                        </div>
+                        <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                          <h2>Titulo de la Entrada 4</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel
+                            quibusdam maiores eveniet porro vitae!</p>
+                          <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card h-auto rounded mb-4">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png"
+                            alt="Imagen de card">
+                        </div>
+                        <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                          <h2>Titulo de la Entrada 5</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel
+                            quibusdam maiores eveniet porro vitae!</p>
+                          <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card h-auto rounded mb-4">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png"
+                            alt="Imagen de card">
+                        </div>
+                        <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                          <h2>Titulo de la Entrada 6</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel
+                            quibusdam maiores eveniet porro vitae!</p>
+                          <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
-                
-                <div class="text-center redes-sociales col-lg-4">
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="col-lg-10">
+
+                    <article class="card h-auto rounded mb-4">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png"
+                            alt="Imagen de card">
+                        </div>
+                        <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                          <h2>Titulo de la Entrada 7</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel
+                            quibusdam maiores eveniet porro vitae!</p>
+                          <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card h-auto rounded mb-4">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png"
+                            alt="Imagen de card">
+                        </div>
+                        <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                          <h2>Titulo de la Entrada 8</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel
+                            quibusdam maiores eveniet porro vitae!</p>
+                          <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="card h-auto rounded mb-4">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="h-100 object-fit-contain rounded-start" src="/img/Banner1.png"
+                            alt="Imagen de card">
+                        </div>
+                        <div class="col-lg-7 text-start d-flex flex-column justify-content-center">
+                          <h2>Titulo de la Entrada 9</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea aliquam amet nam vel
+                            quibusdam maiores eveniet porro vitae!</p>
+                          <button class="btn btn-warning btn-sm align-self-start">Ver más</button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
+              </div>
+
             </div>
+          </div>
+
+          <!-- PAginación -->
+          <div class="pagination-container">
+            <ul class="pagination justify-content-center">
+              <!-- flecha anterior -->
+              <li class="page item">
+                <button class="page-link" data-bs-target="#carousel-cards" data-bs-slide="prev">
+                  <span aria-hidden="true">&laquo;</span>
+                </button>
+              </li>
+
+              <!-- Números -->
+              <li class="page-item">
+                <button class="page-link" data-bs-target="#carousel-cards" data-bs-slide-to="0">1</button>
+              </li>
+              <li class="page item">
+                <button class="page-link" data-bs-target="#carousel-cards" data-bs-slide-to="1">
+                  2
+                </button>
+              </li>
+              <li class="page item">
+                <button class="page-link" data-bs-target="#carousel-cards" data-bs-slide-to="2">
+                  3
+                </button>
+              </li>
+
+
+              <!-- flecha siguiente -->
+              <li class="page item">
+                <button class="page-link" data-bs-target="#carousel-cards" data-bs-slide="next">
+                  <span aria-hidden="true">&raquo;</span>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-     </footer>
-    
-    
-    <!-- SCRIP BOOTSTRAP 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- SCRIP AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <!-- Categorias -->
+        <section class="col-lg-4 categorias">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-10">
+                <!-- Buscador -->
+                <div class=" search input-group my-3">
+                  <input type="search" class="form-control" placeholder="¡Busca tus articulos preferidos!"
+                    aria-label="Buscar" aria-describedby="button-addon2">
+                  <button type="submit" class="btn btn-warning" id="button-addon2">Buscar</button>
+                </div>
+                <!-- Opciones -->
+                <div class=" options d-grid gap-1 col-12 mx-auto">
+                  <button type="button" class="btn btn-lg btn-primary">Css3</button>
+                  <button type="button" class="btn btn-lg btn-warning">Html5</button>
+                  <button type="button" class="btn btn-lg btn-success">Bootstrap5</button>
+                  <button type="button" class="btn btn-lg btn-light">Informativos</button>
+                  <button type="button" class="btn btn-lg btn-secondary">Herramientas y tips</button>
+                  <button type="button" class="btn btn-lg  btn-danger">Metodologia Scrum</button>
+
+                </div>
+
+                <!-- Publicidad -->
+                <div id="carousel-publicidad" class="carousel slide my-4" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="/img/publicidad1.jpeg" alt="Publicidad1">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="/img/Publicidad2.jpeg" alt="Publicidad2">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="/img/Publicidad3.jpg" alt="Publicidad3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-dark bg-gradient">
+    <div class="container-lg">
+      <div class="row d-flex justify-content-between align-items-center">
+        <!-- 1ra Columna Logo -->
+        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-start">
+          <a class="nav-link text-center text-white fw-bolder fs-6" href="index.html">
+            < Web / Tech>
+          </a>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer bg-dark bg-gradient">
+          <div class="container-lg">
+            <div class="row d-flex justify-content-between align-items-center">
+              <!-- 1ra Columna Logo -->
+              <div class="col-lg-4 d-flex justify-content-center justify-content-lg-start">
+                <a class="nav-link text-center text-white fw-bolder fs-6" href="index.html">
+                  < Web / Tech>
+                </a>
+              </div>
+
+              <!-- 2da Columna Faqs -->
+              <div class="col-lg-4 d-flex justify-content-center">
+                <a class="nav-link text-center text-white fw-bolder fs-6" href="Faqs.html">Preguntas Frecuentes</a>
+              </div>
+
+              <!-- 3ra Columna Redes sociales -->
+              <div class="text-center redes-sociales col-lg-4 d-flex justify-content-center justify-content-lg-end">
+                <a href="#"><i class="fa-brands fa-square-instagram mx-2"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter mx-2"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook mx-2"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok mx-2"></i></a>
+              </div>
+            </div>
+        </footer>
+
+
+        <!-- SCRIP BOOTSTRAP 5 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+        <!-- SCRIP AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
+
 </html>
