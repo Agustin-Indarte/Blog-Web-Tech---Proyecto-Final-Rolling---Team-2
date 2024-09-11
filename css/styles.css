@@ -2,6 +2,7 @@
 
 @import "/css/general.css";
 @import "/css/variables.css";
+@import "/css/entradas.css";
 
 /* Estilos del Home */
 @import "/css/Home/Navbar-Footer.css"
