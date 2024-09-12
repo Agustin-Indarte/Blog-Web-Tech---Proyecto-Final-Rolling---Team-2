@@ -73,5 +73,34 @@
             width: 100px;
         }
 
+        /* Estilos banner con logo */
+        .textos-banner-principal{
+            top: 20%;
+        }
 
+        .textos-banner-principal img {
+            height: 100px;
+        }
+
+        .textos-banner-principal h1{
+            font-size: 1rem;
+
+        }
+
+        .textos-banner-principal p{
+            font-size: 0.5rem;
+        }
+
+        /* Estilos banner con textos */
+        .textos-banner-inicio h2{
+            font-size:1rem;
+        }
+
+        .textos-banner-inicio p{
+            font-size: 0.5rem;
+        }
+
+        .card img{
+            height: 150px;
+        }
     }
