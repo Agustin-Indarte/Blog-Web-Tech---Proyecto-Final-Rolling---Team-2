@@ -54,7 +54,10 @@
 
 /* Dispositivos pequeños */
     @media (max-width: 360px){
-       
+        .carousel-item img {
+            aspect-ratio: 20/15;
+            object-fit: fill;
+        }
         .carousel-indicators [data-bs-target] {
             width: 15px;
             height: 5px;
@@ -69,4 +72,6 @@
         .btn-sm{
             width: 100px;
         }
+
+
     }
