@@ -1,6 +1,7 @@
 /* Navbar */
 .navbar{
     background-color:var(--colorBackground);
+    border-bottom: 2px solid var(--colorPrimary);
 }
 
 .navbar-brand{
@@ -31,14 +32,17 @@
     background-color: var(--colorPrimary);
     &:hover{
         color: var(--colorSecondary);
+        border: 1px solid var(--colorSecondary) ;
         background-color: var(--colorBackground);
-        outline: 2px solid var(--colorSecondary);
     }
     }
 
 /* Footer */
 .footer{
     background-color:var(--colorBackground);
+
+    
+
 }
 
 .redes-sociales a{

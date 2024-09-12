@@ -1,0 +1,57 @@
+/* Dispositivos medianos */
+@media (max-width: 768px){
+
+    /* Slider Inicio */
+    .carousel-item img {
+        height: auto;
+    }
+
+
+    .carousel-indicators [data-bs-target] {
+        width: 30px;
+        height: 10px;
+        margin-bottom: 30px;
+    }
+
+    .carousel-indicators .active {
+        background-color: var(--colorPrimary);
+        width: 31px;
+        height: 11px;
+    }
+
+    /* Estilos banner con logo */
+    .textos-banner-principal{
+        top: 20%;
+    }
+
+    .textos-banner-principal img {
+        height: 125px;
+    }
+
+    .textos-banner-principal h1{
+        font-size: 1.5rem;
+
+    }
+
+    .textos-banner-principal p{
+        font-size: 1rem;
+    }
+
+    /* Estilos banner con textos */
+    .textos-banner-inicio h2{
+        font-size:2rem;
+    }
+
+    .textos-banner-inicio p{
+        font-size: 1rem;
+    }
+
+
+}
+
+/* Dispositivos pequeños */
+
+
+    @media (max-width: 360px){
+        
+    }

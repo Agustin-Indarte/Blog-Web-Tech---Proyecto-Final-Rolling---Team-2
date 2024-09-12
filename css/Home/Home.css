@@ -1,0 +1,98 @@
+/* Slider Inicio */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item {
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 50px;
+    height: 10px;
+    border-radius: 5%;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--colorPrimary);
+    width: 51px;
+    height: 11px;
+}
+
+/* Estilos banner con logo */
+.textos-banner-principal{
+    position: absolute;
+    top: 20%;
+}
+
+.textos-banner-principal img {
+    height: 300px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.textos-banner-principal h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--colorPrimary);
+}
+
+.textos-banner-principal p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+/* Estilos banner con textos */
+.textos-banner-inicio{
+    position: absolute;
+    top: 35%;
+}
+
+
+.carousel-item {
+    position: relative;
+}
+
+.textos-banner-inicio h2{
+    font-size:4rem;
+    font-weight: bolder;
+    color:var(--colorPrimary);
+}
+
+.textos-banner-inicio p{
+    font-size: 2rem;
+    font-weight:lighter;
+}
+
+/* Seccion Entradas Recientes */
+.card img{
+    height: 100%;
+}
+
+
+/* Seccion Cagegorias */
+.btn-lg {
+    height: 54px;
+    font-size: 1.5rem;
+}
+
+.categorias{
+    background-color: var(--colorBackground);
+}
+
+/* carousel publicidad */
+#carousel-publicidad {
+    height: 215px; 
+    max-height: 250px; 
+    overflow: hidden; 
+}
+
+#carousel-publicidad .carousel-item img {
+    height: 100%; 
+    width: auto; 
+    object-fit:cover 
+}

@@ -4,3 +4,17 @@
     padding: 0;
     font-family: var(--tipograficaGeneral);
 }
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+}
+#logo-user{
+
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+
+
+}
