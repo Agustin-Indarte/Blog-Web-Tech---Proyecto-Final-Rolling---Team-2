@@ -1,9 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.main-contactos{
+    background-color: var(--colorBackground);
 }
 
+   
+   
+.contact-container{
+    background-color: var(--colorBackground);
+}
+.contact-group{
+    background-color: var(--colorBackground);
+}
+.contact-form{
+    border: 5px solid yellow;
+    border-radius: 10px;
+    height: 450px;
+    padding: 5px;
+}
+.iframe-map{
+    border: 5px solid yellow;
+    border-radius: 10px;
+    height: 450px;
+    margin:20px;
+}
 
 
 
