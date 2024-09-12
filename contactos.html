@@ -22,6 +22,198 @@
 <body>
 
     <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg py-1 fixed-top">
+          <div class="container-fluid mx-2">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand">
+              <img src="/img/Logo.png" height="50px" alt="Logo" /></a>
+    
+            <!-- Menu desplegable -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle-navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <!-- Lista Navbar -->
+                <li class="nav-item">
+                  <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a href="/contactos.html" class="nav-link fw-bold me-3">Contacto</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a href="login.html" class="nav-link fw-bold me-3">Login</a>
+                </li>
+    
+                <!-- Button Ventana modal Suscripcion -->
+                <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal"
+                  data-bs-target="#ventana-suscripcion">
+                  SUSCRIBETE
+                </button>
+              </ul>
+            </div>
+          </div>
+          <hr style="color: yellow;">
+        </nav>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+    
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header bg-dark">
+                <!-- Btn de cancelar sup -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+    
+              <!-- Modal Body -->
+              <div class="modal-body text-center">
+                <!-- Banner Suscripción -->
+                <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
+                  <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
+    
+                  <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
+                    ¡Únete a Nuestra comunidad!
+                  </h3>
+    
+                  <p class="my-2 text-white">
+                    Recibe los últimos artículos publicados <br />
+                    Aprende con nosotros, compártelo con el mundo.
+                  </p>
+    
+                  <p class="mb-2" style="color: var(--colorPrimary)">
+                    Nuevas publicaciones Lunes y Viernes
+                  </p>
+                </div>
+    
+                <!-- Formulario de Suscripción -->
+                <form action="error404.html" method="post">
+                  <div class="row">
+                    <!-- 1ra columna form - Datos de suscripcion -->
+                    <div class="col-md-6 mt-2">
+    
+                      <label for="Datos-suscripcion" class="mb-2">Datos de suscripción</label>
+    
+                      <input type="text" id="nombre-apellido" name="nombre-apellido" class="form-control mb-3"
+                        placeholder="Nombre y Apellido" title="El nombre solo debe contener letras y espacios." required
+                        pattern="^[A-Za-zÀ-ÿ\u00f1\u00d1]+(\s[A-Za-zÀ-ÿ\u00f1\u00d1]+)+$">
+                      <!-- Incluye letras (mayúsculas y minúsculas), letras acentuadas y la "ñ". Además, requiere al menos un espacio entre el nombre y el apellido, y asegura que solo se ingresen letras y espacios -->
+    
+                      <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Correo electronico"
+                        title="Por favor, introduce un correo electrónico válido." required
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                      <!-- Incluye un nombre de usuario seguido por @, un dominio, y una extensión con al menos dos caracteres -->
+    
+                      <input type="date" id="nacimiento" name="nacimiento" class="form-control mb-3"
+                        placeholder="Fecha de nacimiento"
+                        title="Por favor, introduce una fecha válida en el formato AAAA-MM-DD." required
+                        pattern="\d{4}-\d{2}-\d{2}">
+                      <!-- Valida que la fecha esté en el formato AAAA-MM-DD-->
+    
+                    </div>
+    
+                    <!-- 2da columna form - Intereses y preferencias -->
+                    <div class="col-md-6 mt-2">
+    
+                      <label for="Datos-suscripcion" class="mb-2">Intereses y Preferencias</label>
+    
+                      <!-- Selector de frecuencia -->
+                      <select name="Frecuencia" id="Frecuencia-envios" class="form-select mb-3">
+    
+                        <option selected>Frecuencia de envíos</option>
+                        <option value="1">Diariamente</option>
+                        <option value="2">Semanalmente</option>
+                        <option value="3">Mensualmente</option>
+    
+                      </select>
+    
+                      <!-- Checkbox de intereses -->
+                      <div class="row">
+    
+                        <!-- 1ra columna checkbox-->
+                        <div class="col-6">
+    
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Bootsrap5" id="Bootsrap5"
+                              value="Bootsrap5">
+                            <label for="Bootsrap5" class="form-check-label mb-2">
+                              Bootsrap5
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Informativos" id="Informativos"
+                              value="Informativos">
+                            <label for="Informativos" class="form-check-label mb-2">
+                              Informativos
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Herramientas" id="Herramientas"
+                              value="Herramientas">
+                            <label for="Herramientas" class="form-check-label mb-2">
+                              Herramientas
+                            </label>
+                          </div>
+    
+                        </div>
+    
+                        <!-- 2da columna checbox-->
+                        <div class="col-6">
+    
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Css3" id="Css3" value="Css3">
+                            <label for="Css3" class="form-check-label mb-2">
+                              Css3
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Html5" id="Html5" value="Html5">
+                            <label for="Html5" class="form-check-label mb-2">
+                              Html5
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Scrum" id="Scrum" value="Scrum">
+                            <label for="Scrum" class="form-check-label mb-2">
+                              Scrum
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+               <!-- Modal Footer -->
+            <div class="modal-footer bg-dark">
+              <div class="d-flex justify-content-center w-100">
+                <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+              </div>
+            </div>
+            </div>
+            </form>
+          </div>
+        </div>
+    
+      </header>
+
+
+
+
+
+
+
+
+
+
+
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg py-1 fixed-top">
         
@@ -76,34 +268,43 @@
   </div>
 
 
-    </header>
+    
+    
+    
 
     <!-- FORMULARIO DE CONTACTOS Y MAPA DE UBICACION -->
-     <main class="main-contactos" style="height: 676px;">
-        <div class="container-lg py-4 mt-5">
-            <div class="row ">      
-                <div class="col-lg-6  bg-dark rounded mt-3 ">
-                    <h1 class="text-warning p-1">Contactate con nosotros <i class="fa-solid fa-envelopes-bulk"></i></h1>
+    <section class="contact-container  p-5" id="contactos"></section>
+        <div class="container-fluid-lg  ">
+            
+
+            <div class="contact-group  row p-lg-5 ">
+                
+                    
+               
+                <div class="col-lg-6   rounded  ">
+                    <h1 class="text-warning p-1 text-center">Contactate con nosotros <i class="fa-solid fa-envelopes-bulk"></i></h1>
                
                     
-                    <div class="contact-form mt-4 h-50">
+                    <div class="contact-form mt-4 ">
                         <form action="">
                             <div class="row">
                                 <div class="col-lg-12 mb-4">
-                                   <input type="text" name="name" placeholder="tu nombre" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                                      
+                                   <input type="text" name="username" placeholder="tu usuario" class="form-control form-control-lg fs-6 border-0 shadow-sm" pattern="^[a-zA-Z0-9_]{3,16}$" required>
                                 </div>
                                 <div class="col-lg-12 mb-4">
-                                    <input type="email" name="email" placeholder="tu email" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                                   
+                                    <input type="email" name="email" placeholder="tu email" class="form-control form-control-lg fs-6 border-0 shadow-sm"  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
                                 </div>
                              </div>
                              <div class="row">
                                 <div class="col-lg-12 mb-4">
-                                    <input type="text" name="asunto" placeholder="asunto" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                                    <input type="text" name="asunto" placeholder="asunto" class="form-control form-control-lg fs-6 border-0 shadow-sm" pattern="^[a-zA-Z0-9\s]{3,15}$" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 mb-4">
-                                   <textarea  rows="5" name="Mensaje" id="" placeholder="Escribe tu mensaje" class="form-control form-control-lg fs-6 border-0 shadow-sm" required></textarea>
+                                   <textarea  rows="5" name="Mensaje" id="mensajes" placeholder="Escribe tu mensaje" pattern="^[a-zA-Z0-9\s,.!?]{10,100}$"  class="form-control form-control-lg fs-6 border-0 shadow-sm"  required></textarea>
                                 </div>
                              </div>
 
@@ -122,12 +323,16 @@
 
 
 
-                <div class="col-lg-6 bg-dark mt-4 rounded"> 
-                    <h1 class="text-warning p-1">Encontranos aqui <i class="fa-solid fa-location-dot"></i></h1>
-                    <div class="iframe-map h-50">
-                        <article class="contact-item d-flex flex-grow-1 align-items-center ">
-                            <div class="w-100">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.10606794951!2d-65.20974192556409!3d-26.83657849002515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1725913434321!5m2!1ses!2sar" width="550" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-3"></iframe>
+                
+                
+                <div class="col-lg-6   rounded"> 
+                    <h1 class="text-warning p-1 text-center">Encontranos aqui. <i class="fa-solid fa-location-dot"></i></h1>
+                
+                    
+                    <div class="iframe-map col-lg-12">
+                        <article class="contact-item  ">
+                            <div class="d-flex justify-content-center p-1">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.10606794951!2d-65.20974192556409!3d-26.83657849002515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1726079457165!5m2!1ses!2sar" width="600" height="435" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </article>
                     </div>
@@ -170,4 +375,4 @@
         AOS.init();
     </script>
 </body>
-</html>
+</html>      
