@@ -11,7 +11,7 @@
 
 .textos-banner-presentacion{
     position: absolute;
-    top: 25%;
+    top: 22%;
 }
 
 .textos-banner-presentacion h1{
@@ -25,24 +25,29 @@
     font-weight: bolder;
 }
 
-.Lectura h2{
+
+/* Secciones de lectura */
+.textos h2{
     font-size: 2rem;
     color: var(--colorSecondary);
     font-weight: bolder;
 }
 
+.textos h3{
+    font-size: 1.7rem;
+    color: var(--colorPrimary);
+    
+}
 
-.Lectura p{
+.textos p{
     font-size: 1.5rem;
     text-align: justify;
 }
 
-.banner-suscripcion{
-    background-color: var(--colorSecondary);
-}
-
-.banner-suscripcion h3{
-    color: var(--colorPrimary);
-    font-weight: bolder;
-    font-size: 2.5rem;
+/* Banner suscripcion */
+.banner-ventana-suscripcion{
+    background-image: url(/img/fondo-suscripción.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
