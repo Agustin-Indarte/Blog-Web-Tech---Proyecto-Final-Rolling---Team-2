@@ -42,22 +42,20 @@
           <ul class="navbar-nav ms-auto">
             <!-- Lista Navbar -->
             <li class="nav-item">
-              <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
+              <a href="#Nosotros" class="nav-link fw-bold me-3">Nosotros</a>
             </li>
 
             <li class="nav-item">
-              <a href="/contactos.html" class="nav-link fw-bold me-3">Contacto</a>
+              <a href="#Contenidos" class="nav-link fw-bold me-3">Contenidos</a>
             </li>
 
             <li class="nav-item">
-              <a href="login.html" class="nav-link fw-bold me-3">Login</a>
+              <a href="#Equipo" class="nav-link fw-bold me-3">Equipo</a>
             </li>
-
             <!-- Button Ventana modal Suscripcion -->
-            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal"
-              data-bs-target="#ventana-suscripcion">
-              SUSCRIBETE
-            </button>
+            <li class="nav-item-proyectos">
+              <a href="proyectos" class="btn-proyectos nav-link fw-bold me-3">PROYECTOS</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -192,14 +190,14 @@
                   </div>
                 </div>
               </div>
-              
+
           </div>
-           <!-- Modal Footer -->
-        <div class="modal-footer bg-dark">
-          <div class="d-flex justify-content-center w-100">
-            <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+          <!-- Modal Footer -->
+          <div class="modal-footer bg-dark">
+            <div class="d-flex justify-content-center w-100">
+              <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+            </div>
           </div>
-        </div>
         </div>
         </form>
       </div>
@@ -209,12 +207,15 @@
 
   <!-- MAIN DE NOSOTROS -->
   <main class="main-nosotros bg-dark text-light">
-    <section class="banner-presentacion mt-4 d-flex justify-content-center">
-      <video src="/videos/Presentación3.mp4" autoplay muted loop></video>
-      <div class="textos-banner-presentacion  text-center">
+
+    <section id="Nosotros"
+      class="banner-presentacion mt-4 d-flex position-relative justify-content-center align-items-center overflow-hidden">
+      <video src="/videos/Presentación3.mp4" autoplay muted loop
+        class="position-absolute w-100 h-100 object-fit-cover z-1"></video>
+      <div class="textos-banner-presentacion text-center position-relative z-2 mt-5">
         <p>Bienvenidos a</p>
         <h1>
-          < Web / Tech >
+          < Web / Tech>
         </h1>
         <p>"Del aula al blog: Aprendiendo y compartiendo el arte de programar con pasión"</p>
       </div>
@@ -223,22 +224,25 @@
 
     <section class="Lectura mt-3">
       <div class="container">
-        <article class="Bienvenidos row d-flex justify-content-center">
+        <article class="row d-flex justify-content-center">
           <div class="textos col-12 col-md-6">
             <h2 class="text-center">¿QUIÉNES SOMOS?</h2>
             <p>
-              ¡Hola! Nosotros somos Web Tech, una página creada por un grupo de estudiantes apasionados por el fascinante mundo de las tecnologías, la programación y el desarrollo web. Este proyecto surge de nuestra premisa fundamental:
+              ¡Hola! Nosotros somos Web Tech, una página creada por un grupo de estudiantes apasionados por el
+              fascinante mundo de las tecnologías, la programación y el desarrollo web. Este proyecto surge de nuestra
+              premisa fundamental:
               <br><br>
-              Transmitir lo aprendido, de este modo, nosotros y nuestros lectores podemos beneficiarnos del conocimiento colectivo. 
-              Este es un rincón virtual donde transformamos el aula en un sitio web; aprenderás junto a nosotros los nuevos conocimientos que adquirimos. 
-              <br><br> 
+              Transmitir lo aprendido, de este modo, nosotros y nuestros lectores podemos beneficiarnos del conocimiento
+              colectivo.
+              Este es un rincón virtual donde transformamos el aula en un sitio web; aprenderás junto a nosotros los
+              nuevos conocimientos que adquirimos.
+              <br id="Contenidos">
               ¡Es nuestro cuaderno diario de HTML, CSS, Bootstrap y más!
             </p>
           </div>
           <div class="gif col-12 col-md-6 d-flex justify-content-center align-items-center">
-            <lottie-player src="https://lottie.host/3c11a161-2f27-4441-b770-7559e246b192/CZ54L8RXjR.json" 
-              autoplay loop speed="1" 
-              style="width: auto; height: 500px;">
+            <lottie-player src="https://lottie.host/3c11a161-2f27-4441-b770-7559e246b192/CZ54L8RXjR.json" autoplay loop
+              speed="1" style="width: auto; height: 500px;">
             </lottie-player>
           </div>
         </article>
@@ -247,31 +251,34 @@
 
     <section class="Lectura mt-3">
       <div class="container">
-        <article class="Contenidos row d-flex justify-content-center">
+        <article class="row d-flex justify-content-center">
           <div class="textos col-12 col-md-6">
             <h2 class="text-center">¿QUÉ ENCONTRARAS?</h2>
             <article class="mt-1">
               <h3>Descubre lo básico con estilo:</h3>
               <p>
-                Desde los primeros pasos en HTML hasta los secretos de CSS y Bootstrap, nuestros post están llenos de explicaciones claras y un toque de humor.
+                Desde los primeros pasos en HTML hasta los secretos de CSS y Bootstrap, nuestros post están llenos de
+                explicaciones claras y un toque de humor.
               </p>
             </article>
             <article>
               <h3>Trucos, tips y herramientas:</h3>
               <p>
-                Nos adentramos en el universo de herramientas útiles, te contamos todo lo que sabemos con ejemplos prácticos y consejos de esos que solo un amigo te podría dar.
+                Nos adentramos en el universo de herramientas útiles, te contamos todo lo que sabemos con ejemplos
+                prácticos y consejos de esos que solo un amigo te podría dar.
               </p>
             </article>
             <article>
               <h3>Historias y aventuras del aula:</h3>
               <p>
-                Cada post es como una charla entre amigos. Compartimos nuestras victorias, desafíos y esas pequeñas anécdotas que hacen el aprendizaje aún más memorable.
+                Cada post es como una charla entre amigos. Compartimos nuestras victorias, desafíos y esas pequeñas
+                anécdotas que hacen el aprendizaje aún más memorable.
               </p>
             </article>
           </div>
           <div class="gif col-12 col-md-6 d-flex justify-content-center align-items-center">
-            <lottie-player class="gif-contenido" src="https://lottie.host/d401e686-425c-4da8-bbba-769aef98dea8/15YlT7BZs8.json" 
-              autoplay loop speed="1" 
+            <lottie-player class="gif-contenido"
+              src="https://lottie.host/d401e686-425c-4da8-bbba-769aef98dea8/15YlT7BZs8.json" autoplay loop speed="1"
               style="width: auto; height: 600px;">
             </lottie-player>
           </div>
@@ -279,39 +286,125 @@
       </div>
     </section>
 
-    <section class="banner-ventana-suscripcion py-3">
-      <div class="container-lg py-1">
-        <div class="row justify-content-center">
-          <div class="col-lg-12 text-center">
-            <h3>
-              ¡UNETE A NOSOTROS Y FORMA PARTE DE ESTA AVENTURA!
-            </h3>
-            <p>
-              Web Tech no es solo un blog <br>
-              <br>
-              Es nuestra forma de conectar, aprender y reir juntos mientras navegamos por el emocionante mundo del desarrollo web.
-              <br>
-              Te invitamos a que nos acompañes
-            </p>
-            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal"
-              data-bs-target="#ventana-suscripcion">
-              SUSCRIBETE
-            </button>
-          </div>
+    <section
+      class="banner-suscripcion mt-4 d-flex position-relative justify-content-center align-items-center overflow-hidden">
+      <video src="/videos/Presentación2.mp4" autoplay muted loop
+        class="position-absolute w-100 h-100 object-fit-cover z-1"></video>
+      <div class="textos-banner-suscripcion text-center position-relative z-2">
+        <h3>
+          ¡UNETE A NOSOTROS Y FORMA PARTE DE ESTA AVENTURA!
+        </h3>
+        <p>
+          Web Tech es más que un blog, es nuestra forma de conectar, aprender y reir juntos mientras navegamos por el
+          mundo del desarrollo web.
+          <br>
+          Te invitamos a que nos acompañes
+        </p>
+        <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal" data-bs-target="#ventana-suscripcion">
+          QUIERO SER PARTE
+        </button>
+      </div>
+    </section>
+
+    <section id="Equipo" class="Lectura mt-3">
+      <div class="container">
+        <div class="textos col-12">
+
         </div>
       </div>
     </section>
 
-    <section class="Lectura mt-3 d-flex - justify-content-center">
-      <article class="Equipo col-10">
-        <h2 class="text-center">NUESTRO EQUIPO</h2>
-      <p>
-        Somos un equipo de alumnos apasionados por la programación y el desarrollo web. Cada uno aporta su visión y conocimientos para crear contenido útil y accesible. Nos dedicamos a aprender y compartir lo que descubrimos transformando nuestras experiencias en recursos valiosos para todos ¡Juntos, llevamos Web Tech al siguiente nivel!
-      </p>
+    <section class="Lectura mt-3"></section>
+    <div class="container">
+      <article class="row d-flex justify-content-center">
+        <div class="textos col-12">
+          <h2 class="text-center">NUESTRO EQUIPO</h2>
+          <p>
+            Somos un equipo de alumnos apasionados por la programación y el desarrollo web. Cada uno aporta su visión y
+            conocimientos para crear contenido útil y accesible. Nos dedicamos a aprender y compartir lo que descubrimos
+            transformando nuestras experiencias en recursos valiosos para todos ¡Juntos, llevamos Web Tech al siguiente
+            nivel!
+          </p>
+        </div>
       </article>
+    </div>
     </section>
 
-
+    <section class="cards">
+      <article class="card-equipo">
+        <div class="face front">
+          <img class="fondo-card" src="/img/fondo-suscripción.png" alt="">
+          <div class="foto-perfil">
+            <img src="/img/logo.png" height="150px" alt="">
+          </div>
+          <h3>Persona1</h3>
+        </div>
+        <div class="face back">
+          <h3>Persona1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
+          </p>
+          <div class="link">
+            <a href="#">Details</a>
+          </div>
+        </div>
+      </article>
+      <article class="card-equipo">
+        <div class="face front">
+          <img class="fondo-card" src="/img/fondo-suscripción.png" alt="">
+          <div class="foto-perfil">
+            <img src="/img/logo.png" height="150px" alt="">
+          </div>
+          <h3>Persona1</h3>
+        </div>
+        <div class="face back">
+          <h3>Persona1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
+          </p>
+          <div class="link">
+            <a href="#">Details</a>
+          </div>
+        </div>
+      </article>
+      <article class="card-equipo">
+        <div class="face front">
+          <img class="fondo-card" src="/img/fondo-suscripción.png" alt="">
+          <div class="foto-perfil">
+            <img src="/img/logo.png" height="150px" alt="">
+          </div>
+          <h3>Persona1</h3>
+        </div>
+        <div class="face back">
+          <h3>Persona1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
+          </p>
+          <div class="link">
+            <a href="#">Details</a>
+          </div>
+        </div>
+      </article>
+      <article class="card-equipo">
+        <div class="face front">
+          <img class="fondo-card" src="/img/fondo-suscripción.png" alt="">
+          <div class="foto-perfil">
+            <img src="/img/logo.png" height="150px" alt="">
+          </div>
+          <h3>Persona1</h3>
+        </div>
+        <div class="face back">
+          <h3>Persona1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
+          </p>
+          <div class="link">
+            <a href="#">Details</a>
+          </div>
+        </div>
+      </article>
+      
+    </section>
   </main>
 
 
