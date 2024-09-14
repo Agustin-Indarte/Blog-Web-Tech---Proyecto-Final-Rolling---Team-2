@@ -14,7 +14,10 @@
 @import "/css/Home/Ventana-suscripcion.css";
 @import "/css/Home/Home.css";
 @import "/css/Home/MediaQuerys-home.css";
+
+/* Estilos Nosotros */
 @import "/css/Nosotros/Nosotros.css";
+@import "/css/Nosotros/MediaQuerys-Nosotros.css";
 
 
 /* ESTILOS ERROR 404 */

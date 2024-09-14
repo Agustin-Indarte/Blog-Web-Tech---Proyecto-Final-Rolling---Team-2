@@ -1,0 +1,132 @@
+/* Dispositivos medianos */
+@media (max-width: 768px){
+
+    /* banner presentación */
+    .textos-banner-presentacion{
+        margin-top: 50px;
+    }
+    .textos-banner-presentacion h1{
+        font-size: 2rem;
+    }
+
+    .textos-banner-presentacion p{
+        font-size: 1rem;
+    }
+
+    /* Secciones de lectura */
+    .textos h2{
+        font-size: 1.7rem;
+    }
+
+    .textos h3{
+        font-size: 1.5rem;
+    }
+
+    .textos p{
+        font-size: 1.35rem;
+    }
+
+    .gif-container{
+        margin-left: 0px;
+        height: 400px;
+        width: auto;
+    }
+    .gif-nosotros{
+        height: 450px;
+        width: auto;
+    }
+
+    .gif-contenido{
+        height: 350px;
+        width: auto;
+    }
+
+    /* Banner suscripcion */
+    .banner-suscripcion{
+        height: 200px;
+    }
+
+    .textos-banner-suscripcion h3{
+        font-size: 1.6rem;
+    }
+
+    .textos-banner-suscripcion p{
+        font-size: 0.7rem;
+    }
+    }
+
+/* Dispositivos pequeños */
+@media (max-width: 360px){
+
+     /* banner presentación */
+    .textos-banner-presentacion{
+        margin-top: 100px;
+    }
+     .textos-banner-presentacion h1{
+        font-size: 1.5rem;
+    }
+
+    .textos-banner-presentacion p{
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+
+    /* Secciones de lectura */
+    .textos h2{
+        font-size: 1.5rem;
+    }
+
+    .textos h3{
+        padding-inline: 5px;
+        font-size: 1.3rem;
+    }
+
+    .textos p{
+        padding-inline: 5px;
+        font-size: 1rem;
+    }
+
+    .gif-container{
+        margin-left: 0px;
+        height: 200px;
+    }
+    .gif-nosotros{
+        height: 250px;
+    }
+
+    .gif-contenido{
+        height: 200px;
+
+    }
+
+    /* Banner suscripcion */
+    .banner-suscripcion{
+        height: 150px;
+    }
+
+    .textos-banner-suscripcion h3{
+        font-size: 1rem;
+    }
+
+    .textos-banner-suscripcion p{
+        font-size: 0.5rem;
+    }
+
+    .btn-suscripcion {
+        font-size: 10px;
+    }
+
+    /* Cards equipo */
+    .container-cards{
+        margin-left: 5px;
+    }
+    .card-equipo{
+        width: 250px;
+        height: 300px;
+        margin: 15px;
+    }
+
+
+}
+
+

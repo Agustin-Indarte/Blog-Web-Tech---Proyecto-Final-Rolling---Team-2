@@ -19,6 +19,7 @@
     height: 250px;
 }
 
+/* banner presentación */
 .textos-banner-presentacion h1{
     font-size: 3rem;
     font-weight: bolder;
@@ -47,6 +48,21 @@
 .textos p{
     font-size: 1.5rem;
     text-align: justify;
+}
+
+.gif-container{
+    margin-left: 100px;
+    height: 500px;
+    width: 500px;
+}
+.gif-nosotros{
+    height: 500px;
+    width: auto;
+}
+
+.gif-contenido{
+    height: 500px;
+    width: 500px;
 }
 
 /* Banner suscripcion */
@@ -84,8 +100,7 @@
 
 .card-equipo .front h3{
     bottom: 0;
-    height: 40px;
-    line-height: 45px black;
+    height: 30px;
     color: white;
     background: rgba(0, 0, 0, 0.4);
 }
