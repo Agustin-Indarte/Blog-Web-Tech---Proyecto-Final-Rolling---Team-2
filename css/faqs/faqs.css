@@ -1,4 +1,10 @@
-.body{
-    background-color: #567194;
+.card{
+    background-color: var(--colorBackground);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0,3);
+    & h5{
+        color: var(--colorSecondary);
+    }
+    & p{
+        color:white
+    }
 }
-
