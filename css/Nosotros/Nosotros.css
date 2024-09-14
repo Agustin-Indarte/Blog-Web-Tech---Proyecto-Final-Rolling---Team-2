@@ -20,6 +20,11 @@
 }
 
 /* banner presentación */
+
+.textos-banner-presentacion{
+    margin-top: 90px;
+}
+
 .textos-banner-presentacion h1{
     font-size: 3rem;
     font-weight: bolder;
