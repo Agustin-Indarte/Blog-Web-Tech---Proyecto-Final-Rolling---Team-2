@@ -23,7 +23,7 @@
   <title>Web Tech</title>
 </head>
 
-<body>
+<body style="background-color: var(--colorBackground);">
   <header>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-sm py-1 fixed-top">
@@ -286,8 +286,7 @@
       </div>
     </section>
 
-    <section
-      class="banner-suscripcion mt-4 d-flex position-relative justify-content-center align-items-center overflow-hidden">
+    <section class="banner-suscripcion mt-4 d-flex position-relative justify-content-center align-items-center overflow-hidden">
       <video src="/videos/Presentación2.mp4" autoplay muted loop
         class="position-absolute w-100 h-100 object-fit-cover z-1"></video>
       <div class="textos-banner-suscripcion text-center position-relative z-2">
@@ -306,105 +305,113 @@
       </div>
     </section>
 
-    <section id="Equipo" class="Lectura mt-3">
-      <div class="container">
-        <div class="textos col-12">
+      <section id="Equipo" class="container my-5">
 
+        <article class="row d-flex justify-content-center">
+          <div class="textos col-12">
+            <h2 class="text-center">NUESTRO EQUIPO</h2>
+            <p>
+              Somos un equipo de alumnos apasionados por la programación y el desarrollo web. Cada uno aporta su visión y
+              conocimientos para crear contenido útil y accesible. Nos dedicamos a aprender y compartir lo que descubrimos
+              transformando nuestras experiencias en recursos valiosos para todos ¡Juntos, llevamos Web Tech al siguiente
+              nivel!
+            </p>
+          </div>
+
+        </article>
+
+           <!-- CARDS EQUIPO -->
+      <div class="cards d-flex align-items-center justify-content-center min-vh-75 min-vw-75">
+        
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="card-equipo position-relative">
+                <div class="face front position-absolute w-100 h-100 border-2 overflow-hidden">
+                  <img class="fondo-card position-absolute w-100 h-100 object-fit-cover z-0" src="/img/fondo-suscripción.png" alt="">
+                  <div class="foto-perfil position-relative text-center mt-5 z-2">
+                    <img src="/img/fto-perfil-ivan.jpg" height="200px" width="200px" alt="foto de perfil de ivan" class=" object-fit-cover rounded-circle">
+                  </div>
+                  <h3 class="position-absolute w-100 text-center" >Ivan Arroyo</h3>
+                </div>
+                <div class="face back p-2 d-flex flex-column justify-content-between text-center w-100 h-100">
+                  <h3 class="fs-3 mt-4"> Ivan Arroyo</h3>
+                  <p class="text-center p-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
+                  </p>
+                  <div class="link">
+                    <a href="#">Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="card-equipo position-relative">
+                <div class="face front position-absolute w-100 h-100 border-2 overflow-hidden">
+                  <img class="fondo-card position-absolute w-100 h-100 object-fit-cover z-0" src="/img/fondo-suscripción.png" alt="">
+                  <div class="foto-perfil position-relative text-center mt-5 z-2">
+                    <img src="/img/fto-perfil-agustin.jpg" height="200px" width="200px" alt="foto de perfil de ivan" class=" object-fit-cover rounded-circle">
+                  </div>
+                  <h3 class="position-absolute w-100 text-center" >Agustin Indarte</h3>
+                </div>
+                <div class="face back p-2 d-flex flex-column justify-content-between text-center w-100 h-100">
+                  <h3 class="fs-3 mt-4"> Agustin Indarte</h3>
+                  <p class="text-center p-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
+                  </p>
+                  <div class="link">
+                    <a href="#">Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="card-equipo position-relative">
+                <div class="face front position-absolute w-100 h-100 border-2 overflow-hidden">
+                  <img class="fondo-card position-absolute w-100 h-100 object-fit-cover z-0" src="/img/fondo-suscripción.png" alt="">
+                  <div class="foto-perfil position-relative text-center mt-5 z-2">
+                    <img src="/img/fto-perfil-ivan.jpg" height="200px" width="200px" alt="foto de perfil de ivan" class=" object-fit-cover rounded-circle">
+                  </div>
+                  <h3 class="position-absolute w-100 text-center" >Ivan Arroyo</h3>
+                </div>
+                <div class="face back p-2 d-flex flex-column justify-content-between text-center w-100 h-100">
+                  <h3 class="fs-3 mt-4"> Ivan Arroyo</h3>
+                  <p class="text-center p-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
+                  </p>
+                  <div class="link">
+                    <a href="#">Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="card-equipo position-relative">
+                <div class="face front position-absolute w-100 h-100 border-2 overflow-hidden">
+                  <img class="fondo-card position-absolute w-100 h-100 object-fit-cover z-0" src="/img/fondo-suscripción.png" alt="">
+                  <div class="foto-perfil position-relative text-center mt-5 z-2">
+                    <img src="/img/fto-perfil-ivan.jpg" height="200px" width="200px" alt="foto de perfil de ivan" class=" object-fit-cover rounded-circle">
+                  </div>
+                  <h3 class="position-absolute w-100 text-center" >Ivan Arroyo</h3>
+                </div>
+                <div class="face back p-2 d-flex flex-column justify-content-between text-center w-100 h-100">
+                  <h3 class="fs-3 mt-4"> Ivan Arroyo</h3>
+                  <p class="text-center p-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
+                  </p>
+                  <div class="link">
+                    <a href="#">Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section class="Lectura mt-3"></section>
-    <div class="container">
-      <article class="row d-flex justify-content-center">
-        <div class="textos col-12">
-          <h2 class="text-center">NUESTRO EQUIPO</h2>
-          <p>
-            Somos un equipo de alumnos apasionados por la programación y el desarrollo web. Cada uno aporta su visión y
-            conocimientos para crear contenido útil y accesible. Nos dedicamos a aprender y compartir lo que descubrimos
-            transformando nuestras experiencias en recursos valiosos para todos ¡Juntos, llevamos Web Tech al siguiente
-            nivel!
-          </p>
-        </div>
-      </article>
-    </div>
-    </section>
-
-    <section class="cards">
-      <article class="card-equipo">
-        <div class="face front">
-          <img class="fondo-card" src="/img/fondo-suscripción.png" alt="">
-          <div class="foto-perfil">
-            <img src="/img/logo.png" height="150px" alt="">
-          </div>
-          <h3>Persona1</h3>
-        </div>
-        <div class="face back">
-          <h3>Persona1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
-          </p>
-          <div class="link">
-            <a href="#">Details</a>
-          </div>
-        </div>
-      </article>
-      <article class="card-equipo">
-        <div class="face front">
-          <img class="fondo-card" src="/img/fondo-suscripción.png" alt="">
-          <div class="foto-perfil">
-            <img src="/img/logo.png" height="150px" alt="">
-          </div>
-          <h3>Persona1</h3>
-        </div>
-        <div class="face back">
-          <h3>Persona1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
-          </p>
-          <div class="link">
-            <a href="#">Details</a>
-          </div>
-        </div>
-      </article>
-      <article class="card-equipo">
-        <div class="face front">
-          <img class="fondo-card" src="/img/fondo-suscripción.png" alt="">
-          <div class="foto-perfil">
-            <img src="/img/logo.png" height="150px" alt="">
-          </div>
-          <h3>Persona1</h3>
-        </div>
-        <div class="face back">
-          <h3>Persona1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
-          </p>
-          <div class="link">
-            <a href="#">Details</a>
-          </div>
-        </div>
-      </article>
-      <article class="card-equipo">
-        <div class="face front">
-          <img class="fondo-card" src="/img/fondo-suscripción.png" alt="">
-          <div class="foto-perfil">
-            <img src="/img/logo.png" height="150px" alt="">
-          </div>
-          <h3>Persona1</h3>
-        </div>
-        <div class="face back">
-          <h3>Persona1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci rem. Sequi, fugiat repudiandae voluptatibus incidunt repellendus consectetur. Totam, amet?
-          </p>
-          <div class="link">
-            <a href="#">Details</a>
-          </div>
-        </div>
-      </article>
-      
-    </section>
+      </section>
   </main>
 
 
