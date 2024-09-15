@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Indarte Agustin, Mario Chavez, Jose Navarro" />
+    <meta name="description" content="Blog de programación y Desarrollo Web" />
+    <meta
+      name="keywords"
+      content="Blog, Programación, Desarrollo, Web, Html, Css,Bootsrap,Scrum,Herramientas,Tecnologia"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LINK FAVICON -->
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+    <!-- LINK AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- LINK BOOTSTRAP 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- SCRIP FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/5982b69b0e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- TITULO -->
+    <title>Web Tech</title>
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg py-1 fixed-top mw-100">
+      <div class="container-fluid mx-2">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand">
+          <img src="/img/Logo.png" height="50px" alt="Logo"
+        /></a>
+
+        <!-- Menu desplegable -->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="#navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle-navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Lista Navbar -->
+            <li class="nav-item">
+              <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#Contacto.html" class="nav-link fw-bold me-3"
+                >Contacto</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="Login.html" class="nav-link fw-bold me-3">Login</a>
+            </li>
+
+            <!-- Button Ventana modal Suscripcion -->
+            <button
+              type="button"
+              class="btn btn-suscripcion"
+              data-bs-toggle="modal"
+              data-bs-target="#ventana-suscripcion"
+            >
+              SUSCRIBETE
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body class="body-galeria">
+    <main id="imagenes">
+      <section class="intro_galeria">
+        <div class="banner_galeria row my-5 mh-100">
+          <div
+            class="col col-md-6 mt-5 mt-md-0 d-flex justify-content-center align-items-center"
+          >
+            <div class="animation_viv text-lg-center">
+              <lottie-player
+                src="https://lottie.host/afccb29f-6e41-4b6f-8167-4a730ecd96ca/za1WjRnZZw.json "
+                background="transparent"
+                speed="1"
+                style="width: 50vw; height: 30vh"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+          </div>
+          <div
+            class="col col-md-6 mt-5 mt-md-0 d-flex justify-content-center align-items-center"
+          >
+            <div class="d-flex justify-content-center align-items-center">
+              <h1 class="title_galeria">
+                Bienvenidos a la galería de proyectos
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--cards-->
+      <section class="cards">
+        <!--Tarjetas-->
+        <div class="card-container d-flex flex-wrap">
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="1500"
+          >
+            <img
+              src="/img/portadda de portfolio.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Portfolio con Bootstrap</h5>
+              <p class="card-text">
+                Tal como titulo de la card lo indica este proyeto se refiere a
+                un portfolio personal realizado totalmente con Bootstrap,el
+                mismo es totalmente resposivos en tres tamaños
+                movil,tablet,laptop
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir al sitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="1800"
+          >
+            <img
+              src="/img/image.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web de pelis</h5>
+              <p class="card-text">
+                en este caso el proyecto se refiere a un blog de pelicualas, el
+                mismo tiene una galerria con las peliulas favorira e incluye
+                galerias de distintos generos, es responsivo en los distintos
+                dispositivos movil,tablet,laptop
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="2100"
+          >
+            <img
+              src="/img/adopata_michi.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Adopta un Michi</h5>
+              <p class="card-text">
+                Este proyecto apunta a una web que busca crea un cambio desde lo
+                social buscando promover la adopcion de gatitos, el miso cuenta
+                con login,formulario de contacto,formulario de preguntas
+                frecuentes,un llink de wp para responder preguntas y es
+                reponsivo
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="2400"
+          >
+            <img src="/img/2.png" class="card-img-top" alt="Portfolio image" />
+            <div class="card-body">
+              <h5 class="card-title">Under -Unido</h5>
+              <p class="card-text">
+                Este proyecto al igual que adopata un michi tiene un perfil
+                social,El cual busca publicitar recitales y temas de bandas
+                emergentes en el mundo Under,lo hace publicando las fechas y los
+                lugares donde dichas bandas tocaran al igual que los sitios
+                propios de cada banda.
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="1500"
+          >
+            <img
+              src="/img/one_page.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">One-page</h5>
+              <p class="card-text">
+                Este proyecto es una one page utilizando los conocimentos de
+                d-flex y respossividad y diseños que aprendimpos en el curso
+              </p>
+            </div>
+            <a href="" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="1800"
+          >
+            <img
+              src="/img/ring.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">posicionamiento</h5>
+              <p class="card-text">
+                si bien este no es un proyecto propiamete dicho
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="2100"
+          >
+            <img
+              src="/img/page_ciruja.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pagina de San Martin de Tucuman</h5>
+              <p class="card-text">
+                Este proyecto tambien es de la primeras clases donde se nos daba
+                un tema libre para hacer una page.La misma conteniene
+                navegaciones y natvar basicamente,la idea era apredender como
+                hacer navegaciones dentro de la page, hacias otras paginas de
+                proecto e incluso a paginas de la web
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="2400"
+          >
+            <img
+              src="/img/fotos_seleccion.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Galeria de Imagenes</h5>
+              <p class="card-text">
+                Este proyecto de fue delos primero que hicimos en clases, el
+                objetivo del mismo era hacar una gleria de fotos responsiva con
+                flexbox y añadirle efectos con la pseudoclase hoover,d modo tal
+                que las imagene se vayan agrandano y tomando mas brillo.
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--modal de subcripcion-->
+    <div
+      class="modal fade"
+      id="ventana-suscripcion"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="ventana-suscripcionLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header bg-dark">
+            <!-- Btn de cancelar sup -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body text-center">
+            <!-- Banner Suscripción -->
+            <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
+              <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
+
+              <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
+                ¡Únete a Nuestra comunidad!
+              </h3>
+
+              <p class="my-2 text-white">
+                Recibe los últimos artículos publicados <br />
+                Aprende con nosotros, compártelo con el mundo.
+              </p>
+
+              <p class="mb-2" style="color: var(--colorPrimary)">
+                Nuevas publicaciones Lunes y Viernes
+              </p>
+            </div>
+
+            <!-- Formulario de Suscripción -->
+            <form action="post">
+              <div class="row">
+                <!-- 1ra columna form - Datos de suscripcion -->
+                <div class="col-md-6 mt-2">
+                  <label for="Datos-suscripcion" class="mb-2"
+                    >Datos de suscripción</label
+                  >
+
+                  <input
+                    type="text"
+                    class="form-control mb-3"
+                    placeholder="Nombre y Apellido"
+                    required
+                  />
+
+                  <input
+                    type="email"
+                    class="form-control mb-3"
+                    placeholder="Correo electronico"
+                    required
+                  />
+
+                  <input
+                    type="date"
+                    class="form-control mb-3"
+                    placeholder="Fecha de nacimiento"
+                    required
+                  />
+                </div>
+
+                <!-- 2da columna form - Intereses y preferencias -->
+                <div class="col-md-6 mt-2">
+                  <label for="Datos-suscripcion" class="mb-2"
+                    >Intereses y Preferencias</label
+                  >
+
+                  <!-- Selector de frecuencia -->
+                  <select
+                    name="Frecuencia"
+                    id="Frecuencia-envios"
+                    class="form-select mb-3"
+                  >
+                    <option selected>Frecuencia de envíos</option>
+                    <option value="1">Diariamente</option>
+                    <option value="2">Semanalmente</option>
+                    <option value="3">Mensualmente</option>
+                  </select>
+
+                  <!-- Checkbox de intereses -->
+                  <div class="row">
+                    <!-- 1ra columna checkbox-->
+                    <div class="col-6">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="Bootsrap5"
+                          id="Bootsrap5"
+                          value="Bootsrap5"
+                        />
+                        <label for="Bootsrap5" class="form-check-label mb-2">
+                          Bootsrap5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="Informativos"
+                          id="Informativos"
+                          value="Informativos"
+                        />
+                        <label for="Informativos" class="form-check-label mb-2">
+                          Informativos
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="Herramientas"
+                          id="Herramientas"
+                          value="Herramientas"
+                        />
+                        <label for="Herramientas" class="form-check-label mb-2">
+                          Herramientas
+                        </label>
+                      </div>
+                    </div>
+
+                    <!-- 2da columna checbox-->
+                    <div class="col-6">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="Css3"
+                          id="Css3"
+                          value="Css3"
+                        />
+                        <label for="Css3" class="form-check-label mb-2">
+                          Css3
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="Html5"
+                          id="Html5"
+                          value="Html5"
+                        />
+                        <label for="Html5" class="form-check-label mb-2">
+                          Html5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="Scrum"
+                          id="Scrum"
+                          value="Scrum"
+                        />
+                        <label for="Scrum" class="form-check-label mb-2">
+                          Scrum
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer bg-dark">
+                <div class="d-flex justify-content-center w-100">
+                  <button type="submit" class="btn btn-suscripcion">
+                    SUSCRIBIRME
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal_rec"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-8" id="staticBackdropLabel"></h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center mw-600px">
+            <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
+              <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
+
+              <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
+                ¡Únete a Nuestra comunidad!
+              </h3>
+
+              <p class="my-2 text-white">
+                Recibe los últimos artículos publicados <br />
+                Aprende con nosotros, compártelo con el mundo.
+              </p>
+
+              <p class="mb-2" style="color: var(--colorPrimary)">
+                Nuevas publicaciones Lunes y Viernes
+              </p>
+            </div>
+
+            <body class="form-body">
+              <div class="container">
+                <form action="" class="form-login">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="nuevo_user"> ingresa tu Nombre </label>
+                      <input
+                        type="text"
+                        id="nuevo_user"
+                        name="nuevo_user"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="dni"> ingresa tu dni </label>
+                      <input type="number" id="dni" name="dni" required />
+                    </div>
+                  </div>
+                  <div class="form-row mb-3">
+                    <div class="form-group">
+                      <label for="email"> ingresa tu Email </label>
+                      <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="password">
+                        Ingresa el codigo que te enviamos a tu mail
+                      </label>
+                      <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button
+                      type="submit"
+                      class="btn-suscripcion btn w-30"
+                      id="enviar"
+                    >
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </body>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer bg-dark bg-gradient">
+      <div class="container-lg">
+        <div class="row d-flex justify-content-between align-items-center">
+          <!-- 1ra Columna Logo -->
+          <div
+            class="col-lg-4 d-flex justify-content-center justify-content-lg-start"
+          >
+            <a
+              class="nav-link text-center text-white fw-bolder fs-6"
+              href="index.html"
+            >
+              < Web / Tech >
+            </a>
+          </div>
+
+          <!-- 2da Columna Faqs -->
+          <div class="col-lg-4 d-flex justify-content-center">
+            <a
+              class="nav-link text-center text-white fw-bolder fs-6"
+              href="Faqs.html"
+              >Preguntas Frecuentes</a
+            >
+          </div>
+
+          <!-- 3ra Columna Redes sociales -->
+          <div
+            class="text-center redes-sociales col-lg-4 d-flex justify-content-center justify-content-lg-end"
+          >
+            <a href="#"><i class="fa-brands fa-square-instagram mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok mx-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIP BOOTSTRAP 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SCRIP AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
