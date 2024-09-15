@@ -1,29 +1,64 @@
-.body-galeria{
 
-    background-image: url(/img/fondo-suscripción.png);
-    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-position: center; /* Centra la imagen en el contenedor */
-
+html ,body{
+  width: 100%;
+  overflow-x: hidden;
 }
-
-
-
-.cards{
-  margin-top: 20;
-  margin-bottom: 20
-  ;
-
-
-
+.body-galeria {
+  background-color: var(--colorBackground);
 }
-.banner-galeria{
+.banner_galeria {
   height: 250px;
-  background-image: url(/img/fondo-suscripción.png);
+  background-image: url(/img/Banner1.png);
+}
+.title_galeria {
+  color: var(--colorPrimary);
+}
+
+.cards {
+  margin-top: 30px;
+}
+.card {
+  margin-bottom: 30px;
+  border: 4px solid var(--colorPrimary);
+  background-color: var(--colorBackground);
+  color: var(--colorPrimary);
+}
+
+.card-img-top {
+  height: 200px !important; /* Altura específica */
+  object-fit: cover; /* Cubre el área del contenedor */
+}
+
+.card-container {
+  gap: 30px;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .animation_viv lottie-player {
+    width: 70vw;
+    height: 70vw;
+  }
+}
+
   
 
 
+@media (max-width: 576px) {
+  .animation_viv lottie-player {
+    width: 90vw;
+    height: 90vw;
+  }
+
 }
 
 
 
+
+
+
+
+
+
+
+
+  

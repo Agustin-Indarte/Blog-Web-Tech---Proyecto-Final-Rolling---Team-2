@@ -30,88 +30,286 @@
     <!-- TITULO -->
     <title>Web Tech</title>
   </head>
+  <header>
+    <nav class="navbar navbar-expand-lg py-1 fixed-top mw-100">
+      <div class="container-fluid mx-2">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand">
+          <img src="/img/Logo.png" height="50px" alt="Logo"
+        /></a>
 
-  <body class="login-body min-vh-100">
-    <header>
-      <nav class="navbar navbar-expand-lg py-1 fixed-top">
-        <div class="container-fluid mx-2">
-          <!-- Logo -->
-          <a href="index.html" class="navbar-brand">
-            <img src="/img/Logo.png" height="50px" alt="Logo"
-          /></a>
+        <!-- Menu desplegable -->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="#navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle-navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!-- Menu desplegable -->
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="#navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle-navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Lista Navbar -->
+            <li class="nav-item">
+              <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
+            </li>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <!-- Lista Navbar -->
-              <li class="nav-item">
-                <a href="Nosotros.html" class="nav-link fw-bold me-3"
-                  >Nosotros</a
-                >
-              </li>
-
-              <li class="nav-item">
-                <a href="#Contacto.html" class="nav-link fw-bold me-3"
-                  >Contacto</a
-                >
-              </li>
-
-              <li class="nav-item">
-                <a href="Login.html" class="nav-link fw-bold me-3">Login</a>
-              </li>
-
-              <!-- Button Ventana modal Suscripcion -->
-              <button
-                type="button"
-                class="btn btn-suscripcion"
-                data-bs-toggle="modal"
-                data-bs-target="#ventana-suscripcion"
+            <li class="nav-item">
+              <a href="#Contacto.html" class="nav-link fw-bold me-3"
+                >Contacto</a
               >
-                SUSCRIBETE
-              </button>
-            </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="Login.html" class="nav-link fw-bold me-3">Login</a>
+            </li>
+
+            <!-- Button Ventana modal Suscripcion -->
+            <button
+              type="button"
+              class="btn btn-suscripcion"
+              data-bs-toggle="modal"
+              data-bs-target="#ventana-suscripcion"
+            >
+              SUSCRIBETE
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body class="body-galeria">
+    <main id="imagenes">
+      <section class="intro_galeria">
+        <div class="banner_galeria row my-5 mh-100">
+          <div
+            class="col col-md-6 mt-5 mt-md-0 d-flex justify-content-center align-items-center"
+          >
+            <div class="animation_viv text-lg-center">
+              <lottie-player
+                src="https://lottie.host/afccb29f-6e41-4b6f-8167-4a730ecd96ca/za1WjRnZZw.json "
+                background="transparent"
+                speed="1"
+                style="width: 50vw; height: 30vh"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+          </div>
+          <div
+            class="col col-md-6 mt-5 mt-md-0 d-flex justify-content-center align-items-center"
+          >
+            <div class="d-flex justify-content-center align-items-center">
+              <h1 class="title_galeria">
+                Bienvenidos a la galería de proyectos
+              </h1>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <main id="imgenes">
-      <section id="section-banner">
-        <br /><br /><br />
+      </section>
 
-        <div
-          class="banner-galeria d-flex align-items-center  justify-content-center"
-        >
-          <h1 class="text-center">
-            Galeria de imgenes <i class="fa-solid fa-photo-film"></i>
-          </h1>
+      <!--cards-->
+      <section class="cards">
+        <!--Tarjetas-->
+        <div class="card-container d-flex flex-wrap">
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="1500"
+          >
+            <img
+              src="/img/portadda de portfolio.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Portfolio con Bootstrap</h5>
+              <p class="card-text">
+                Tal como titulo de la card lo indica este proyeto se refiere a
+                un portfolio personal realizado totalmente con Bootstrap,el
+                mismo es totalmente resposivos en tres tamaños
+                movil,tablet,laptop
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir al sitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="1800"
+          >
+            <img
+              src="/img/image.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web de pelis</h5>
+              <p class="card-text">
+                en este caso el proyecto se refiere a un blog de pelicualas, el
+                mismo tiene una galerria con las peliulas favorira e incluye
+                galerias de distintos generos, es responsivo en los distintos
+                dispositivos movil,tablet,laptop
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="2100"
+          >
+            <img
+              src="/img/adopata_michi.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Adopta un Michi</h5>
+              <p class="card-text">
+                Este proyecto apunta a una web que busca crea un cambio desde lo
+                social buscando promover la adopcion de gatitos, el miso cuenta
+                con login,formulario de contacto,formulario de preguntas
+                frecuentes,un llink de wp para responder preguntas y es
+                reponsivo
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="2400"
+          >
+            <img src="/img/2.png" class="card-img-top" alt="Portfolio image" />
+            <div class="card-body">
+              <h5 class="card-title">Under -Unido</h5>
+              <p class="card-text">
+                Este proyecto al igual que adopata un michi tiene un perfil
+                social,El cual busca publicitar recitales y temas de bandas
+                emergentes en el mundo Under,lo hace publicando las fechas y los
+                lugares donde dichas bandas tocaran al igual que los sitios
+                propios de cada banda.
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="1500"
+          >
+            <img
+              src="/img/one_page.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">One-page</h5>
+              <p class="card-text">
+                Este proyecto es una one page utilizando los conocimentos de
+                d-flex y respossividad y diseños que aprendimpos en el curso
+              </p>
+            </div>
+            <a href="" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="1800"
+          >
+            <img
+              src="/img/ring.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">posicionamiento</h5>
+              <p class="card-text">
+                si bien este no es un proyecto propiamete dicho
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="2100"
+          >
+            <img
+              src="/img/page_ciruja.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pagina de San Martin de Tucuman</h5>
+              <p class="card-text">
+                Este proyecto tambien es de la primeras clases donde se nos daba
+                un tema libre para hacer una page.La misma conteniene
+                navegaciones y natvar basicamente,la idea era apredender como
+                hacer navegaciones dentro de la page, hacias otras paginas de
+                proecto e incluso a paginas de la web
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
+
+          <div
+            class="card"
+            style="width: 20rem"
+            data-aos="fade-up-left"
+            data-aos-duration="2400"
+          >
+            <img
+              src="/img/fotos_seleccion.png"
+              class="card-img-top"
+              alt="Portfolio image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Galeria de Imagenes</h5>
+              <p class="card-text">
+                Este proyecto de fue delos primero que hicimos en clases, el
+                objetivo del mismo era hacar una gleria de fotos responsiva con
+                flexbox y añadirle efectos con la pseudoclase hoover,d modo tal
+                que las imagene se vayan agrandano y tomando mas brillo.
+              </p>
+            </div>
+            <a href="#" class="btn-suscripcion btn"
+              >Ir alsitio <i class="fa-solid fa-diamond-turn-right"></i
+            ></a>
+          </div>
         </div>
       </section>
-      <section id="cards">
-      <!--cards-->
-      <div class="card" style="width: 18rem;">
-  <img src="/img/img_gal1.jpg" class="card-img-top" alt="ig1">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-      
-      </section>
-
-      
     </main>
 
     <!--modal de subcripcion-->
@@ -303,7 +501,6 @@
       </div>
     </div>
 
-    <!-- Modal recuperar contraseñas-->
     <div
       class="modal fade"
       id="modal_rec"
@@ -442,5 +639,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
