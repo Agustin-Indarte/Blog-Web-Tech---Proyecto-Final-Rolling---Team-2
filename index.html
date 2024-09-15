@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="author" content="Indarte Agustin, Mario Chavez, Jose Navarro" />
+  <meta name="author" content="Indarte Agustin, Mario Chavez, Jose Navarro, Arroyo Ivan" />
   <meta name="description" content="Blog de programación y Desarrollo Web" />
   <meta name="keywords"
     content="Blog, Programación, Desarrollo, Web, Html, Css,Bootsrap,Scrum,Herramientas,Tecnologia" />
@@ -27,12 +27,12 @@
 
   <!-- HEADER CON NAVBAR Y VENTANA MODAL -->
   <header>
+
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-sm py-1 fixed-top">
-      <div class="container-fluid mx-2">
+      <section class="container-fluid mx-2">
         <!-- Logo -->
-        <a href="index.html" class="navbar-brand">
-          <img src="/img/Logo.png" height="50px" alt="Logo" /></a>
+        <a href="index.html" class="navbar-brand"> <img src="/img/Logo.png" height="50px" alt="Logo" /> </a>
 
         <!-- Menu desplegable -->
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -40,11 +40,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Items Navbar -->
+        <section class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <!-- Lista Navbar -->
             <li class="nav-item">
-              <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
+              <a href="/Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
             </li>
 
             <li class="nav-item">
@@ -52,24 +53,23 @@
             </li>
 
             <li class="nav-item">
-              <a href="login.html" class="nav-link fw-bold me-3">Login</a>
+              <a href="/login.html" class="nav-link fw-bold me-3">Login</a>
             </li>
 
             <!-- Button Ventana modal Suscripcion -->
-            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal"
-              data-bs-target="#ventana-suscripcion">
+            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal" data-bs-target="#ventana-suscripcion">
               SUSCRIBETE
             </button>
 
           </ul>
-        </div>
-
-      </div>
+        </section>
+      </section>
     </nav>
 
     <!-- Modal -->
-    <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <section class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
+      
       <div class="modal-dialog modal-dialog-centered">
 
         <div class="modal-content">
@@ -211,7 +211,7 @@
         </div>
 
       </div>
-    </div>
+    </section>
   </header>
 
   <!-- MAIN DE HOME -->
