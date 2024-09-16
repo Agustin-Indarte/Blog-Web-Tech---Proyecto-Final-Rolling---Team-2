@@ -6,7 +6,7 @@
     <meta name="description" content="Blog de programación y Desarrollo Web" />
     <meta
       name="keywords"
-      content="Blog, Programación, Desarrollo, Web, Html, Css,Bootsrap,Scrum,Herramientas,Tecnologia"
+      content="Blog, Programación, Desarrollo, Web, Html, Css,Bootstrap,Scrum,Herramientas,Tecnologia"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- LINK FAVICON -->
@@ -31,193 +31,211 @@
     <title>Web Tech</title>
   </head>
 
-  <body class="login-body min-vh-100">
-  <header>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-sm py-1 fixed-top">
-      <div class="container-fluid mx-2">
-        <!-- Logo -->
-        <a href="index.html" class="navbar-brand">
-          <img src="/img/Logo.png" height="50px" alt="Logo" /></a>
-
-        <!-- Menu desplegable -->
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle-navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <!-- Lista Navbar -->
-            <li class="nav-item">
-              <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="/contactos.html" class="nav-link fw-bold me-3">Contacto</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="login.html" class="nav-link fw-bold me-3">Login</a>
-            </li>
-
-            <!-- Button Ventana modal Suscripcion -->
-            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal"
-              data-bs-target="#ventana-suscripcion">
-              SUSCRIBETE
-            </button>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Modal -->
-    <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header bg-dark">
-            <!-- Btn de cancelar sup -->
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <body class="login-body ">
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg py-1 fixed-top">
+        <div class="container-fluid mx-2">
+          <!-- Logo -->
+          <a href="index.html" class="navbar-brand">
+            <img src="/img/Logo.png" height="50px" alt="Logo" /></a>
+  
+          <!-- Menu desplegable -->
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle-navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <!-- Lista Navbar -->
+              <li class="nav-item">
+                <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="/contactos.html" class="nav-link fw-bold me-3">Contacto</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="login.html" class="nav-link fw-bold me-3">Login</a>
+              </li>
+  
+              <!-- Button Ventana modal Suscripcion -->
+              <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal"
+                data-bs-target="#ventana-suscripcion">
+                SUSCRIBETE
+              </button>
+            </ul>
           </div>
-
-          <!-- Modal Body -->
-          <div class="modal-body text-center">
-            <!-- Banner Suscripción -->
-            <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
-              <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
-
-              <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
-                ¡Únete a Nuestra comunidad!
-              </h3>
-
-              <p class="my-2 text-white">
-                Recibe los últimos artículos publicados <br />
-                Aprende con nosotros, compártelo con el mundo.
-              </p>
-
-              <p class="mb-2" style="color: var(--colorPrimary)">
-                Nuevas publicaciones Lunes y Viernes
-              </p>
+        </div>
+        <hr style="color: yellow;">
+      </nav>
+  
+      <!-- Modal -->
+      <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+  
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header bg-dark">
+              <!-- Btn de cancelar sup -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-
-            <!-- Formulario de Suscripción -->
-            <form action="error404.html" method="post">
-              <div class="row">
-                <!-- 1ra columna form - Datos de suscripcion -->
-                <div class="col-md-6 mt-2">
-
-                  <label for="Datos-suscripcion" class="mb-2">Datos de suscripción</label>
-
-                  <input type="text" id="nombre-apellido" name="nombre-apellido" class="form-control mb-3"
-                    placeholder="Nombre y Apellido" title="El nombre solo debe contener letras y espacios." required
-                    pattern="^[A-Za-zÀ-ÿ\u00f1\u00d1]+(\s[A-Za-zÀ-ÿ\u00f1\u00d1]+)+$">
-                  <!-- Incluye letras (mayúsculas y minúsculas), letras acentuadas y la "ñ". Además, requiere al menos un espacio entre el nombre y el apellido, y asegura que solo se ingresen letras y espacios -->
-
-                  <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Correo electronico"
-                    title="Por favor, introduce un correo electrónico válido." required
-                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
-                  <!-- Incluye un nombre de usuario seguido por @, un dominio, y una extensión con al menos dos caracteres -->
-
-                  <input type="date" id="nacimiento" name="nacimiento" class="form-control mb-3"
-                    placeholder="Fecha de nacimiento"
-                    title="Por favor, introduce una fecha válida en el formato AAAA-MM-DD." required
-                    pattern="\d{4}-\d{2}-\d{2}">
-                  <!-- Valida que la fecha esté en el formato AAAA-MM-DD-->
-
-                </div>
-
-                <!-- 2da columna form - Intereses y preferencias -->
-                <div class="col-md-6 mt-2">
-
-                  <label for="Datos-suscripcion" class="mb-2">Intereses y Preferencias</label>
-
-                  <!-- Selector de frecuencia -->
-                  <select name="Frecuencia" id="Frecuencia-envios" class="form-select mb-3">
-
-                    <option selected>Frecuencia de envíos</option>
-                    <option value="1">Diariamente</option>
-                    <option value="2">Semanalmente</option>
-                    <option value="3">Mensualmente</option>
-
-                  </select>
-
-                  <!-- Checkbox de intereses -->
-                  <div class="row">
-
-                    <!-- 1ra columna checkbox-->
-                    <div class="col-6">
-
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="Bootsrap5" id="Bootsrap5"
-                          value="Bootsrap5">
-                        <label for="Bootsrap5" class="form-check-label mb-2">
-                          Bootsrap5
-                        </label>
+  
+            <!-- Modal Body -->
+            <div class="modal-body text-center">
+              <!-- Banner Suscripción -->
+              <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
+                <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
+  
+                <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
+                  ¡Únete a Nuestra comunidad!
+                </h3>
+  
+                <p class="my-2 text-white">
+                  Recibe los últimos artículos publicados <br />
+                  Aprende con nosotros, compártelo con el mundo.
+                </p>
+  
+                <p class="mb-2" style="color: var(--colorPrimary)">
+                  Nuevas publicaciones Lunes y Viernes
+                </p>
+              </div>
+  
+              <!-- Formulario de Suscripción -->
+              <form action="error404.html" method="post">
+                <div class="row">
+                  <!-- 1ra columna form - Datos de suscripcion -->
+                  <div class="col-md-6 mt-2">
+  
+                    <label for="Datos-suscripcion" class="mb-2">Datos de suscripción</label>
+  
+                    <input type="text" id="nombre-apellido" name="nombre-apellido" class="form-control mb-3"
+                      placeholder="Nombre y Apellido" title="El nombre solo debe contener letras y espacios." required
+                      pattern="^[A-Za-zÀ-ÿ\u00f1\u00d1]+(\s[A-Za-zÀ-ÿ\u00f1\u00d1]+)+$">
+                    <!-- Incluye letras (mayúsculas y minúsculas), letras acentuadas y la "ñ". Además, requiere al menos un espacio entre el nombre y el apellido, y asegura que solo se ingresen letras y espacios -->
+  
+                    <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Correo electronico"
+                      title="Por favor, introduce un correo electrónico válido." required
+                      pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                    <!-- Incluye un nombre de usuario seguido por @, un dominio, y una extensión con al menos dos caracteres -->
+  
+                    <input type="date" id="nacimiento" name="nacimiento" class="form-control mb-3"
+                      placeholder="Fecha de nacimiento"
+                      title="Por favor, introduce una fecha válida en el formato AAAA-MM-DD." required
+                      pattern="\d{4}-\d{2}-\d{2}">
+                    <!-- Valida que la fecha esté en el formato AAAA-MM-DD-->
+  
+                  </div>
+  
+                  <!-- 2da columna form - Intereses y preferencias -->
+                  <div class="col-md-6 mt-2">
+  
+                    <label for="Datos-suscripcion" class="mb-2">Intereses y Preferencias</label>
+  
+                    <!-- Selector de frecuencia -->
+                    <select name="Frecuencia" id="Frecuencia-envios" class="form-select mb-3">
+  
+                      <option selected>Frecuencia de envíos</option>
+                      <option value="1">Diariamente</option>
+                      <option value="2">Semanalmente</option>
+                      <option value="3">Mensualmente</option>
+  
+                    </select>
+  
+                    <!-- Checkbox de intereses -->
+                    <div class="row">
+                      <!-- 1ra columna checkbox-->
+                      <div class="col-6">
+  
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="Bootsrap5" id="Bootsrap5"
+                            value="Bootsrap5">
+                          <label for="Bootsrap5" class="form-check-label mb-2">
+                            Bootsrap5
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="Informativos" id="Informativos"
+                            value="Informativos">
+                          <label for="Informativos" class="form-check-label mb-2">
+                            Informativos
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="Herramientas" id="Herramientas"
+                            value="Herramientas">
+                          <label for="Herramientas" class="form-check-label mb-2">
+                            Herramientas
+                          </label>
+                        </div>
+  
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="Informativos" id="Informativos"
-                          value="Informativos">
-                        <label for="Informativos" class="form-check-label mb-2">
-                          Informativos
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="Herramientas" id="Herramientas"
-                          value="Herramientas">
-                        <label for="Herramientas" class="form-check-label mb-2">
-                          Herramientas
-                        </label>
-                      </div>
-
-                    </div>
-
-                    <!-- 2da columna checbox-->
-                    <div class="col-6">
-
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="Css3" id="Css3" value="Css3">
-                        <label for="Css3" class="form-check-label mb-2">
-                          Css3
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="Html5" id="Html5" value="Html5">
-                        <label for="Html5" class="form-check-label mb-2">
-                          Html5
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="Scrum" id="Scrum" value="Scrum">
-                        <label for="Scrum" class="form-check-label mb-2">
-                          Scrum
-                        </label>
+  
+                      <!-- 2da columna checbox-->
+                      <div class="col-6">
+  
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="Css3" id="Css3" value="Css3">
+                          <label for="Css3" class="form-check-label mb-2">
+                            Css3
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="Html5" id="Html5" value="Html5">
+                          <label for="Html5" class="form-check-label mb-2">
+                            Html5
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="Scrum" id="Scrum" value="Scrum">
+                          <label for="Scrum" class="form-check-label mb-2">
+                            Scrum
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-          </div>
-          <!-- Modal Footer -->
-          <div class="modal-footer bg-dark">
-            <div class="d-flex justify-content-center w-100">
-              <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
-            </div>
-          </div>
+             <!-- Modal Footer -->
+              <div class="modal-footer bg-dark mt-3">
+               <div class="d-flex justify-content-center w-100">
+               <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+               </div>
+             </div>
+         </form>
         </div>
-        </form>
+      </div>
+    </header>
+    <div class="banner_galeria row mt-5">
+      <div
+        class="col col-md-6 mt-5 mt-md-0 d-flex justify-content-center align-items-center"
+      >
+        <div class="animation_viv text-lg-center">
+          <lottie-player
+            src="https://lottie.host/3cb21e1a-314d-49b6-be3f-04ccdec79c29/s06tZ1HYle.json "
+            background="transparent"
+            speed="1"
+            style="width: 50vw; height: 30vh"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+      <div
+        class="col col-md-6 mt-5 mt-md-0 d-flex justify-content-center align-items-center"
+      >
+        <div class="d-flex justify-content-center align-items-center">
+          <h1 class="title_galeria">
+            Bienvenidos al login
+          </h1>
+        </div>
       </div>
     </div>
-
-  </header>
-
-  <main>
-    <section id="login" class="py-10">
-      <div class="container-fluid">
-        <div class="row min-vh-100 align-items-center align-content-center d-flex justify-content-center">
+    <section id="login">
+        <div class="row min-vh-100 mt-0  align-content-start d-flex  justify-content-center">
           <!--se arma la fila para colocar los fromularios-->
           <div
             class="div-img col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-between align-items-center"
@@ -226,7 +244,7 @@
               <img
                 src="/img/img_gal2.jpeg"
                 alt="imagen de login"
-                class="img-fluid mw-100 w-100"
+                class="img-fluid "
               />
               <div
                 class="overlay d-flex justify-content-center align-items-center text-warning">
@@ -246,17 +264,21 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="user"> ingrese su usuario</label>
-                  <input type="text" name="usuario" id="user" required />
+                  <input class="input_login" type="text" name="usuario" id="user" title="maximo 8 caracteres"  required pattern= "[A-Za-z]{1,8} "  />
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
                   <label for="contraseña"> ingrese su contraseña</label>
                   <input
+                  class="input_login"
                     type="password"
                     name="contraseña"
                     id="contraseña"
+                    title="El ID debe contener exactamente 8 letras o números"
                     required
+                    pattern="[A-Za-z0-9]{8}" 
+                    
                   />
                 </div>
               </div>
@@ -286,7 +308,7 @@
               </div>
               <button
                 type="button"
-                class=" btn-suscripcion btn w-100"
+                class="btn-suscripcion  btn w-100"
                 data-bs-toggle="modal"
                 data-bs-target="#modal_rec"
               >
@@ -344,12 +366,19 @@
                               type="text"
                               id="nuevo_user"
                               name="nuevo_user"
+                              title="el ombre no debe tener mas de 20 caracteres y no debe contner numeros"
                               required
+                              pattern="[A-Za-z\s]{1,20}"
+                              maxlength="20"
                             />
                           </div>
                           <div class="form-group">
                             <label for="dni"> ingresa tu dni </label>
-                            <input type="number" id="dni" name="dni" required />
+                            <input type="number" id="dni" name="dni" pattern="\d{2}\.\d{3}\.\d{3}|\d{8}" 
+                            maxlength="12" 
+                            title="El DNI debe tener 8 dígitos, con o sin puntos (XX.XXX.XXX)." 
+                            placeholder="12.345.678" 
+                            required> 
                           </div>
                         </div>
                         <div class="form-row mb-3">
@@ -359,8 +388,14 @@
                               type="email"
                               id="email"
                               name="email"
-                              required
-                            />
+                              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
+                              title="Ingrese una dirección de correo electrónico válida (ejemplo: usuario@dominio.com)" 
+                              placeholder="usuario@dominio.com" 
+                              required>
+                            
+
+                              
+                            
                           </div>
                           <div class="form-group">
                             <label for="password">
@@ -370,8 +405,11 @@
                               type="password"
                               id="password"
                               name="password"
-                              required
-                            />
+                              pattern="\d{4}" 
+                              maxlength="4" 
+                              title="El código debe tener exactamente 4 dígitos." 
+                              placeholder="1234" 
+                              required>
                           </div>
                         </div>
                       </form>
@@ -392,7 +430,9 @@
             </div>
           </div>
         </div>
-      </div>
+      
+      
+
     </section>
   </main>
  
@@ -431,6 +471,8 @@
     ></script>
     <!-- SCRIP AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <script>
       AOS.init();
     </script>
