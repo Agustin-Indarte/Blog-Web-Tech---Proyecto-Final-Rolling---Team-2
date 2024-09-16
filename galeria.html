@@ -30,57 +30,194 @@
     <!-- TITULO -->
     <title>Web Tech</title>
   </head>
-  <header>
-    <nav class="navbar navbar-expand-lg py-1 fixed-top mw-100">
-      <div class="container-fluid mx-2">
+ 
+   <!-- HEADER CON NAVBAR Y VENTANA MODAL -->
+   <header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm py-1 fixed-top">
+      <section class="container-fluid mx-2">
         <!-- Logo -->
-        <a href="index.html" class="navbar-brand">
-          <img src="/img/Logo.png" height="50px" alt="Logo"
-        /></a>
+        <a href="index.html" class="navbar-brand"> <img src="/img/Logo.png" height="50px" alt="Logo" /> </a>
 
         <!-- Menu desplegable -->
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="#navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle-navigation"
-        >
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle-navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Items Navbar -->
+        <section class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <!-- Lista Navbar -->
             <li class="nav-item">
-              <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
+              <a href="/Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
             </li>
 
             <li class="nav-item">
-              <a href="#Contacto.html" class="nav-link fw-bold me-3"
-                >Contacto</a
-              >
+              <a href="/contactos.html" class="nav-link fw-bold me-3">Contacto</a>
             </li>
 
             <li class="nav-item">
-              <a href="Login.html" class="nav-link fw-bold me-3">Login</a>
+              <a href="/login.html" class="nav-link fw-bold me-3">Login</a>
             </li>
 
             <!-- Button Ventana modal Suscripcion -->
-            <button
-              type="button"
-              class="btn btn-suscripcion"
-              data-bs-toggle="modal"
-              data-bs-target="#ventana-suscripcion"
-            >
+            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal" data-bs-target="#ventana-suscripcion">
               SUSCRIBETE
             </button>
+
           </ul>
-        </div>
-      </div>
+        </section>
+      </section>
     </nav>
+
+    <!-- Modal -->
+    <section class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
+      
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header bg-dark">
+            <!-- Btn de cancelar sup -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body text-center">
+            <!-- Banner Suscripción -->
+            <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
+              <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
+
+              <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
+                ¡Únete a Nuestra comunidad!
+              </h3>
+
+              <p class="my-2 text-white">
+                Recibe los últimos artículos publicados <br />
+                Aprende con nosotros, compártelo con el mundo.
+              </p>
+
+              <p class="mb-2" style="color: var(--colorPrimary)">
+                Nuevas publicaciones Lunes y Viernes
+              </p>
+            </div>
+
+            <!-- Formulario de Suscripción -->
+            <form action="/Error404.html" method="get">
+              <div class="row">
+                <!-- 1ra columna form - Datos de suscripcion -->
+                <div class="col-md-6 mt-2">
+
+                  <label for="Datos-suscripcion" class="mb-2">Datos de suscripción</label>
+
+                  <input type="text" id="nombre-apellido" name="nombre-apellido" class="form-control mb-3"
+                    placeholder="Nombre y Apellido" title="El nombre solo debe contener letras y espacios." required
+                    pattern="^[A-Za-zÀ-ÿ\u00f1\u00d1]+(\s[A-Za-zÀ-ÿ\u00f1\u00d1]+)+$">
+                  <!-- Incluye letras (mayúsculas y minúsculas), letras acentuadas y la "ñ". Además, requiere al menos un espacio entre el nombre y el apellido, y asegura que solo se ingresen letras y espacios -->
+
+                  <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Correo electronico"
+                    title="Por favor, introduce un correo electrónico válido." required
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                  <!-- Incluye un nombre de usuario seguido por @, un dominio, y una extensión con al menos dos caracteres -->
+
+                  <input type="date" id="nacimiento" name="nacimiento" class="form-control mb-3"
+                    placeholder="Fecha de nacimiento"
+                    title="Por favor, introduce una fecha válida en el formato AAAA-MM-DD." required
+                    pattern="\d{4}-\d{2}-\d{2}">
+                  <!-- Valida que la fecha esté en el formato AAAA-MM-DD-->
+
+                </div>
+
+                <!-- 2da columna form - Intereses y preferencias -->
+                <div class="col-md-6 mt-2">
+
+                  <label for="Datos-suscripcion" class="mb-2">Intereses y Preferencias</label>
+
+                  <!-- Selector de frecuencia -->
+                  <select name="Frecuencia" id="Frecuencia-envios" class="form-select mb-3">
+
+                    <option selected>Frecuencia de envíos</option>
+                    <option value="1">Diariamente</option>
+                    <option value="2">Semanalmente</option>
+                    <option value="3">Mensualmente</option>
+
+                  </select>
+
+                  <!-- Checkbox de intereses -->
+                  <div class="row">
+
+                    <!-- 1ra columna checkbox-->
+                    <div class="col-6">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Bootsrap5" id="Bootsrap5"
+                          value="Bootsrap5">
+                        <label for="Bootsrap5" class="form-check-label mb-2">
+                          Bootsrap5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Informativos" id="Informativos"
+                          value="Informativos">
+                        <label for="Informativos" class="form-check-label mb-2">
+                          Informativos
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Herramientas" id="Herramientas"
+                          value="Herramientas">
+                        <label for="Herramientas" class="form-check-label mb-2">
+                          Herramientas
+                        </label>
+                      </div>
+
+                    </div>
+
+                    <!-- 2da columna checbox-->
+                    <div class="col-6">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Css3" id="Css3" value="Css3">
+                        <label for="Css3" class="form-check-label mb-2">
+                          Css3
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Html5" id="Html5" value="Html5">
+                        <label for="Html5" class="form-check-label mb-2">
+                          Html5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Scrum" id="Scrum" value="Scrum">
+                        <label for="Scrum" class="form-check-label mb-2">
+                          Scrum
+                        </label>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+          </div>
+          
+          <!-- Modal Footer -->
+          <div class="modal-footer bg-dark">
+            <div class="d-flex justify-content-center w-100">
+              <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+            </div>
+          </div>
+            </form>
+        </div>
+
+      </div>
+    </section>
   </header>
 
   <body class="body-galeria">
@@ -118,7 +255,7 @@
         <!--Tarjetas-->
         <div class="card-container d-flex flex-wrap">
           <div
-            class="card"
+            class="card card-galeria"
             style="width: 20rem"
             data-aos="fade-up-left"
             data-aos-duration="1500"
@@ -143,7 +280,7 @@
           </div>
 
           <div
-            class="card"
+            class="card card-galeria"
             style="width: 20rem"
             data-aos="fade-up-left"
             data-aos-duration="1800"
@@ -168,7 +305,7 @@
           </div>
 
           <div
-            class="card"
+            class="card card-galeria"
             style="width: 20rem"
             data-aos="fade-up-left"
             data-aos-duration="2100"
@@ -193,7 +330,7 @@
             ></a>
           </div>
           <div
-            class="card"
+            class="card card-galeria"
             style="width: 20rem"
             data-aos="fade-up-left"
             data-aos-duration="2400"
@@ -214,7 +351,7 @@
             ></a>
           </div>
           <div
-            class="card"
+            class="card card-galeria"
             style="width: 20rem"
             data-aos="fade-up-left"
             data-aos-duration="1500"
@@ -237,7 +374,7 @@
           </div>
 
           <div
-            class="card"
+            class="card card-galeria"
             style="width: 20rem"
             data-aos="fade-up-left"
             data-aos-duration="1800"
@@ -259,7 +396,7 @@
           </div>
 
           <div
-            class="card"
+            class="card card-galeria"
             style="width: 20rem"
             data-aos="fade-up-left"
             data-aos-duration="2100"
@@ -285,7 +422,7 @@
           </div>
 
           <div
-            class="card"
+            class="card card-galeria"
             style="width: 20rem"
             data-aos="fade-up-left"
             data-aos-duration="2400"

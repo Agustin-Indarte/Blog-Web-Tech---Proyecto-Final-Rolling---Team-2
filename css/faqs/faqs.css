@@ -1,10 +1,16 @@
-.card{
+.card-faqs{
+    border: solid 1px var(--colorPrimary);
     background-color: var(--colorBackground);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0,3);
+    height: 125px;
+    padding: 10px;
     & h5{
         color: var(--colorSecondary);
     }
     & p{
         color:white
-    }
+    }   
+}
+#primera-card{
+    margin-top: 50px;
 }
