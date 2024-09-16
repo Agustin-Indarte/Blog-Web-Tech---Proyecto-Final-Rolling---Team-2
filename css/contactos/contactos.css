@@ -7,6 +7,7 @@
 }
 .contact-group{
     background-color: var(--colorBackground);
+    margin-top: 25px;
 }
 .contact-form{
     border: 5px solid yellow;

@@ -25,13 +25,14 @@
 </head>
 
 <body style=" background-color: #333a44;">
+  <!-- HEADER CON NAVBAR Y VENTANA MODAL -->
   <header>
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg py-1 fixed-top">
-      <div class="container-fluid mx-2">
+    <nav class="navbar navbar-expand-sm py-1 fixed-top">
+      <section class="container-fluid mx-2">
         <!-- Logo -->
-        <a href="index.html" class="navbar-brand">
-          <img src="/img/Logo.png" height="50px" alt="Logo" /></a>
+        <a href="index.html" class="navbar-brand"> <img src="/img/Logo.png" height="50px" alt="Logo" /> </a>
 
         <!-- Menu desplegable -->
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -39,11 +40,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Items Navbar -->
+        <section class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <!-- Lista Navbar -->
             <li class="nav-item">
-              <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
+              <a href="/Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
             </li>
 
             <li class="nav-item">
@@ -51,22 +53,23 @@
             </li>
 
             <li class="nav-item">
-              <a href="login.html" class="nav-link fw-bold me-3">Login</a>
+              <a href="/login.html" class="nav-link fw-bold me-3">Login</a>
             </li>
 
             <!-- Button Ventana modal Suscripcion -->
-            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal"
-              data-bs-target="#ventana-suscripcion">
+            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal" data-bs-target="#ventana-suscripcion">
               SUSCRIBETE
             </button>
+
           </ul>
-        </div>
-      </div>
+        </section>
+      </section>
     </nav>
 
     <!-- Modal -->
-    <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <section class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
+      
       <div class="modal-dialog modal-dialog-centered">
 
         <div class="modal-content">
@@ -97,7 +100,7 @@
             </div>
 
             <!-- Formulario de Suscripción -->
-            <form action="error404.html" method="post">
+            <form action="/Error404.html" method="get">
               <div class="row">
                 <!-- 1ra columna form - Datos de suscripcion -->
                 <div class="col-md-6 mt-2">
@@ -189,22 +192,26 @@
                         </label>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              
-          </div>
-           <!-- Modal Footer -->
-        <div class="modal-footer bg-dark">
-          <div class="d-flex justify-content-center w-100">
-            <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
-          </div>
-        </div>
-        </div>
-        </form>
-      </div>
-    </div>
 
+                  </div>
+
+                </div>
+
+              </div>
+
+          </div>
+          
+          <!-- Modal Footer -->
+          <div class="modal-footer bg-dark">
+            <div class="d-flex justify-content-center w-100">
+              <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+            </div>
+          </div>
+            </form>
+        </div>
+
+      </div>
+    </section>
   </header>
 
   <!-- MAIN FAQS -->
@@ -351,23 +358,23 @@
     <div class="container-lg">
       <div class="row d-flex justify-content-between align-items-center">
         <!-- 1ra Columna Logo -->
-        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-start">
+        <div class="col-lg-4 col-md-4 d-flex justify-content-center justify-content-lg-start">
           <a class="nav-link text-center text-white fw-bolder fs-6" href="index.html">
             < Web / Tech>
           </a>
         </div>
 
         <!-- 2da Columna Faqs -->
-        <div class="col-lg-4 d-flex justify-content-center">
-          <a class="nav-link text-center text-white fw-bolder fs-6" href="Faqs.html">Preguntas Frecuentes</a>
+        <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+          <a class="nav-link text-center text-white fw-bolder fs-6" href="/faqs.html">Preguntas Frecuentes</a>
         </div>
 
         <!-- 3ra Columna Redes sociales -->
-        <div class="text-center redes-sociales col-lg-4 d-flex justify-content-center justify-content-lg-end">
-          <a href="#"><i class="fa-brands fa-square-instagram mx-2"></i></a>
-          <a href="#"><i class="fa-brands fa-square-twitter mx-2"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook mx-2"></i></a>
-          <a href="#"><i class="fa-brands fa-tiktok mx-2"></i></a>
+        <div class="text-center redes-sociales col-lg-4 col-md-4 d-flex justify-content-center justify-content-lg-end">
+          <a href="https://www.instagram.com/RollingCodeSchool/"><i class="fa-brands fa-square-instagram mx-2"></i></a>
+          <a href="https://ar.linkedin.com/company/rollingcodeschool"><i class="fa-brands fa-linkedin mx-2"></i></a>
+          <a href="https://www.facebook.com/RollingCodeSchool/"><i class="fa-brands fa-facebook mx-2"></i></a>
+          <a href="https://www.tiktok.com/@rollingcode"><i class="fa-brands fa-tiktok mx-2"></i></a>
         </div>
       </div>
   </footer>

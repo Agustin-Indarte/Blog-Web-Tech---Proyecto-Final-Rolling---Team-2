@@ -1,23 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
 
-/* Estilos Login */
-@import "/css/login.css";
+/* Estilos Generales */
 @import "/css/general.css";
 @import "/css/variables.css";
-@import "/css/entradas.css";
+@import "/css/Home/Navbar-Footer.css";
+
+/* Estilos del Home */
+@import "/css/Home/Ventana-suscripcion.css";
+@import "/css/Home/Home.css";
+@import "/css/Home/MediaQuerys-home.css";
+
+/* Estilos de Entradas */
+@import "/css/Entrada/entradas.css";
+
+
+/* Estilos Login */
+@import "/css/Login/login.css";
+
+
 /* estilos galeria*/
-@import"/css/galeria.css";
+@import"/css/Galeria/galeria.css";
+
 
 /*estilos contactos*/
 @import "/css/contactos/contactos.css";
 
-
-/* Estilos del Home */
-@import "/css/Home/Navbar-Footer.css";
-
-@import "/css/Home/Ventana-suscripcion.css";
-@import "/css/Home/Home.css";
-@import "/css/Home/MediaQuerys-home.css";
 
 /* Estilos Nosotros */
 @import "/css/Nosotros/Nosotros.css";
@@ -26,4 +33,6 @@
 
 /* ESTILOS ERROR 404 */
 @import "/css/Error404/Error404.css";
+
+/* Estilos Faqs */
 @import "/css/faqs/faqs.css";
