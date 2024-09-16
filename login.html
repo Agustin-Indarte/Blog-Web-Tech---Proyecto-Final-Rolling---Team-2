@@ -6,7 +6,7 @@
     <meta name="description" content="Blog de programación y Desarrollo Web" />
     <meta
       name="keywords"
-      content="Blog, Programación, Desarrollo, Web, Html, Css,Bootsrap,Scrum,Herramientas,Tecnologia"
+      content="Blog, Programación, Desarrollo, Web, Html, Css,Bootstrap,Scrum,Herramientas,Tecnologia"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- LINK FAVICON -->
@@ -31,7 +31,7 @@
     <title>Web Tech</title>
   </head>
 
-  <body class="login-body min-vh-100">
+  <body class="login-body ">
     <header>
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg py-1 fixed-top">
@@ -147,7 +147,6 @@
   
                     <!-- Checkbox de intereses -->
                     <div class="row">
-  
                       <!-- 1ra columna checkbox-->
                       <div class="col-6">
   
@@ -200,23 +199,43 @@
                     </div>
                   </div>
                 </div>
-                
-            </div>
              <!-- Modal Footer -->
-          <div class="modal-footer bg-dark">
-            <div class="d-flex justify-content-center w-100">
-              <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
-            </div>
-          </div>
-          </div>
-          </form>
+              <div class="modal-footer bg-dark mt-3">
+               <div class="d-flex justify-content-center w-100">
+               <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+               </div>
+             </div>
+         </form>
         </div>
       </div>
     </header>
-
-    <section id="login" class="py-10">
-      <div class="container-fluid">
-        <div class="row min-vh-100 align-items-center align-content-center d-flex justify-content-center">
+    <div class="banner_galeria row mt-5">
+      <div
+        class="col col-md-6 mt-5 mt-md-0 d-flex justify-content-center align-items-center"
+      >
+        <div class="animation_viv text-lg-center">
+          <lottie-player
+            src="https://lottie.host/3cb21e1a-314d-49b6-be3f-04ccdec79c29/s06tZ1HYle.json "
+            background="transparent"
+            speed="1"
+            style="width: 50vw; height: 30vh"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+      <div
+        class="col col-md-6 mt-5 mt-md-0 d-flex justify-content-center align-items-center"
+      >
+        <div class="d-flex justify-content-center align-items-center">
+          <h1 class="title_galeria">
+            Bienvenidos al login
+          </h1>
+        </div>
+      </div>
+    </div>
+    <section id="login">
+        <div class="row min-vh-100 mt-0  align-content-start d-flex  justify-content-center">
           <!--se arma la fila para colocar los fromularios-->
           <div
             class="div-img col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-between align-items-center"
@@ -225,7 +244,7 @@
               <img
                 src="/img/img_gal2.jpeg"
                 alt="imagen de login"
-                class="img-fluid mw-100 w-100"
+                class="img-fluid "
               />
               <div
                 class="overlay d-flex justify-content-center align-items-center text-warning">
@@ -245,17 +264,21 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="user"> ingrese su usuario</label>
-                  <input type="text" name="usuario" id="user" required />
+                  <input class="input_login" type="text" name="usuario" id="user" title="maximo 8 caracteres"  required pattern= "[A-Za-z]{1,8} "  />
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
                   <label for="contraseña"> ingrese su contraseña</label>
                   <input
+                  class="input_login"
                     type="password"
                     name="contraseña"
                     id="contraseña"
+                    title="El ID debe contener exactamente 8 letras o números"
                     required
+                    pattern="[A-Za-z0-9]{8}" 
+                    
                   />
                 </div>
               </div>
@@ -285,7 +308,7 @@
               </div>
               <button
                 type="button"
-                class=" btn-suscripcion btn w-100"
+                class="btn-suscripcion  btn w-100"
                 data-bs-toggle="modal"
                 data-bs-target="#modal_rec"
               >
@@ -343,12 +366,19 @@
                               type="text"
                               id="nuevo_user"
                               name="nuevo_user"
+                              title="el ombre no debe tener mas de 20 caracteres y no debe contner numeros"
                               required
+                              pattern="[A-Za-z\s]{1,20}"
+                              maxlength="20"
                             />
                           </div>
                           <div class="form-group">
                             <label for="dni"> ingresa tu dni </label>
-                            <input type="number" id="dni" name="dni" required />
+                            <input type="number" id="dni" name="dni" pattern="\d{2}\.\d{3}\.\d{3}|\d{8}" 
+                            maxlength="12" 
+                            title="El DNI debe tener 8 dígitos, con o sin puntos (XX.XXX.XXX)." 
+                            placeholder="12.345.678" 
+                            required> 
                           </div>
                         </div>
                         <div class="form-row mb-3">
@@ -358,8 +388,14 @@
                               type="email"
                               id="email"
                               name="email"
-                              required
-                            />
+                              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
+                              title="Ingrese una dirección de correo electrónico válida (ejemplo: usuario@dominio.com)" 
+                              placeholder="usuario@dominio.com" 
+                              required>
+                            
+
+                              
+                            
                           </div>
                           <div class="form-group">
                             <label for="password">
@@ -369,8 +405,11 @@
                               type="password"
                               id="password"
                               name="password"
-                              required
-                            />
+                              pattern="\d{4}" 
+                              maxlength="4" 
+                              title="El código debe tener exactamente 4 dígitos." 
+                              placeholder="1234" 
+                              required>
                           </div>
                         </div>
                       </form>
@@ -391,7 +430,9 @@
             </div>
           </div>
         </div>
-      </div>
+      
+      
+
     </section>
 
     <footer class="footer bg-dark bg-gradient">
@@ -439,6 +480,8 @@
     ></script>
     <!-- SCRIP AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <script>
       AOS.init();
     </script>

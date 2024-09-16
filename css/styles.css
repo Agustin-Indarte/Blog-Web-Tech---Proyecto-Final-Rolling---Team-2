@@ -4,9 +4,13 @@
 @import "/css/login.css";
 @import "/css/general.css";
 @import "/css/variables.css";
+@import "/css/entradas.css";
+/* estilos galeria*/
+@import"/css/galeria.css";
 
 /*estilos contactos*/
 @import "/css/contactos/contactos.css";
+
 
 /* Estilos del Home */
 @import "/css/Home/Navbar-Footer.css";
