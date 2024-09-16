@@ -1,8 +1,8 @@
 
-html ,body{
-  width: 100%;
+html,login{
   overflow-x: hidden;
 }
+
 .body-galeria {
   background-color: var(--colorBackground);
 }
