@@ -4,6 +4,7 @@
 @import "/css/login.css";
 @import "/css/general.css";
 @import "/css/variables.css";
+@import "/css/entradas.css";
 /* estilos galeria*/
 @import"/css/galeria.css";
 
@@ -18,5 +19,11 @@
 @import "/css/Home/Home.css";
 @import "/css/Home/MediaQuerys-home.css";
 
+/* Estilos Nosotros */
+@import "/css/Nosotros/Nosotros.css";
+@import "/css/Nosotros/MediaQuerys-Nosotros.css";
+
+
 /* ESTILOS ERROR 404 */
 @import "/css/Error404/Error404.css";
+@import "/css/faqs/faqs.css";

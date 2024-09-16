@@ -4,19 +4,23 @@
     padding: 0;
     font-family: var(--tipograficaGeneral);
 }
-body{
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
 
-}
 #logo-user{
-
     height: 50px;
     width: 50px;
     object-fit: cover;
-
-
 }
 
+/* SCROLL */
+::-webkit-scrollbar{
+    width: 10px;
+}
 
+::-webkit-scrollbar-track{
+    background: #2f3031;
+}
+
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(#83C9BD, #75b9ae, #6aafa4);
+    border-radius: 0.2em;
+}

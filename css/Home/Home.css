@@ -73,11 +73,95 @@
     height: 100%;
 }
 
+.btn-suscripcion {
+    color: var(--colorBackground);
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: var(--colorPrimary);
+    &:hover{
+        color: var(--colorSecondary);
+        border: 1px solid var(--colorSecondary) ;
+        background-color: var(--colorBackground);
+    }
+}
+
 
 /* Seccion Cagegorias */
 .btn-lg {
     height: 54px;
     font-size: 1.5rem;
+}
+
+.btn-html {
+    color: var(--colorBackground);
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: orange;
+    &:hover{
+        color: orange;
+        border: 1px solid orange ;
+        background-color: var(--colorBackground);
+    }
+}
+
+.btn-css {
+    color: var(--colorBackground);
+    font-weight: bolder;
+    font-size: 20px;
+    background-color:aqua;
+    &:hover{
+        color:aqua;
+        border: 1px solid aqua ;
+        background-color: var(--colorBackground);
+    }
+}
+
+.btn-Bts {
+    color: var(--colorBackground);
+    font-weight: bolder;
+    font-size: 20px;
+    background-color:darkorchid;
+    &:hover{
+        color:darkorchid;
+        border: 1px solid darkorchid ;
+        background-color: var(--colorBackground);
+    }
+}
+
+.btn-informativos{
+    color: var(--colorBackground);
+    font-weight: bolder;
+    font-size: 20px;
+    background-color:blanchedalmond;
+    &:hover{
+        color:blanchedalmond;
+        border: 1px solid blanchedalmond ;
+        background-color: var(--colorBackground);
+    }
+}
+
+.btn-Herramientas{
+    color: var(--colorBackground);
+    font-weight: bolder;
+    font-size: 20px;
+    background-color:gray;
+    &:hover{
+        color:gray;
+        border: 1px solid gray ;
+        background-color: var(--colorBackground);
+    }
+}
+
+.btn-scrum{
+    color: var(--colorBackground);
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: tomato;
+    &:hover{
+        color: tomato;
+        border: 1px solid tomato ;
+        background-color: var(--colorBackground);
+    }
 }
 
 .categorias{
@@ -96,3 +180,4 @@
     width: auto; 
     object-fit:cover 
 }
+

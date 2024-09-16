@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Indarte Agustin, Mario Chavez, Jose Navarro" />
+  <meta name="description" content="Blog de programación y Desarrollo Web" />
+  <meta name="keywords"
+    content="Blog, Programación, Desarrollo, Web, Html, Css,Bootsrap,Scrum,Herramientas,Tecnologia" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- LINK FAVICON -->
+  <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+  <!-- LINK AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- LINK BOOTSTRAP 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- SCRIP FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/5982b69b0e.js" crossorigin="anonymous"></script>
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <!-- TITULO -->
+  <title>Web Tech</title>
+</head>
+
+<body style="background-color: var(--colorBackground);">
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm py-1 fixed-top">
+      <div class="container-fluid mx-2">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand">
+          <img src="/img/Logo.png" height="50px" alt="Logo" /></a>
+
+        <!-- Menu desplegable -->
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle-navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Lista Navbar -->
+            <li class="nav-item">
+              <a href="#Nosotros" class="nav-link fw-bold me-3">Nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#Contenidos" class="nav-link fw-bold me-3">Contenidos</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#Equipo" class="nav-link fw-bold me-3">Equipo</a>
+            </li>
+            <!-- Button Ventana modal Suscripcion -->
+            <li class="nav-item-proyectos">
+              <a href="/galeria.html" class="btn-proyectos nav-link fw-bold me-3">PROYECTOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header bg-dark">
+            <!-- Btn de cancelar sup -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body text-center">
+            <!-- Banner Suscripción -->
+            <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
+              <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
+
+              <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
+                ¡Únete a Nuestra comunidad!
+              </h3>
+
+              <p class="my-2 text-white">
+                Recibe los últimos artículos publicados <br />
+                Aprende con nosotros, compártelo con el mundo.
+              </p>
+
+              <p class="mb-2" style="color: var(--colorPrimary)">
+                Nuevas publicaciones Lunes y Viernes
+              </p>
+            </div>
+
+            <!-- Formulario de Suscripción -->
+            <form action="error404.html" method="post">
+              <div class="row">
+                <!-- 1ra columna form - Datos de suscripcion -->
+                <div class="col-md-6 mt-2">
+
+                  <label for="Datos-suscripcion" class="mb-2">Datos de suscripción</label>
+
+                  <input type="text" id="nombre-apellido" name="nombre-apellido" class="form-control mb-3"
+                    placeholder="Nombre y Apellido" title="El nombre solo debe contener letras y espacios." required
+                    pattern="^[A-Za-zÀ-ÿ\u00f1\u00d1]+(\s[A-Za-zÀ-ÿ\u00f1\u00d1]+)+$">
+                  <!-- Incluye letras (mayúsculas y minúsculas), letras acentuadas y la "ñ". Además, requiere al menos un espacio entre el nombre y el apellido, y asegura que solo se ingresen letras y espacios -->
+
+                  <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Correo electronico"
+                    title="Por favor, introduce un correo electrónico válido." required
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                  <!-- Incluye un nombre de usuario seguido por @, un dominio, y una extensión con al menos dos caracteres -->
+
+                  <input type="date" id="nacimiento" name="nacimiento" class="form-control mb-3"
+                    placeholder="Fecha de nacimiento"
+                    title="Por favor, introduce una fecha válida en el formato AAAA-MM-DD." required
+                    pattern="\d{4}-\d{2}-\d{2}">
+                  <!-- Valida que la fecha esté en el formato AAAA-MM-DD-->
+
+                </div>
+
+                <!-- 2da columna form - Intereses y preferencias -->
+                <div class="col-md-6 mt-2">
+
+                  <label for="Datos-suscripcion" class="mb-2">Intereses y Preferencias</label>
+
+                  <!-- Selector de frecuencia -->
+                  <select name="Frecuencia" id="Frecuencia-envios" class="form-select mb-3">
+
+                    <option selected>Frecuencia de envíos</option>
+                    <option value="1">Diariamente</option>
+                    <option value="2">Semanalmente</option>
+                    <option value="3">Mensualmente</option>
+
+                  </select>
+
+                  <!-- Checkbox de intereses -->
+                  <div class="row">
+
+                    <!-- 1ra columna checkbox-->
+                    <div class="col-6">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Bootsrap5" id="Bootsrap5"
+                          value="Bootsrap5">
+                        <label for="Bootsrap5" class="form-check-label mb-2">
+                          Bootsrap5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Informativos" id="Informativos"
+                          value="Informativos">
+                        <label for="Informativos" class="form-check-label mb-2">
+                          Informativos
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Herramientas" id="Herramientas"
+                          value="Herramientas">
+                        <label for="Herramientas" class="form-check-label mb-2">
+                          Herramientas
+                        </label>
+                      </div>
+
+                    </div>
+
+                    <!-- 2da columna checbox-->
+                    <div class="col-6">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Css3" id="Css3" value="Css3">
+                        <label for="Css3" class="form-check-label mb-2">
+                          Css3
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Html5" id="Html5" value="Html5">
+                        <label for="Html5" class="form-check-label mb-2">
+                          Html5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Scrum" id="Scrum" value="Scrum">
+                        <label for="Scrum" class="form-check-label mb-2">
+                          Scrum
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <!-- Modal Footer -->
+          <div class="modal-footer bg-dark">
+            <div class="d-flex justify-content-center w-100">
+              <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+            </div>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- MAIN DE NOSOTROS -->
+  <main class="main-nosotros bg-dark text-light">
+
+    <section id="Nosotros"
+  class="banner-presentacion d-flex position-relative justify-content-center align-items-center overflow-hidden"
+  style="min-height: 25vh;">
+  <video src="/videos/Presentación3.mp4" autoplay muted loop
+    class="position-absolute w-100 h-100 object-fit-cover z-1"></video>
+  <div class="textos-banner-presentacion text-center position-relative z-2">
+    <p>Bienvenidos a</p>
+    <h1>
+      < Web / Tech>
+    </h1>
+    <p>"Del aula al blog: Aprendiendo y compartiendo el arte de programar con pasión"</p>
+  </div>
+</section>
+
+
+    <section class="Lectura mt-3">
+      <div class="container">
+        <article class="row d-flex justify-content-center">
+          <div class="textos col-lg-6 col-md-12">
+            <h2 class="text-center">¿QUIÉNES SOMOS?</h2>
+            <p>
+              ¡Hola! Nosotros somos Web Tech, una página creada por un grupo de estudiantes apasionados por el
+              fascinante mundo de las tecnologías, la programación y el desarrollo web. Este proyecto surge de nuestra
+              premisa fundamental:
+              <br><br>
+              Transmitir lo aprendido, de este modo, nosotros y nuestros lectores podemos beneficiarnos del conocimiento
+              colectivo.
+              Este es un rincón virtual donde transformamos el aula en un sitio web; aprenderás junto a nosotros los
+              nuevos conocimientos que adquirimos.
+              <br id="Contenidos">
+              ¡Es nuestro cuaderno diario de HTML, CSS, Bootstrap y más!
+            </p>
+          </div>
+          <div class="gif-container col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
+            <lottie-player class="gif-nosotros" src="https://lottie.host/3c11a161-2f27-4441-b770-7559e246b192/CZ54L8RXjR.json" autoplay loop
+              speed="1">
+            </lottie-player>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="Lectura mt-3">
+      <div class="container">
+        <article class="row d-flex justify-content-center">
+          <div class="textos col-lg-6 col-md-12">
+            <h2 class="text-center">¿QUÉ ENCONTRARAS?</h2>
+            <article class="mt-1">
+              <h3>Descubre lo básico con estilo:</h3>
+              <p>
+                Desde los primeros pasos en HTML hasta los secretos de CSS y Bootstrap, nuestros post están llenos de
+                explicaciones claras y un toque de humor.
+              </p>
+            </article>
+            <article>
+              <h3>Trucos, tips y herramientas:</h3>
+              <p>
+                Nos adentramos en el universo de herramientas útiles, te contamos todo lo que sabemos con ejemplos
+                prácticos y consejos de esos que solo un amigo te podría dar.
+              </p>
+            </article>
+            <article>
+              <h3>Historias y aventuras del aula:</h3>
+              <p>
+                Cada post es como una charla entre amigos. Compartimos nuestras victorias, desafíos y esas pequeñas
+                anécdotas que hacen el aprendizaje aún más memorable.
+              </p>
+            </article>
+          </div>
+          <div class="gif-container col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
+            <lottie-player class="gif-contenido"
+              src="https://lottie.host/a097bb59-0f21-40b6-815a-848613b201e0/jTof29goiD.json" autoplay loop speed="1">
+            </lottie-player>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="banner-suscripcion mt-4 d-flex position-relative justify-content-center align-items-center overflow-hidden">
+      <video src="/videos/Presentación2.mp4" autoplay muted loop
+        class="position-absolute w-100 h-100 object-fit-cover z-1"></video>
+      <div class="textos-banner-suscripcion text-center position-relative z-2">
+        <h3>
+          ¡UNETE A NOSOTROS Y FORMA PARTE DE ESTA AVENTURA!
+        </h3>
+        <p>
+          Web Tech es más que un blog, es nuestra forma de conectar, aprender y reir juntos mientras navegamos por el
+          mundo del desarrollo web.
+          <br>
+          Te invitamos a que nos acompañes
+        </p>
+        <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal" data-bs-target="#ventana-suscripcion">
+          QUIERO SER PARTE
+        </button>
+      </div>
+    </section>
+
+      <section id="Equipo" class="container my-5">
+
+        <article class="row d-flex justify-content-center">
+          <div class="textos col-12">
+            <h2 class="text-center">NUESTRO EQUIPO</h2>
+            <p>
+              Somos un equipo de alumnos apasionados por la programación y el desarrollo web. Cada uno aporta su visión y
+              conocimientos para crear contenido útil y accesible. Nos dedicamos a aprender y compartir lo que descubrimos
+              transformando nuestras experiencias en recursos valiosos para todos ¡Juntos, llevamos Web Tech al siguiente
+              nivel!
+            </p>
+          </div>
+
+        </article>
+
+           <!-- CARDS EQUIPO -->
+      <div class="cards d-flex align-items-center justify-content-center min-vh-75 min-vw-75">
+        
+        <div class="container container-cards">
+          <div class="row justify-content-center">
+            <div class="col-11 col-md-6 col-lg-3">
+              <article class="card-equipo position-relative">
+                <div class="face front position-absolute w-100 h-100 border-2 overflow-hidden">
+                  <img class="fondo-card position-absolute w-100 h-100 object-fit-cover z-0" src="/img/fondo-suscripción.png" alt="">
+                  <div class="foto-perfil position-relative text-center mt-5 z-2">
+                    <img src="/img/fto-perfil-ivan.jpg" height="200px" width="200px" alt="foto de perfil de ivan" class=" object-fit-cover rounded-circle">
+                  </div>
+                  <h3 class="position-absolute w-100 text-center" >Ivan Arroyo</h3>
+                </div>
+                <div class="face back p-2 d-flex flex-column justify-content-between text-center w-100 h-100">
+                  <h3 class="fs-3 mt-2"> Ivan Arroyo</h3>
+                  <p class="text-center p-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci
+                  </p>
+                  <div class="link">
+                    <a href="#">Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-11 col-md-6 col-lg-3">
+              <article class="card-equipo position-relative">
+                <div class="face front position-absolute w-100 h-100 border-2 overflow-hidden">
+                  <img class="fondo-card position-absolute w-100 h-100 object-fit-cover z-0" src="/img/fondo-suscripción.png" alt="">
+                  <div class="foto-perfil position-relative text-center mt-5 z-2">
+                    <img src="/img/fto-perfil-agustin.jpg" height="200px" width="200px" alt="foto de perfil de ivan" class=" object-fit-cover rounded-circle">
+                  </div>
+                  <h3 class="position-absolute w-100 text-center" >Ivan Arroyo</h3>
+                </div>
+                <div class="face back p-2 d-flex flex-column justify-content-between text-center w-100 h-100">
+                  <h3 class="fs-3 mt-2"> Ivan Arroyo</h3>
+                  <p class="text-center p-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci
+                  </p>
+                  <div class="link">
+                    <a href="#">Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-11 col-md-6 col-lg-3">
+              <article class="card-equipo position-relative">
+                <div class="face front position-absolute w-100 h-100 border-2 overflow-hidden">
+                  <img class="fondo-card position-absolute w-100 h-100 object-fit-cover z-0" src="/img/fondo-suscripción.png" alt="">
+                  <div class="foto-perfil position-relative text-center mt-5 z-2">
+                    <img src="/img/logo.png" height="200px" width="200px" alt="foto de perfil de ivan" class=" object-fit-cover rounded-circle">
+                  </div>
+                  <h3 class="position-absolute w-100 text-center" >Ivan Arroyo</h3>
+                </div>
+                <div class="face back p-2 d-flex flex-column justify-content-between text-center w-100 h-100">
+                  <h3 class="fs-3 mt-2"> Ivan Arroyo</h3>
+                  <p class="text-center p-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci
+                  </p>
+                  <div class="link">
+                    <a href="#">Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-11 col-md-6 col-lg-3">
+              <article class="card-equipo position-relative">
+                <div class="face front position-absolute w-100 h-100 border-2 overflow-hidden">
+                  <img class="fondo-card position-absolute w-100 h-100 object-fit-cover z-0" src="/img/fondo-suscripción.png" alt="">
+                  <div class="foto-perfil position-relative text-center mt-5 z-2">
+                    <img src="/img/logo.png" height="200px" width="200px" alt="foto de perfil de ivan" class=" object-fit-cover rounded-circle">
+                  </div>
+                  <h3 class="position-absolute w-100 text-center" >Ivan Arroyo</h3>
+                </div>
+                <div class="face back p-2 d-flex flex-column justify-content-between text-center w-100 h-100">
+                  <h3 class="fs-3 mt-2"> Ivan Arroyo</h3>
+                  <p class="text-center p-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat laborum dolore praesentium, incidunt vero, sunt id voluptas sit adipisci
+                  </p>
+                  <div class="link">
+                    <a href="#">Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer bg-dark bg-gradient">
+    <div class="container-lg">
+      <div class="row d-flex justify-content-between align-items-center">
+        <!-- 1ra Columna Logo -->
+        <div class="col-lg-4 col-md-4 d-flex justify-content-center justify-content-lg-start">
+          <a class="nav-link text-center text-white fw-bolder fs-6" href="index.html">
+            < Web / Tech>
+          </a>
+        </div>
+
+        <!-- 2da Columna Faqs -->
+        <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+          <a class="nav-link text-center text-white fw-bolder fs-6" href="Faqs.html">Preguntas Frecuentes</a>
+        </div>
+
+        <!-- 3ra Columna Redes sociales -->
+        <div class="text-center redes-sociales col-lg-4 col-md-4 d-flex justify-content-center justify-content-lg-end">
+          <a href="#"><i class="fa-brands fa-square-instagram mx-2"></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter mx-2"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook mx-2"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok mx-2"></i></a>
+        </div>
+      </div>
+  </footer>
+
+  <!-- SCRIP LOTTIEFILES -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!-- SCRIP BOOTSTRAP 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- SCRIP AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
