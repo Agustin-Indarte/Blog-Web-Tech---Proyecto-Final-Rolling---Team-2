@@ -1,4 +1,4 @@
-.card{
+.card-faqs{
     background-color: var(--colorBackground);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0,3);
     & h5{

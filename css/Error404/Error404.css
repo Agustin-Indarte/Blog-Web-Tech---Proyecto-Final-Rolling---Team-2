@@ -48,10 +48,10 @@
   font-size: 2rem;
 }
 
-@media (max-width: 200px)
- { .btn
-  { height: 50px; 
-  width: 150px; 
+@media (max-width: 360px)
+ { .btn-error
+  { height: 60px; 
+  width: 180px; 
   font-size: 1rem; } 
 }
 
