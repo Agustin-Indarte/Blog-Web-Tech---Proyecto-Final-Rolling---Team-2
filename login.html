@@ -32,183 +32,196 @@
   </head>
 
   <body class="login-body ">
-    <header>
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg py-1 fixed-top">
-        <div class="container-fluid mx-2">
-          <!-- Logo -->
-          <a href="index.html" class="navbar-brand">
-            <img src="/img/Logo.png" height="50px" alt="Logo" /></a>
-  
-          <!-- Menu desplegable -->
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle-navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <!-- Lista Navbar -->
-              <li class="nav-item">
-                <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
-              </li>
-  
-              <li class="nav-item">
-                <a href="/contactos.html" class="nav-link fw-bold me-3">Contacto</a>
-              </li>
-  
-              <li class="nav-item">
-                <a href="login.html" class="nav-link fw-bold me-3">Login</a>
-              </li>
-  
-              <!-- Button Ventana modal Suscripcion -->
-              <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal"
-                data-bs-target="#ventana-suscripcion">
-                SUSCRIBETE
-              </button>
-            </ul>
+   <!-- HEADER CON NAVBAR Y VENTANA MODAL -->
+   <header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm py-1 fixed-top">
+      <section class="container-fluid mx-2">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand"> <img src="/img/Logo.png" height="50px" alt="Logo" /> </a>
+
+        <!-- Menu desplegable -->
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle-navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Items Navbar -->
+        <section class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Lista Navbar -->
+            <li class="nav-item">
+              <a href="/Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/contactos.html" class="nav-link fw-bold me-3">Contacto</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/login.html" class="nav-link fw-bold me-3">Login</a>
+            </li>
+
+            <!-- Button Ventana modal Suscripcion -->
+            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal" data-bs-target="#ventana-suscripcion">
+              SUSCRIBETE
+            </button>
+
+          </ul>
+        </section>
+      </section>
+    </nav>
+
+    <!-- Modal -->
+    <section class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
+      
+      <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header bg-dark">
+            <!-- Btn de cancelar sup -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </div>
-        <hr style="color: yellow;">
-      </nav>
-  
-      <!-- Modal -->
-      <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-  
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header bg-dark">
-              <!-- Btn de cancelar sup -->
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+          <!-- Modal Body -->
+          <div class="modal-body text-center">
+            <!-- Banner Suscripción -->
+            <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
+              <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
+
+              <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
+                ¡Únete a Nuestra comunidad!
+              </h3>
+
+              <p class="my-2 text-white">
+                Recibe los últimos artículos publicados <br />
+                Aprende con nosotros, compártelo con el mundo.
+              </p>
+
+              <p class="mb-2" style="color: var(--colorPrimary)">
+                Nuevas publicaciones Lunes y Viernes
+              </p>
             </div>
-  
-            <!-- Modal Body -->
-            <div class="modal-body text-center">
-              <!-- Banner Suscripción -->
-              <div class="banner-ventana-suscripcion col-12 mb-2 py-1">
-                <i class="fa-solid fa-envelope fa-3x mt-2 text-white"></i>
-  
-                <h3 class="mt-2 fw-bold" style="color: var(--colorPrimary)">
-                  ¡Únete a Nuestra comunidad!
-                </h3>
-  
-                <p class="my-2 text-white">
-                  Recibe los últimos artículos publicados <br />
-                  Aprende con nosotros, compártelo con el mundo.
-                </p>
-  
-                <p class="mb-2" style="color: var(--colorPrimary)">
-                  Nuevas publicaciones Lunes y Viernes
-                </p>
-              </div>
-  
-              <!-- Formulario de Suscripción -->
-              <form action="error404.html" method="post">
-                <div class="row">
-                  <!-- 1ra columna form - Datos de suscripcion -->
-                  <div class="col-md-6 mt-2">
-  
-                    <label for="Datos-suscripcion" class="mb-2">Datos de suscripción</label>
-  
-                    <input type="text" id="nombre-apellido" name="nombre-apellido" class="form-control mb-3"
-                      placeholder="Nombre y Apellido" title="El nombre solo debe contener letras y espacios." required
-                      pattern="^[A-Za-zÀ-ÿ\u00f1\u00d1]+(\s[A-Za-zÀ-ÿ\u00f1\u00d1]+)+$">
-                    <!-- Incluye letras (mayúsculas y minúsculas), letras acentuadas y la "ñ". Además, requiere al menos un espacio entre el nombre y el apellido, y asegura que solo se ingresen letras y espacios -->
-  
-                    <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Correo electronico"
-                      title="Por favor, introduce un correo electrónico válido." required
-                      pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
-                    <!-- Incluye un nombre de usuario seguido por @, un dominio, y una extensión con al menos dos caracteres -->
-  
-                    <input type="date" id="nacimiento" name="nacimiento" class="form-control mb-3"
-                      placeholder="Fecha de nacimiento"
-                      title="Por favor, introduce una fecha válida en el formato AAAA-MM-DD." required
-                      pattern="\d{4}-\d{2}-\d{2}">
-                    <!-- Valida que la fecha esté en el formato AAAA-MM-DD-->
-  
-                  </div>
-  
-                  <!-- 2da columna form - Intereses y preferencias -->
-                  <div class="col-md-6 mt-2">
-  
-                    <label for="Datos-suscripcion" class="mb-2">Intereses y Preferencias</label>
-  
-                    <!-- Selector de frecuencia -->
-                    <select name="Frecuencia" id="Frecuencia-envios" class="form-select mb-3">
-  
-                      <option selected>Frecuencia de envíos</option>
-                      <option value="1">Diariamente</option>
-                      <option value="2">Semanalmente</option>
-                      <option value="3">Mensualmente</option>
-  
-                    </select>
-  
-                    <!-- Checkbox de intereses -->
-                    <div class="row">
-                      <!-- 1ra columna checkbox-->
-                      <div class="col-6">
-  
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Bootsrap5" id="Bootsrap5"
-                            value="Bootsrap5">
-                          <label for="Bootsrap5" class="form-check-label mb-2">
-                            Bootsrap5
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Informativos" id="Informativos"
-                            value="Informativos">
-                          <label for="Informativos" class="form-check-label mb-2">
-                            Informativos
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Herramientas" id="Herramientas"
-                            value="Herramientas">
-                          <label for="Herramientas" class="form-check-label mb-2">
-                            Herramientas
-                          </label>
-                        </div>
-  
+
+            <!-- Formulario de Suscripción -->
+            <form action="/Error404.html" method="get">
+              <div class="row">
+                <!-- 1ra columna form - Datos de suscripcion -->
+                <div class="col-md-6 mt-2">
+
+                  <label for="Datos-suscripcion" class="mb-2">Datos de suscripción</label>
+
+                  <input type="text" id="nombre-apellido" name="nombre-apellido" class="form-control mb-3"
+                    placeholder="Nombre y Apellido" title="El nombre solo debe contener letras y espacios." required
+                    pattern="^[A-Za-zÀ-ÿ\u00f1\u00d1]+(\s[A-Za-zÀ-ÿ\u00f1\u00d1]+)+$">
+                  <!-- Incluye letras (mayúsculas y minúsculas), letras acentuadas y la "ñ". Además, requiere al menos un espacio entre el nombre y el apellido, y asegura que solo se ingresen letras y espacios -->
+
+                  <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Correo electronico"
+                    title="Por favor, introduce un correo electrónico válido." required
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                  <!-- Incluye un nombre de usuario seguido por @, un dominio, y una extensión con al menos dos caracteres -->
+
+                  <input type="date" id="nacimiento" name="nacimiento" class="form-control mb-3"
+                    placeholder="Fecha de nacimiento"
+                    title="Por favor, introduce una fecha válida en el formato AAAA-MM-DD." required
+                    pattern="\d{4}-\d{2}-\d{2}">
+                  <!-- Valida que la fecha esté en el formato AAAA-MM-DD-->
+
+                </div>
+
+                <!-- 2da columna form - Intereses y preferencias -->
+                <div class="col-md-6 mt-2">
+
+                  <label for="Datos-suscripcion" class="mb-2">Intereses y Preferencias</label>
+
+                  <!-- Selector de frecuencia -->
+                  <select name="Frecuencia" id="Frecuencia-envios" class="form-select mb-3">
+
+                    <option selected>Frecuencia de envíos</option>
+                    <option value="1">Diariamente</option>
+                    <option value="2">Semanalmente</option>
+                    <option value="3">Mensualmente</option>
+
+                  </select>
+
+                  <!-- Checkbox de intereses -->
+                  <div class="row">
+
+                    <!-- 1ra columna checkbox-->
+                    <div class="col-6">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Bootsrap5" id="Bootsrap5"
+                          value="Bootsrap5">
+                        <label for="Bootsrap5" class="form-check-label mb-2">
+                          Bootsrap5
+                        </label>
                       </div>
-  
-                      <!-- 2da columna checbox-->
-                      <div class="col-6">
-  
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Css3" id="Css3" value="Css3">
-                          <label for="Css3" class="form-check-label mb-2">
-                            Css3
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Html5" id="Html5" value="Html5">
-                          <label for="Html5" class="form-check-label mb-2">
-                            Html5
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="Scrum" id="Scrum" value="Scrum">
-                          <label for="Scrum" class="form-check-label mb-2">
-                            Scrum
-                          </label>
-                        </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Informativos" id="Informativos"
+                          value="Informativos">
+                        <label for="Informativos" class="form-check-label mb-2">
+                          Informativos
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Herramientas" id="Herramientas"
+                          value="Herramientas">
+                        <label for="Herramientas" class="form-check-label mb-2">
+                          Herramientas
+                        </label>
+                      </div>
+
+                    </div>
+
+                    <!-- 2da columna checbox-->
+                    <div class="col-6">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Css3" id="Css3" value="Css3">
+                        <label for="Css3" class="form-check-label mb-2">
+                          Css3
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Html5" id="Html5" value="Html5">
+                        <label for="Html5" class="form-check-label mb-2">
+                          Html5
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Scrum" id="Scrum" value="Scrum">
+                        <label for="Scrum" class="form-check-label mb-2">
+                          Scrum
+                        </label>
                       </div>
                     </div>
+
                   </div>
+
                 </div>
-             <!-- Modal Footer -->
-              <div class="modal-footer bg-dark mt-3">
-               <div class="d-flex justify-content-center w-100">
-               <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
-               </div>
-             </div>
-         </form>
+
+              </div>
+
+          </div>
+          
+          <!-- Modal Footer -->
+          <div class="modal-footer bg-dark">
+            <div class="d-flex justify-content-center w-100">
+              <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+            </div>
+          </div>
+            </form>
         </div>
+
       </div>
-    </header>
+    </section>
+  </header>
+
+    
     <div class="banner_galeria row mt-5">
       <div
         class="col col-md-6 mt-5 mt-md-0 d-flex justify-content-center align-items-center"
@@ -238,7 +251,7 @@
         <div class="row min-vh-100 mt-0  align-content-start d-flex  justify-content-center">
           <!--se arma la fila para colocar los fromularios-->
           <div
-            class="div-img col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-between align-items-center"
+            class="div-img col-lg-6   mt-3 mt-md-5 d-flex justify-content-between align-items-center"
           >
             <div class="login-img d-flex justify-content-center text-lg-center">
               <img
@@ -254,22 +267,22 @@
           </div>
           <!-- formulario de login -->
           <div
-            class="div-login col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-center align-items-center"
+            class="div-login col-lg-6  mt-3 mt-md-5 d-flex justify-content-center align-items-center"
           >
             <form action="" class="login-form">
               <h1 class="form-title h3 h-md-1">
-                iniciar sesion <i class="fa-solid fa-right-to-bracket"></i>
+                Iniciar sesion <i class="fa-solid fa-right-to-bracket"></i>
               </h1>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="user"> ingrese su usuario</label>
+                  <label for="user"> Ingrese su usuario</label>
                   <input class="input_login" type="text" name="usuario" id="user" title="maximo 8 caracteres"  required pattern= "[A-Za-z]{1,8} "  />
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="contraseña"> ingrese su contraseña</label>
+                  <label for="contraseña"> Ingrese su contraseña</label>
                   <input
                   class="input_login"
                     type="password"
@@ -285,7 +298,7 @@
               <div class="form-row">
                 <div class="form-group">
                   <a href="" type="button" class="btn btn-light">
-                    Ingresa con cuenta de google
+                    Ingresa con su cuenta de google
                     <i class="fa-brands fa-google-plus text-danger"></i>
                   </a>
                 </div>
@@ -293,7 +306,7 @@
               <div class="form-row">
                 <div class="form-group">
                   <a href="" type="button" class="btn btn-light">
-                    Ingresa con cuenta de facebook
+                    Ingresa con su cuenta de facebook
                     <i class="fa-brands fa-square-facebook text-bg-primary"></i>
                   </a>
                 </div>
@@ -306,14 +319,14 @@
 
                 <!--button para desplegar el modal-->
               </div>
-              <button
+              <a
                 type="button"
-                class="btn-suscripcion  btn w-100"
+                class="btn w-100 text-warning"
                 data-bs-toggle="modal"
                 data-bs-target="#modal_rec"
               >
-                olvidaste tu contraseña? ingresa
-              </button>
+                ¿Olvidaste tu contraseña?
+              </a>
             </form>
           </div>
 
@@ -434,43 +447,34 @@
       
 
     </section>
+  </main>
+ 
 
-    <footer class="footer bg-dark bg-gradient">
-      <div class="container-lg">
-        <div class="row d-flex justify-content-between align-items-center">
-          <!-- 1ra Columna Logo -->
-          <div
-            class="col-lg-4 d-flex justify-content-center justify-content-lg-start"
-          >
-            <a
-              class="nav-link text-center text-white fw-bolder fs-6"
-              href="index.html"
-            >
-              < Web / Tech >
-            </a>
-          </div>
+  <!-- FOOTER -->
+  <footer class="footer bg-dark bg-gradient">
+    <div class="container-lg">
+      <div class="row d-flex justify-content-between align-items-center">
+        <!-- 1ra Columna Logo -->
+        <div class="col-lg-4 col-md-4 d-flex justify-content-center justify-content-lg-start">
+          <a class="nav-link text-center text-white fw-bolder fs-6" href="index.html">
+            < Web / Tech>
+          </a>
+        </div>
 
-          <!-- 2da Columna Faqs -->
-          <div class="col-lg-4 d-flex justify-content-center">
-            <a
-              class="nav-link text-center text-white fw-bolder fs-6"
-              href="Faqs.html"
-              >Preguntas Frecuentes</a
-            >
-          </div>
+        <!-- 2da Columna Faqs -->
+        <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+          <a class="nav-link text-center text-white fw-bolder fs-6" href="/faqs.html">Preguntas Frecuentes</a>
+        </div>
 
-          <!-- 3ra Columna Redes sociales -->
-          <div
-            class="text-center redes-sociales col-lg-4 d-flex justify-content-center justify-content-lg-end"
-          >
-            <a href="#"><i class="fa-brands fa-square-instagram mx-2"></i></a>
-            <a href="#"><i class="fa-brands fa-square-twitter mx-2"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook mx-2"></i></a>
-            <a href="#"><i class="fa-brands fa-tiktok mx-2"></i></a>
-          </div>
+        <!-- 3ra Columna Redes sociales -->
+        <div class="text-center redes-sociales col-lg-4 col-md-4 d-flex justify-content-center justify-content-lg-end">
+          <a href="https://www.instagram.com/RollingCodeSchool/"><i class="fa-brands fa-square-instagram mx-2"></i></a>
+          <a href="https://ar.linkedin.com/company/rollingcodeschool"><i class="fa-brands fa-linkedin mx-2"></i></a>
+          <a href="https://www.facebook.com/RollingCodeSchool/"><i class="fa-brands fa-facebook mx-2"></i></a>
+          <a href="https://www.tiktok.com/@rollingcode"><i class="fa-brands fa-tiktok mx-2"></i></a>
         </div>
       </div>
-    </footer>
+  </footer>
 
     <!-- SCRIP BOOTSTRAP 5 -->
     <script

@@ -1,0 +1,65 @@
+
+html,login{
+  overflow-x: hidden;
+}
+
+.body-galeria {
+  background-color: var(--colorBackground);
+  height: 100%;
+}
+.banner_galeria {
+  height: 250px;
+  background-image: url(/img/Banner1.png);
+}
+.title_galeria {
+  color: var(--colorPrimary);
+}
+
+.cards {
+  margin-top: 30px;
+}
+.card-galeria{
+  margin-bottom: 30px;
+  border: 4px solid var(--colorPrimary);
+  background-color: var(--colorBackground);
+  color: var(--colorPrimary);
+}
+
+.card-img-top {
+  height: 200px !important; /* Altura específica */
+  object-fit: cover; /* Cubre el área del contenedor */
+}
+
+.card-container {
+  gap: 30px;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .animation_viv lottie-player {
+    width: 70vw;
+    height: 70vw;
+  }
+}
+
+  
+
+
+@media (max-width: 576px) {
+  .animation_viv lottie-player {
+    width: 90vw;
+    height: 90vw;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  

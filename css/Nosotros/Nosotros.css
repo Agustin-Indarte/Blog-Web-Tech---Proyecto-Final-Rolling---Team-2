@@ -1,0 +1,136 @@
+.btn-proyectos {
+    color: var(--colorBackground);
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: var(--colorPrimary);
+    border-radius: 5px;
+    &:hover{
+        color: var(--colorSecondary);
+        border: 1px solid var(--colorSecondary) ;
+        background-color: var(--colorBackground);
+    }
+}
+
+.nav-item-proyectos a{
+    color: var(--colorBackground);
+}
+
+.banner-presentacion{
+    height: 250px;
+}
+
+/* banner presentación */
+
+.textos-banner-presentacion{
+    margin-top: 90px;
+}
+
+.textos-banner-presentacion h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--colorPrimary);
+}
+
+.textos-banner-presentacion p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+/* Secciones de lectura */
+.textos h2{
+    font-size: 2rem;
+    color: var(--colorSecondary);
+    font-weight: bolder;
+}
+
+.textos h3{
+    font-size: 1.7rem;
+    color: var(--colorPrimary);
+    
+}
+
+.textos p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.gif-container{
+    margin-left: 100px;
+    height: 500px;
+    width: 500px;
+}
+.gif-nosotros{
+    height: 500px;
+    width: auto;
+}
+
+.gif-contenido{
+    height: 500px;
+    width: 500px;
+}
+
+/* Banner suscripcion */
+.banner-suscripcion{
+    height: 200px;
+}
+
+.textos-banner-suscripcion h3{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--colorPrimary);
+}
+
+.textos-banner-suscripcion p{
+    font-size: 1.15rem;
+}
+
+
+/* cards equipos */
+.card-equipo{
+    width: 300px;
+    height: 350px;
+    margin: 20px
+}
+
+.card-equipo .face{
+    backface-visibility: hidden;
+    transition: 1s ease;
+}
+
+.card-equipo .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow:0 5px 10px black;
+}
+
+.card-equipo .front h3{
+    bottom: 0;
+    height: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.card-equipo .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: var(--colorPrimary);
+    color: black;
+    box-shadow: 0 5px 10px black;
+}
+
+.card-equipo .back .link{
+    border-top: solid 1px black;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card-equipo .back .link a{
+    color: black;
+}
+
+.card-equipo:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card-equipo:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}

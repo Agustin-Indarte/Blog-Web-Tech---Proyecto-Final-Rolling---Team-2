@@ -1,0 +1,31 @@
+
+.banner-container img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    display: block;
+}
+
+.imagen-blog{
+    width: 100%;
+    height: 500px;
+}
+hr{
+    border: 5px solid yellow;
+}
+.banner-motivacion{
+    background-color: var(--colorBackground);
+   
+}
+
+.carousel-comentario{
+    background-color: var(--colorPrimary);
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: black;
+}
+
+.contact-form{
+    background: url(/img/fondo-suscripción.png);
+}

@@ -2,13 +2,12 @@
     background-color: var(--colorBackground);
 }
 
-   
-   
 .contact-container{
     background-color: var(--colorBackground);
 }
 .contact-group{
     background-color: var(--colorBackground);
+    margin-top: 25px;
 }
 .contact-form{
     border: 5px solid yellow;
