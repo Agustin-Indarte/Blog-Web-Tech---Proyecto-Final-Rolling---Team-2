@@ -45,6 +45,11 @@
   height: 100px;
   width: 300px;
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
 }
 
 @media (max-width: 200px)

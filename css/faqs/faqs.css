@@ -14,3 +14,14 @@
 #primera-card{
     margin-top: 50px;
 }
+.card-faqs {
+    overflow: hidden; /* Evita que el contenido se desborde */
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      margin: 0; /* Elimina márgenes si están causando desbordamiento */
+      padding: 1rem; /* Ajusta el padding para dispositivos móviles */
+    }
+  }
+  
