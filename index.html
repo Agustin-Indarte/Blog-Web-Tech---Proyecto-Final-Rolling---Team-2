@@ -57,19 +57,21 @@
             </li>
 
             <!-- Button Ventana modal Suscripcion -->
-            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal" data-bs-target="#ventana-suscripcion">
+            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal"
+              data-bs-target="#ventana-suscripcion">
               SUSCRIBETE
             </button>
 
           </ul>
         </section>
+        
       </section>
     </nav>
 
     <!-- Modal -->
-    <section class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
-      
+    <section class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
+
       <div class="modal-dialog modal-dialog-centered">
 
         <div class="modal-content">
@@ -200,22 +202,25 @@
               </div>
 
           </div>
-          
+
           <!-- Modal Footer -->
           <div class="modal-footer bg-dark">
             <div class="d-flex justify-content-center w-100">
               <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
             </div>
           </div>
-            </form>
+
+          </form>
         </div>
 
       </div>
     </section>
+
   </header>
 
   <!-- MAIN DE HOME -->
   <main>
+    <!-- Slider Home -->
     <section class="slider-home mt-5">
       <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
         <!-- sliders -->
@@ -264,22 +269,144 @@
       </div>
     </section>
 
-
+    <!-- Entradas y categorias -->
     <section class="Entradas-categorias container-fluid text-center">
       <div class="row">
-
         <!-- Columna Entradas Recientes -->
-        <section class="col-lg-8">
+        <div class="col-lg-8 bg-">
           <h2 class="my-3">Entradas Recientes</h2>
 
           <!-- Carrusel de cards -->
-          <div id="carousel-cards" class="carousel slide">
+          <section id="carousel-cards" class="carousel slide">
             <div class="carousel-inner">
 
+              <!-- 1ra pagina del carousel -->
               <div class="carousel-item active">
                 <div class="d-flex justify-content-center">
                   <div class="col-lg-10 col-md-11">
 
+                    <!-- Card Html -->
+                    <article class="card card-index h-auto rounded mb-4 bg-dark">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="object-fit-cover rounded-start" src="/img/Entrada-html.png" alt="Imagen de card">
+                        </div>
+                        <div
+                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
+                          <h2>Un nuevo mundo</h2>
+                          <p class="me-2 p-lg-0 text-light small">Los primeros pasos en el mundo de la programación,
+                            experiencia de viaje personal y superación para abrazar esta nueva pasión.
+                          </p>
+                          <a href="/entrada-ivan.html"
+                            class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
+                            más</a>
+                        </div>
+                      </div>
+                    </article>
+
+                    <!-- Card Scrum -->
+                    <article class="card card-index h-auto rounded mb-4 bg-dark">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="object-fit-cover rounded-start" src="/img/Entrada-Scrum.png" alt="Imagen de card">
+                        </div>
+                        <div
+                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
+                          <h2>Equipos ágiles y proyectos exitosos</h2>
+                          <p class="me-2 p-lg-0 text-light small">¡Convierte cualquier proyecto en una aventura organizada, con reuniones rápidas y sprints que mantienen a todos en la misma página!</p>
+                          <a href="/entrada-agustin.html"
+                            class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
+                            más</a>
+                        </div>
+                      </div>
+                    </article>
+
+                    <!-- Card css -->
+                    <article class="card card-index h-auto rounded mb-4 bg-dark">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="object-fit-cover rounded-start" src="/img/Entrada-css.png" alt="Imagen de card">
+                        </div>
+                        <div
+                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
+                          <h2>El arte de dar estilo a la web</h2>
+                          <p class="me-2 p-lg-0 text-light small">Descubre cómo CSS convierte tus páginas simples en verdaderas obras de arte con solo un toque de código.</p>
+                          <a href="/entrada-Mario.html"
+                            class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
+                            más</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2da Pagina del carousel -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="col-lg-10">
+
+                    <!-- Card Herramientas -->
+                    <article class="card card-index h-auto rounded mb-4 bg-dark">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="object-fit-cover rounded-start" src="/img/Entrada-Herramientas.png" alt="Imagen de card">
+                        </div>
+                        <div
+                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
+                          <h2>Desarrollo moderno, herramientas modernas</h2>
+                          <p class="me-2 p-lg-0 text-light small">Nuestra caja de herramientas diaria para el desarrollo web: Los recursos esenciales que utilizamos en cada proyecto</p>
+                          <a href="/entrada-Jose.html"
+                            class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
+                            más</a>
+                        </div>
+                      </div>
+                    </article>
+
+                    <!-- Card Informacion -->
+                    <article class="card card-index h-auto rounded mb-4 bg-dark">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="object-fit-cover rounded-start" src="/img/Entrada-info.png" alt="Imagen de card">
+                        </div>
+                        <div
+                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
+                          <h2>La historia de la web a un clik</h2>
+                          <p class="me-2 p-lg-0 text-light small">Un recorrido rápido y fascinante por la evolución de la web, desde sus humildes comienzos hasta el mundo interconectado que conocemos hoy</p>
+                          <a href="/Error404.html"
+                            class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
+                            más</a>
+                        </div>
+                      </div>
+                    </article>
+
+                    <!-- Card Bootstrap -->
+                    <article class="card card-index h-auto rounded mb-4 bg-dark">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img class="object-fit-cover rounded-start" src="/img/Entrada-bts.png" alt="Imagen de card">
+                        </div>
+                        <div
+                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
+                          <h2>Responsividad y velocidad</h2>
+                          <p class="me-2 p-lg-0 text-light small">Sumergete en las clases que brinda Bootstrap para diseñar todo tipos de proyectos elegantes y funcionales</p>
+                          <a href="/Error404.html"
+                            class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
+                            más</a>
+                        </div>
+                      </div>
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3ra pagina del carousel -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="col-lg-10">
+
+                    <!-- Card 7 -->
                     <article class="card card-index h-auto rounded mb-4 bg-dark">
                       <div class="row">
                         <div class="col-lg-5">
@@ -287,176 +414,69 @@
                         </div>
                         <div
                           class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
-                          <h2>Entrada de Ivan</h2>
-                          <p class="p-2 p-lg-0 text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea
-                            aliquam amet nam vel
-                            quibusdam maiores eveniet porro vitae!</p>
-                          <a href="/entrada-ivan.html" class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
-                            más</a>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article class="card card-index h-auto rounded mb-4 bg-dark">
-                      <div class="row">
-                        <div class="col-lg-5">
-                          <img class="object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
-                        </div>
-                        <div
-                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
-                          <h2>Entrada de Agustin</h2>
-                          <p class="p-2 p-lg-0 text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea
-                            aliquam amet nam vel
-                            quibusdam maiores eveniet porro vitae!</p>
-                          <a href="/entrada-agustin.html" class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
-                            más</a>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article class="card card-index h-auto rounded mb-4 bg-dark">
-                      <div class="row">
-                        <div class="col-lg-5">
-                          <img class="object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
-                        </div>
-                        <div
-                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
-                          <h2>Entrada de Mario</h2>
-                          <p class="p-2 p-lg-0 text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea
-                            aliquam amet nam vel
-                            quibusdam maiores eveniet porro vitae!</p>
-                          <a href="/entrada-Mario.html" class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
-                            más</a>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                  <div class="col-lg-10">
-
-                    <article class="card card-index h-auto rounded mb-4 bg-dark">
-                      <div class="row">
-                        <div class="col-lg-5">
-                          <img class="object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
-                        </div>
-                        <div
-                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
-                          <h2>Entrada de Jose</h2>
-                          <p class="p-2 p-lg-0 text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea
-                            aliquam amet nam vel
-                            quibusdam maiores eveniet porro vitae!</p>
-                          <a href="/entrada-Jose.html" class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
-                            más</a>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article class="card card-index h-auto rounded mb-4 bg-dark">
-                      <div class="row">
-                        <div class="col-lg-5">
-                          <img class="object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
-                        </div>
-                        <div
-                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
-                          <h2>Titulo de la Entrada 5</h2>
-                          <p class="p-2 p-lg-0 text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea
-                            aliquam amet nam vel
-                            quibusdam maiores eveniet porro vitae!</p>
-                          <a href="/Error404.html" class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
-                            más</a>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article class="card card-index h-auto rounded mb-4 bg-dark">
-                      <div class="row">
-                        <div class="col-lg-5">
-                          <img class="object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
-                        </div>
-                        <div
-                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
-                          <h2>Titulo de la Entrada 6</h2>
-                          <p class="p-2 p-lg-0 text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea
-                            aliquam amet nam vel
-                            quibusdam maiores eveniet porro vitae!</p>
-                          <a href="/Error404.html" class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
-                            más</a>
-                        </div>
-                      </div>
-                    </article>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                  <div class="col-lg-10">
-
-                    <article class="card card-index h-auto rounded mb-4 bg-dark">
-                      <div class="row">
-                        <div class="col-lg-5">
-                          <img class="object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
-                        </div>
-                        <div
-                          class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
                           <h2>Titulo de la Entrada 7</h2>
-                          <p class="p-2 p-lg-0 text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea
+                          <p class="me-2 p-lg-0 text-light small">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Nulla ea
                             aliquam amet nam vel
                             quibusdam maiores eveniet porro vitae!</p>
-                          <a href="/Error404.html" class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
+                          <a href="/Error404.html"
+                            class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
                             más</a>
                         </div>
                       </div>
                     </article>
 
+                    <!-- Card 8 -->
                     <article class="card card-index h-auto rounded mb-4 bg-dark">
                       <div class="row">
                         <div class="col-lg-5">
-                          <img class="object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
+                          <img class="object-fit-cover rounded-start" src="/img/Banner1.png" alt="Imagen de card">
                         </div>
                         <div
                           class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
                           <h2>Titulo de la Entrada 8</h2>
-                          <p class="p-2 p-lg-0 text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea
+                          <p class="me-2 p-lg-0 text-light small">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Nulla ea
                             aliquam amet nam vel
                             quibusdam maiores eveniet porro vitae!</p>
-                          <a href="/Error404.html" class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
+                          <a href="/Error404.html"
+                            class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
                             más</a>
                         </div>
                       </div>
                     </article>
 
+                    <!-- Card 9 -->
                     <article class="card card-index h-auto rounded mb-4 bg-dark">
                       <div class="row">
                         <div class="col-lg-5">
-                          <img class="object-fit-contain rounded-start" src="/img/Banner1.png" alt="Imagen de card">
+                          <img class="object-fit-cover rounded-start" src="/img/Banner1.png" alt="Imagen de card">
                         </div>
                         <div
                           class="col-lg-7 text-lg-start mt-lg-0 text-center mt-2 d-flex flex-column justify-content-center">
                           <h2>Titulo de la Entrada 9</h2>
-                          <p class="p-2 p-lg-0 text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ea
+                          <p class="me-2 p-lg-0 text-light small">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Nulla ea
                             aliquam amet nam vel
                             quibusdam maiores eveniet porro vitae!</p>
-                          <a href="/Error404.html" class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
+                          <a href="/Error404.html"
+                            class="btn btn-entrada btn-sm align-self-lg-start align-self-center mb-2 ">Ver
                             más</a>
                         </div>
                       </div>
                     </article>
+
                   </div>
                 </div>
               </div>
 
             </div>
-          </div>
+          </section>
 
           <!-- PAginación -->
-          <div class="pagination-container">
+          <section class="pagination-container">
             <ul class="pagination justify-content-center">
+
               <!-- flecha anterior -->
               <li class="page item">
                 <button class="page-link" data-bs-target="#carousel-cards" data-bs-slide="prev">
@@ -479,56 +499,72 @@
                 </button>
               </li>
 
-
               <!-- flecha siguiente -->
               <li class="page item">
                 <button class="page-link" data-bs-target="#carousel-cards" data-bs-slide="next">
                   <span aria-hidden="true">&raquo;</span>
                 </button>
               </li>
+
             </ul>
-          </div>
-        </section>
+          </section>
+
+        </div>
         <!-- Categorias -->
         <section class="col-lg-4 categorias">
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col-10">
+              <section class="col-10">
+
                 <!-- Buscador -->
-                <div class=" search input-group my-3">
+                <article class=" search input-group my-3">
                   <input type="search" class="form-control" placeholder="¡Busca tus articulos preferidos!"
                     aria-label="Buscar" aria-describedby="button-addon2">
-                  <button type="submit" class="btn btn-warning" id="button-addon2">Buscar</button>
-                </div>
-                <!-- Opciones -->
-                <div class=" options d-grid gap-1 col-12 mx-auto">
-                  <button onclick="window.location.href='/Error404.html';" type="button" class="btn btn-lg btn-html">Html5</button>
-                  <button onclick="window.location.href='/Error404.html';" type="button" class="btn btn-lg btn-css">Css3</button>
-                  <button onclick="window.location.href='/Error404.html';" type="button" class="btn btn-lg btn-Bts">Bootstrap5</button>
-                  <button onclick="window.location.href='/Error404.html';" type="button" class="btn btn-lg btn-informativos">Informativos</button>
-                  <button onclick="window.location.href='/Error404.html';" type="button" class="btn btn-lg btn-Herramientas">Herramientas</button>
-                  <button onclick="window.location.href='/Error404.html';" type="button" class="btn btn-lg  btn-scrum">Metodologia Scrum</button>
+                  <button onclick="window.location.href='/Error404.html';" type="submit" class="btn btn-warning"
+                    id="button-addon2">Buscar</button>
+                </article>
 
-                </div>
+                <!-- Opciones -->
+                <section class=" options d-grid gap-1 col-12 mx-auto">
+
+                  <button onclick="window.location.href='/Error404.html';" type="button"
+                    class="btn btn-lg btn-html">Html5</button>
+                  <button onclick="window.location.href='/Error404.html';" type="button"
+                    class="btn btn-lg btn-css">Css3</button>
+                  <button onclick="window.location.href='/Error404.html';" type="button"
+                    class="btn btn-lg btn-Bts">Bootstrap5</button>
+                  <button onclick="window.location.href='/Error404.html';" type="button"
+                    class="btn btn-lg btn-informativos">Informativos</button>
+                  <button onclick="window.location.href='/Error404.html';" type="button"
+                    class="btn btn-lg btn-Herramientas">Herramientas</button>
+                  <button onclick="window.location.href='/Error404.html';" type="button"
+                    class="btn btn-lg  btn-scrum">Metodologia Scrum</button>
+
+                </section>
 
                 <!-- Publicidad -->
-                <div id="carousel-publicidad" class="carousel slide my-4" data-bs-ride="carousel">
+                <section id="carousel-publicidad" class="carousel slide my-4" data-bs-ride="carousel">
                   <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <!-- publicidad 2 -->
+                    <article class="carousel-item active">
                       <img class="d-block w-100" src="/img/publicidad1.jpeg" alt="Publicidad1">
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <!-- publicidad 2 -->
+                    <article class="carousel-item">
                       <img class="d-block w-100" src="/img/Publicidad2.jpeg" alt="Publicidad2">
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <!-- Publicidad 3 -->
+                    <article class="carousel-item">
                       <img class="d-block w-100" src="/img/Publicidad3.jpg" alt="Publicidad3">
-                    </div>
+                    </article>
                   </div>
-                </div>
-              </div>
+                </section>
+
+              </section>
             </div>
           </div>
         </section>
+        
       </div>
     </section>
 
@@ -540,24 +576,25 @@
     <div class="container-lg">
       <div class="row d-flex justify-content-between align-items-center">
         <!-- 1ra Columna Logo -->
-        <div class="col-lg-4 col-md-4 d-flex justify-content-center justify-content-lg-start">
+        <article class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center justify-content-lg-start">
           <a class="nav-link text-center text-white fw-bolder fs-6" href="index.html">
             < Web / Tech>
           </a>
-        </div>
+        </article>
 
         <!-- 2da Columna Faqs -->
-        <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+        <article class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
           <a class="nav-link text-center text-white fw-bolder fs-6" href="/faqs.html">Preguntas Frecuentes</a>
-        </div>
+        </article>
 
         <!-- 3ra Columna Redes sociales -->
-        <div class="text-center redes-sociales col-lg-4 col-md-4 d-flex justify-content-center justify-content-lg-end">
+        <section
+          class="text-center redes-sociales col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center justify-content-lg-end">
           <a href="https://www.instagram.com/RollingCodeSchool/"><i class="fa-brands fa-square-instagram mx-2"></i></a>
           <a href="https://ar.linkedin.com/company/rollingcodeschool"><i class="fa-brands fa-linkedin mx-2"></i></a>
           <a href="https://www.facebook.com/RollingCodeSchool/"><i class="fa-brands fa-facebook mx-2"></i></a>
           <a href="https://www.tiktok.com/@rollingcode"><i class="fa-brands fa-tiktok mx-2"></i></a>
-        </div>
+        </section>
       </div>
   </footer>
 

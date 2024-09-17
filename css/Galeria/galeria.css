@@ -1,7 +1,7 @@
-
 html,login{
   overflow-x: hidden;
 }
+
 
 .body-galeria {
   background-color: var(--colorBackground);
@@ -51,6 +51,7 @@ html,login{
   }
 
 }
+
 
 
 

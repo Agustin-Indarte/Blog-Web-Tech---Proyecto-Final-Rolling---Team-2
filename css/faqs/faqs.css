@@ -2,8 +2,9 @@
     border: solid 1px var(--colorPrimary);
     background-color: var(--colorBackground);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0,3);
-    height: 125px;
-    padding: 10px;
+    height: 150px;
+    width: 90vw;
+    padding: 5px;
     & h5{
         color: var(--colorSecondary);
     }
@@ -12,5 +13,17 @@
     }
 }
 #primera-card{
-    margin-top: 50px;
+    margin-top: 75px;
 }
+@media (max-width: 768px){
+    .card-faqs{
+        height: 175px;
+    }
+} 
+
+@media (max-width: 360px){
+    .card-faqs{
+        height: 300px;
+    }
+} 
+

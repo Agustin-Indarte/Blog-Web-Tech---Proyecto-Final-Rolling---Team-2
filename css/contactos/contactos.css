@@ -19,6 +19,7 @@
     border: 5px solid yellow;
     border-radius: 10px;
     height: 450px;
+    width: auto;
     margin:20px;
 }
 
