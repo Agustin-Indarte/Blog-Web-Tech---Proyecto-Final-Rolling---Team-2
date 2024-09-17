@@ -1,7 +1,9 @@
 #login{
   background-color: var(--colorBackground);
-  overflow-x: hidden;
+  width: 100;
+  
 }
+
 
 .login-body {
   margin: 0;
