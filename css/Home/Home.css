@@ -73,6 +73,20 @@
     height: 100%;
 }
 
+.card-index h2{
+    color: var(--colorPrimary);
+}
+
+.btn-entrada{
+    background-color: var(--colorBackground);
+    color: var(--colorPrimary);
+    border: solid 1px var(--colorPrimary);
+    &:hover{
+        background-color: var(--colorPrimary);
+        color: var(--colorBackground);
+    }
+}
+
 .btn-suscripcion {
     color: var(--colorBackground);
     font-weight: bolder;

@@ -21,6 +21,7 @@
   color: #fbf050;
   animation: bounce 2s infinite;
   margin-bottom: 200px;
+  margin-top: 100px;
 }
 
 @keyframes bounce {
@@ -38,7 +39,7 @@
 .error-message {
   font-size: 50px;
   color: #567194;
-  margin-top: 100px;
+  
 }
 
 .btn-error{
@@ -52,10 +53,10 @@
   
 }
 
-@media (max-width: 200px)
- { .btn
-  { height: 50px; 
-  width: 150px; 
+@media (max-width: 360px)
+ { .btn-error
+  { height: 60px; 
+  width: 180px; 
   font-size: 1rem; } 
 }
 
@@ -64,19 +65,19 @@
 }
 
 @media (max-width: 768px) {
-  body {
+  .body-error404 {
     background-size: 100% 100%; /* Hace que el GIF se ajuste al contenedor sin recortar */
   }
 }
 
 @media (max-width: 1024px) {
-  body {
+  .body-error404 {
     background-size: 100% 100%; /* Asegura que el GIF ocupe todo el espacio en pantallas muy pequeñas */
   }
 }
 
 @media (min-width: 480px)and(max-width:767){
-  body {
+  .body-error404 {
     background-size:100% 100%;
   }
 }

@@ -249,7 +249,7 @@
         <div class="row min-vh-100 mt-0  align-content-start d-flex  justify-content-center">
           <!--se arma la fila para colocar los fromularios-->
           <div
-            class="div-img col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-between align-items-center"
+            class="div-img col-lg-6   mt-3 mt-md-5 d-flex justify-content-between align-items-center"
           >
             <div class="login-img d-flex justify-content-center text-lg-center">
               <img
@@ -265,22 +265,23 @@
           </div>
           <!-- formulario de login -->
           <div
-            class="div-login col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-center align-items-center"
+            class="div-login col-lg-6  mt-3 mt-md-5 d-flex justify-content-center align-items-center"
           >
-            <form action="" class="login-form">
+
+            <form action="/Error404.html" class="login-form" method="get">
               <h1 class="form-title h3 h-md-1">
-                iniciar sesion <i class="fa-solid fa-right-to-bracket"></i>
+                Iniciar sesion <i class="fa-solid fa-right-to-bracket"></i>
               </h1>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="user"> ingrese su usuario</label>
+                  <label for="user"> Ingrese su usuario</label>
                   <input class="input_login" type="text" name="usuario" id="user" title="maximo 8 caracteres"  required pattern= "[A-Za-z]{1,8} "  />
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="contraseña"> ingrese su contraseña</label>
+                  <label for="contraseña"> Ingrese su contraseña</label>
                   <input
                   class="input_login"
                     type="password"
@@ -295,16 +296,16 @@
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <a href="" type="button" class="btn btn-light">
-                    Ingresa con cuenta de google
+                  <a href="Error404.html" type="button" class="btn btn-light">
+                    Ingresa con su cuenta de google
                     <i class="fa-brands fa-google-plus text-danger"></i>
                   </a>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <a href="" type="button" class="btn btn-light">
-                    Ingresa con cuenta de facebook
+                  <a href="Error404.html" type="button" class="btn btn-light">
+                    Ingresa con su cuenta de facebook
                     <i class="fa-brands fa-square-facebook text-bg-primary"></i>
                   </a>
                 </div>
@@ -317,14 +318,14 @@
 
                 <!--button para desplegar el modal-->
               </div>
-              <button
+              <a
                 type="button"
-                class="btn-suscripcion  btn w-100"
+                class="btn w-100 text-warning"
                 data-bs-toggle="modal"
                 data-bs-target="#modal_rec"
               >
-                olvidaste tu contraseña? ingresa
-              </button>
+                ¿Olvidaste tu contraseña?
+              </a>
             </form>
           </div>
 
@@ -461,15 +462,15 @@
 
         <!-- 2da Columna Faqs -->
         <div class="col-lg-4 col-md-4 d-flex justify-content-center">
-          <a class="nav-link text-center text-white fw-bolder fs-6" href="Faqs.html">Preguntas Frecuentes</a>
+          <a class="nav-link text-center text-white fw-bolder fs-6" href="/faqs.html">Preguntas Frecuentes</a>
         </div>
 
         <!-- 3ra Columna Redes sociales -->
         <div class="text-center redes-sociales col-lg-4 col-md-4 d-flex justify-content-center justify-content-lg-end">
-          <a href="#"><i class="fa-brands fa-square-instagram mx-2"></i></a>
-          <a href="#"><i class="fa-brands fa-square-twitter mx-2"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook mx-2"></i></a>
-          <a href="#"><i class="fa-brands fa-tiktok mx-2"></i></a>
+          <a href="https://www.instagram.com/RollingCodeSchool/"><i class="fa-brands fa-square-instagram mx-2"></i></a>
+          <a href="https://ar.linkedin.com/company/rollingcodeschool"><i class="fa-brands fa-linkedin mx-2"></i></a>
+          <a href="https://www.facebook.com/RollingCodeSchool/"><i class="fa-brands fa-facebook mx-2"></i></a>
+          <a href="https://www.tiktok.com/@rollingcode"><i class="fa-brands fa-tiktok mx-2"></i></a>
         </div>
       </div>
   </footer>

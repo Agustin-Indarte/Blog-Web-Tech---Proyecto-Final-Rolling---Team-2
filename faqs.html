@@ -25,13 +25,14 @@
 </head>
 
 <body style=" background-color: #333a44;">
+  <!-- HEADER CON NAVBAR Y VENTANA MODAL -->
   <header>
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg py-1 fixed-top">
-      <div class="container-fluid mx-2">
+    <nav class="navbar navbar-expand-sm py-1 fixed-top">
+      <section class="container-fluid mx-2">
         <!-- Logo -->
-        <a href="index.html" class="navbar-brand">
-          <img src="/img/Logo.png" height="50px" alt="Logo" /></a>
+        <a href="index.html" class="navbar-brand"> <img src="/img/Logo.png" height="50px" alt="Logo" /> </a>
 
         <!-- Menu desplegable -->
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -39,11 +40,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Items Navbar -->
+        <section class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <!-- Lista Navbar -->
             <li class="nav-item">
-              <a href="Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
+              <a href="/Nosotros.html" class="nav-link fw-bold me-3">Nosotros</a>
             </li>
 
             <li class="nav-item">
@@ -51,22 +53,23 @@
             </li>
 
             <li class="nav-item">
-              <a href="login.html" class="nav-link fw-bold me-3">Login</a>
+              <a href="/login.html" class="nav-link fw-bold me-3">Login</a>
             </li>
 
             <!-- Button Ventana modal Suscripcion -->
-            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal"
-              data-bs-target="#ventana-suscripcion">
+            <button type="button" class="btn btn-suscripcion" data-bs-toggle="modal" data-bs-target="#ventana-suscripcion">
               SUSCRIBETE
             </button>
+
           </ul>
-        </div>
-      </div>
+        </section>
+      </section>
     </nav>
 
     <!-- Modal -->
-    <div class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <section class="modal fade" id="ventana-suscripcion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="ventana-suscripcionLabel" aria-hidden="true">
+      
       <div class="modal-dialog modal-dialog-centered">
 
         <div class="modal-content">
@@ -97,7 +100,7 @@
             </div>
 
             <!-- Formulario de Suscripción -->
-            <form action="error404.html" method="post">
+            <form action="/Error404.html" method="get">
               <div class="row">
                 <!-- 1ra columna form - Datos de suscripcion -->
                 <div class="col-md-6 mt-2">
@@ -189,32 +192,36 @@
                         </label>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              
-          </div>
-           <!-- Modal Footer -->
-        <div class="modal-footer bg-dark">
-          <div class="d-flex justify-content-center w-100">
-            <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
-          </div>
-        </div>
-        </div>
-        </form>
-      </div>
-    </div>
 
+                  </div>
+
+                </div>
+
+              </div>
+
+          </div>
+          
+          <!-- Modal Footer -->
+          <div class="modal-footer bg-dark">
+            <div class="d-flex justify-content-center w-100">
+              <button type="submit" class="btn btn-suscripcion">SUSCRIBIRME</button>
+            </div>
+          </div>
+            </form>
+        </div>
+
+      </div>
+    </section>
   </header>
 
   <!-- MAIN FAQS -->
   <main class="container">
  
-    <div class="mt-5"> 
-      <div class="row justify-content-center"> 
-        <div class="col-12 col-md-12 mb-4">
-              <div id="primera-card" class="card-faqs"> 
-                <div class="card-body my-3"> 
+ 
+      <div class="row justify-content-center mt-4"> 
+        <div class="col-12 col-md-12">
+              <div id="primera-card" class="card card-faqs"> 
+                <div class="card-body my-1"> 
                   <h5 class="card-title">¿Cuál es la edad mínima para aprender a programar?</h5>
                   <p class="card-text">No hay una edad mínima; muchas personas comienzan a aprender a programar en la adolescencia, pero también es posible empezar en la adultez. Lo más importante es tener interés y motivación.</p>
               </div> 
@@ -222,11 +229,11 @@
           </div>  
        </div> 
     </div>
-    <div class="mt-5"> 
-      <div class="justify-content-center"> 
-        <div class="col-12 col-md-12 mb-4">
-              <div class="card-faqs"> 
-                <div class="card-body my-3"> 
+  
+      <div class="row justify-content-center mt-4"> 
+        <div class="col-12 col-md-12">
+              <div class="card card-faqs"> 
+                <div class="card-body my-1"> 
                   <h5 class="card-title">¿Necesito tener conocimientos previos en matemáticas para programar?</h5>
                   <p class="card-text">No es necesario tener un alto nivel de matemáticas para comenzar a programar, pero tener una comprensión básica puede ser útil.</p>
               </div> 
@@ -234,11 +241,11 @@
           </div>  
        </div> 
     </div>
-    <div class="mt-5"> 
-      <div class="row justify-content-center"> 
-        <div class="col-12 col-md-12 mb-4">
-              <div class="card-faqs"> 
-                <div class="card-body my-3"> 
+
+      <div class="row justify-content-center mt-4"> 
+        <div class="col-12 col-md-12">
+              <div class="card card-faqs"> 
+                <div class="card-body my-1"> 
                   <h5 class="card-title">¿Qué tipo de computadora necesito para aprender a programar?</h5>
                   <p class="card-text">La mayoría de los lenguajes de programación se pueden aprender en una computadora común. Las especificaciones necesarias dependen del tipo de programación que quieras hacer (por ejemplo, desarrollo web, aplicaciones, etc.).</p>
               </div> 
@@ -246,11 +253,11 @@
           </div>  
        </div> 
     </div>
-    <div class="mt-5"> 
-      <div class="row justify-content-center"> 
-        <div class="col-12 col-md-12 mb-4">
-              <div class="card-faqs"> 
-                <div class="card-body my-3"> 
+
+      <div class="row justify-content-center mt-4"> 
+        <div class="col-12 col-md-12">
+              <div class="card card-faqs"> 
+                <div class="card-body my-1"> 
                   <h5 class="card-title">¿Cuánto tiempo lleva aprender a programar?</h5>
                   <p class="card-text">El tiempo varía según el lenguaje de programación y el nivel de profundidad que quieras alcanzar. Puede tomar desde unas semanas hasta varios meses o años para adquirir competencia en la programación.</p>
               </div> 
@@ -258,11 +265,11 @@
           </div>  
        </div> 
     </div>
-    <div class="mt-5"> 
-      <div class="row justify-content-center"> 
-        <div class="col-12 col-md-12 mb-4">
-              <div class="card-faqs"> 
-                <div class="card-body my-3"> 
+
+      <div class="row justify-content-center mt-4"> 
+        <div class="col-12 col-md-12">
+              <div class="card card-faqs"> 
+                <div class="card-body my-1"> 
                   <h5 class="card-title">¿Es necesario tener un título universitario para ser programador?</h5>
                   <p class="card-text">No siempre. Muchas personas trabajan en programación sin un título formal, especialmente si tienen habilidades prácticas y experiencia. Las certificaciones y cursos en línea también pueden ser valiosos.</p>
               </div> 
@@ -270,11 +277,11 @@
           </div>  
        </div> 
     </div>
-    <div class="mt-5"> 
-      <div class="row justify-content-center"> 
-        <div class="col-12 col-md-12 mb-4">
-              <div class="card-faqs"> 
-                <div class="card-body my-3"> 
+
+      <div class="row justify-content-center mt-4"> 
+        <div class="col-12 col-md-12">
+              <div class="card card-faqs"> 
+                <div class="card-body my-1"> 
                   <h5 class="card-title">¿Cuánto cuesta aprender a programar?</h5>
                   <p class="card-text"> Hay muchas opciones gratuitas y de bajo costo disponibles, como tutoriales en línea, videos, y comunidades de programación. También hay cursos pagos y programas educativos que pueden tener un costo.
                   </p>
@@ -283,11 +290,11 @@
           </div>  
        </div> 
     </div>
-    <div class="mt-5"> 
-      <div class="row justify-content-center"> 
-        <div class="col-12 col-md-12 mb-4">
-              <div class="card-faqs"> 
-                <div class="card-body my-3"> 
+
+      <div class="row justify-content-center mt-4"> 
+        <div class="col-12 col-md-12">
+              <div class="card card-faqs"> 
+                <div class="card-body my-1"> 
                   <h5 class="card-title">¿Qué lenguajes de programación debería aprender primero?</h5>
                   <p class="card-text">Para principiantes, lenguajes como Python y JavaScript son recomendables debido a su simplicidad y amplia aplicabilidad.</p>
               </div> 
@@ -295,11 +302,11 @@
           </div>  
        </div> 
     </div>
-    <div class="mt-5"> 
-      <div class="row justify-content-center"> 
-        <div class="col-12 col-md-12 mb-4">
-              <div class="card-faqs"> 
-                <div class="card-body my-3"> 
+
+      <div class="row justify-content-center mt-4"> 
+        <div class="col-12 col-md-12">
+              <div class="card card-faqs"> 
+                <div class="card-body my-1"> 
                   <h5 class="card-title">¿Cuál es la edad mínima para aprender a programar?</h5>
                   <p class="card-text">No hay una edad mínima; muchas personas comienzan a aprender a programar en la adolescencia, pero también es posible empezar en la adultez. Lo más importante es tener interés y motivación.</p>
               </div> 
@@ -307,11 +314,11 @@
           </div>  
        </div> 
     </div>
-    <div class="mt-5"> 
-      <div class="row justify-content-center"> 
-        <div class="col-12 col-md-12 mb-4">
-              <div class="card-faqs"> 
-                <div class="card-body my-3"> 
+
+      <div class="row justify-content-center mt-4"> 
+        <div class="col-12 col-md-12">
+              <div class="card card-faqs"> 
+                <div class="card-body my-1"> 
                   <h5 class="card-title">¿Qué es un curso de programación y cómo me ayuda?</h5>
                   <p class="card-text">Un curso de programación es una serie de lecciones y ejercicios diseñados para enseñar habilidades de programación. Puede ser en línea, en persona o autodidacta, y te ayuda a estructurar tu aprendizaje.</p>
               </div> 
@@ -319,10 +326,17 @@
           </div>  
        </div> 
     </div>
+<<<<<<< HEAD
     <div class="mt-5"> 
       <div class="row justify-content-center"> 
         <div class="col-12 col-md-12 mb-4">
               <div class="card-faqs overflow-auto"> 
+=======
+
+      <div class="row justify-content-center mt-4"> 
+        <div class="col-12 col-md-12">
+              <div class="card card-faqs"> 
+>>>>>>> 4d0024e6e7fe34af03758f2af6020f6048c8b2bd
                 <div class="card-body my-3"> 
                   <h5 class="card-title">¿Qué tipo de proyectos puedo hacer mientras aprendo a programar?</h5>
                   <p class="card-text">Puedes comenzar con proyectos simples como sitios web básicos, aplicaciones de lista de tareas, o juegos sencillos. Estos proyectos te ayudarán a aplicar lo que aprendes y ganar experiencia práctica.</p>
@@ -331,11 +345,11 @@
           </div>  
        </div> 
     </div>
-    <div class="mt-5"> 
-      <div class="row justify-content-center"> 
-        <div class="col-12 col-md-12 mb-4">
-              <div class="card-faqs"> 
-                <div class="card-body my-3"> 
+
+      <div class="row justify-content-center mt-4 mb-4"> 
+        <div class="col-12 col-md-12">
+              <div class="card card-faqs"> 
+                <div class="card-body"> 
                   <h5 class="card-title">¿Cómo puedo saber si la programación es para mí?</h5>
                   <p class="card-text">Prueba diferentes lenguajes y proyectos para ver si disfrutas el proceso. También puedes hablar con programadores y participar en comunidades en línea para obtener una idea de lo que implica la programación.</p>
               </div> 
@@ -351,28 +365,29 @@
     <div class="container-lg">
       <div class="row d-flex justify-content-between align-items-center">
         <!-- 1ra Columna Logo -->
-        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-start">
+        <div class="col-lg-4 col-md-4 d-flex justify-content-center justify-content-lg-start">
           <a class="nav-link text-center text-white fw-bolder fs-6" href="index.html">
             < Web / Tech>
           </a>
         </div>
 
         <!-- 2da Columna Faqs -->
-        <div class="col-lg-4 d-flex justify-content-center">
-          <a class="nav-link text-center text-white fw-bolder fs-6" href="Faqs.html">Preguntas Frecuentes</a>
+        <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+          <a class="nav-link text-center text-white fw-bolder fs-6" href="/faqs.html">Preguntas Frecuentes</a>
         </div>
 
         <!-- 3ra Columna Redes sociales -->
-        <div class="text-center redes-sociales col-lg-4 d-flex justify-content-center justify-content-lg-end">
-          <a href="#"><i class="fa-brands fa-square-instagram mx-2"></i></a>
-          <a href="#"><i class="fa-brands fa-square-twitter mx-2"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook mx-2"></i></a>
-          <a href="#"><i class="fa-brands fa-tiktok mx-2"></i></a>
+        <div class="text-center redes-sociales col-lg-4 col-md-4 d-flex justify-content-center justify-content-lg-end">
+          <a href="https://www.instagram.com/RollingCodeSchool/"><i class="fa-brands fa-square-instagram mx-2"></i></a>
+          <a href="https://ar.linkedin.com/company/rollingcodeschool"><i class="fa-brands fa-linkedin mx-2"></i></a>
+          <a href="https://www.facebook.com/RollingCodeSchool/"><i class="fa-brands fa-facebook mx-2"></i></a>
+          <a href="https://www.tiktok.com/@rollingcode"><i class="fa-brands fa-tiktok mx-2"></i></a>
         </div>
       </div>
   </footer>
 
-
+  <!-- Scrip Chatboot -->
+  <script src="//code.tidio.co/wncaanagqooh3xjhfvj4ckk4p5h6fyvg.js" async></script>
   <!-- SCRIP BOOTSTRAP 5 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
