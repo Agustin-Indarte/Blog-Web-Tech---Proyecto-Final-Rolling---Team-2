@@ -105,17 +105,8 @@
   border: 1px solid var(--colorPrimary);
 }
 
-/*resposividad en 768 ox*/
-@media (max-width: 768px) {
-  .login-body {
-    background-size: contain;
-  }
-    .img-fluid {
-    width: 100%;
-    object-fit: cover;
-  }
-  
-}
+
+
 
 
   .img-fluid {
@@ -123,6 +114,7 @@
     object-fit: cover;
   
   }
+
 
   .form-login {
     width: 100%;
@@ -137,4 +129,21 @@
   .form-group {
     width: 100%;
   }
+  /*resposividad en 768 ox*/
+@media (max-width: 768px) {
+  .login-body {
+    background-size: contain;
+    
+  }
+  .div-login{
+    max-width: 100vw;
+    padding:5px;
+ 
+  }
+    .img-fluid {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+}
 
