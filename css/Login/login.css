@@ -1,6 +1,9 @@
 #login{
   background-color: var(--colorBackground);
+  width: 100;
+  
 }
+
 
 .login-body {
   margin: 0;
