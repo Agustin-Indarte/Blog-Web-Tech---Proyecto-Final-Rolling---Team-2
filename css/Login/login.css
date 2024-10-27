@@ -1,9 +1,12 @@
-#login{
-  background-color: var(--colorBackground);
-  width: 100;
-  
+htm,
+body {
+  overflow-x: hidden;
 }
 
+#login {
+  background-color: var(--colorBackground);
+  width: 100;
+}
 
 .login-body {
   margin: 0;
@@ -76,7 +79,7 @@
   margin-bottom: 5px;
 }
 
-.label{
+.label {
   font-size: 0.9rem;
   margin-bottom: 10px;
 }
@@ -95,7 +98,7 @@
   justify-content: space-between;
 }
 
-.modal-contraseña{
+.modal-contraseña {
   background-color: var(--colorBackground);
 }
 
@@ -105,45 +108,50 @@
   border: 1px solid var(--colorPrimary);
 }
 
+.img-fluid {
+  width: 100%;
+  object-fit: cover;
+}
 
-
-
-
-  .img-fluid {
-    width: 100%;
-    object-fit: cover;
-  
-  }
-
-
-  .form-login {
-    width: 100%;
-    padding: 5px;
-  }
-  .form-row {
-    flex-direction: column;
-  }
-  .form-group {
-    flex-direction: column;
-  }
-  .form-group {
-    width: 100%;
-  }
-  /*resposividad en 768 ox*/
+.form-login {
+  width: 100%;
+  padding: 5px;
+}
+.form-row {
+  flex-direction: column;
+}
+.form-group {
+  flex-direction: column;
+}
+.form-group {
+  width: 100%;
+}
+/*resposividad en 768 ox*/
 @media (max-width: 768px) {
   .login-body {
     background-size: contain;
-    
   }
-  .div-login{
+  .div-login {
     max-width: 100vw;
-    padding:5px;
- 
+    padding: 5px;
   }
-    .img-fluid {
+  
+  .img-fluid {
     width: 100%;
     object-fit: cover;
   }
+}
+.modal-content {
+  background-image: url(/img/fondo-suscripción.png);
+}
+.modal-title {
+  color: var(--colorPrimary);
+  font-size: 2em;
+}
+#modal-body-text {
+  color: var(--colorPrimary);
+  font-size: 2em;
+  display: flex;
+  text-align: center;
   
 }
-

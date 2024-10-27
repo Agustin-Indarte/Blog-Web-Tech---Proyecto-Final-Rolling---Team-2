@@ -84,11 +84,13 @@
 
         .textos-banner-principal h1{
             font-size: 1rem;
+            
 
         }
 
         .textos-banner-principal p{
             font-size: 0.5rem;
+            
         }
 
         /* Estilos banner con textos */
@@ -103,4 +105,14 @@
         .card img{
             height: 150px;
         }
+        .primer-banner p{
+            font-size: 0.8rem;
+            
+
+        }
+        .btn-scrum {
+
+            font-size: 18px;
+        }
     }
+    
